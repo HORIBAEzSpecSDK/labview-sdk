@@ -23,6 +23,8 @@
 				<Item Name="OpenWebSocketCommunication Argument--cluster.ctl" Type="VI" URL="../OpenWebSocketCommunication Argument--cluster.ctl"/>
 				<Item Name="OpenWebSocketCommunication (Reply Payload)--cluster.ctl" Type="VI" URL="../OpenWebSocketCommunication (Reply Payload)--cluster.ctl"/>
 				<Item Name="ICLshutdown Argument--cluster.ctl" Type="VI" URL="../ICLshutdown Argument--cluster.ctl"/>
+				<Item Name="SendJSONandAskForReply Argument--cluster.ctl" Type="VI" URL="../SendJSONandAskForReply Argument--cluster.ctl"/>
+				<Item Name="SendJSONandAskForReply (Reply Payload)--cluster.ctl" Type="VI" URL="../SendJSONandAskForReply (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -39,6 +41,7 @@
 			<Item Name="StartICL.vi" Type="VI" URL="../StartICL.vi"/>
 			<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
 			<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
+			<Item Name="SendJSONandAskForReply.vi" Type="VI" URL="../SendJSONandAskForReply.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
