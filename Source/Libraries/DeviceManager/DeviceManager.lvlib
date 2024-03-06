@@ -20,6 +20,9 @@
 				<Item Name="Hide Panel Argument--cluster.ctl" Type="VI" URL="../Hide Panel Argument--cluster.ctl"/>
 				<Item Name="Show Diagram Argument--cluster.ctl" Type="VI" URL="../Show Diagram Argument--cluster.ctl"/>
 				<Item Name="StartICL Argument--cluster.ctl" Type="VI" URL="../StartICL Argument--cluster.ctl"/>
+				<Item Name="OpenWebSocketCommunication Argument--cluster.ctl" Type="VI" URL="../OpenWebSocketCommunication Argument--cluster.ctl"/>
+				<Item Name="OpenWebSocketCommunication (Reply Payload)--cluster.ctl" Type="VI" URL="../OpenWebSocketCommunication (Reply Payload)--cluster.ctl"/>
+				<Item Name="ICLshutdown Argument--cluster.ctl" Type="VI" URL="../ICLshutdown Argument--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -34,6 +37,8 @@
 			<Item Name="Get Module Execution Status.vi" Type="VI" URL="../Get Module Execution Status.vi"/>
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
 			<Item Name="StartICL.vi" Type="VI" URL="../StartICL.vi"/>
+			<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
+			<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
@@ -54,6 +59,12 @@
 	</Item>
 	<Item Name="Requests" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Item Name="Private Requests" Type="Folder">
+			<Item Name="Priv Req Arguments" Type="Folder">
+				<Item Name="ICLstartNotification Argument--cluster.ctl" Type="VI" URL="../ICLstartNotification Argument--cluster.ctl"/>
+			</Item>
+			<Item Name="ICLstartNotification.vi" Type="VI" URL="../ICLstartNotification.vi"/>
+		</Item>
 		<Item Name="Request Events--cluster.ctl" Type="VI" URL="../Request Events--cluster.ctl"/>
 		<Item Name="Obtain Request Events.vi" Type="VI" URL="../Obtain Request Events.vi"/>
 		<Item Name="Destroy Request Events.vi" Type="VI" URL="../Destroy Request Events.vi"/>
@@ -80,6 +91,7 @@
 			<Item Name="Open VI Panel.vi" Type="VI" URL="../Open VI Panel.vi"/>
 		</Item>
 		<Item Name="Typedefs" Type="Folder">
+			<Item Name="ICLcommuncationData.ctl" Type="VI" URL="../ICLcommuncationData.ctl"/>
 			<Item Name="Module Data--cluster.ctl" Type="VI" URL="../Module Data--cluster.ctl"/>
 		</Item>
 	</Item>
