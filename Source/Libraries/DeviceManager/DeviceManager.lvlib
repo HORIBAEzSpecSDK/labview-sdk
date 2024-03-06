@@ -1,7 +1,15 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="23008000">
+	<Property Name="EndevoGOOP_ClassBodyIcon" Type="Str">manager</Property>
+	<Property Name="EndevoGOOP_ColorFrame" Type="UInt">0</Property>
+	<Property Name="EndevoGOOP_ColorHeader" Type="UInt">40813</Property>
+	<Property Name="EndevoGOOP_ColorPrivate" Type="UInt">16777215</Property>
+	<Property Name="EndevoGOOP_ColorPublic" Type="UInt">16751729</Property>
+	<Property Name="EndevoGOOP_ColorTextBody" Type="UInt">0</Property>
+	<Property Name="EndevoGOOP_ColorTextHeader" Type="UInt">16777215</Property>
+	<Property Name="EndevoGOOP_FrameThickness" Type="UInt">1</Property>
 	<Property Name="NI.Lib.Description" Type="Str">This DQMH module takes care of starting and stoping the ICL as well as monitoring any output from the ICL.</Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*+!!!*Q(C=\&gt;5R&lt;C*"%)8BZ^5'4LH"CA2N8$&gt;!3)9$%0A#*;UW=U,KR"*8K'#$T3RO9('&amp;OA*8Y!LY\[&lt;!E*D%NCT,-_ZBZEV0^5@0-*&lt;[=CX^V/\3-HVV;?&gt;&lt;J`:RX$N,?L$`X/`6JLI=7P6Y[&lt;1\HJN/K^JB-TU5XV@:H2S&gt;(R[O@]V`9&gt;(X]LV]\?8_YI`AX8](6WIP)FL3AO9U5RNWF_2*HO2*HO2*(O2"(O2"(O2"\O2/\O2/\O2/&lt;O2'&lt;O2'&lt;O2'XF&gt;SE9N=Z*#3Q:/"EK**A;1T&amp;#7&lt;R*.Y%E`CY6#**`%EHM34?/CCR*.Y%E`C34R=JM34?"*0YEE]F/K3\#MZHM2$?17?Q".Y!E`A95A&amp;HA!1$"95$IL!5(!SW!E]A3@QM+P!%XA#4_!*0*R7Y!E]A3@Q""YO[&lt;-38&gt;.7=DS5E?.R0)\(]4A?3MPR/"\(YXA=$]0*]4A?"_%-["3()/=CJY.TY(A=$R^S0)\(]4A?R]/J@I?]TUT4N*5=D_%R0)&lt;(]"A?3MDQ'"\$9XA-$W6F?!S0Y4%]BI?B:(A-D_%R)-;A$#_DG('BU=E)$!^``7GR@J?C3[SP5DW]KI&gt;3^&lt;#J(C,6Q['[[;K&lt;K&lt;J*KMF84;JKMF34I0JS+L1+IRJ%&gt;8(LK#X&lt;$7V.7^'7N!6N4JP1BL2"O`3./W[X7WUW'[X8;[V7+SW83SU7#]XH=UUG%QW(1QU'A_.LY"@L]97Q@S`&gt;M`^P&gt;$0\`TD_%X`(NQ_`R\/HU&gt;WMZ2`Q``E4P"PV1[&gt;D-%@0#VVRX1!!!!!</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*(!!!*Q(C=\&gt;5`&lt;BJ"&amp;-@R8S)8;:&amp;SA)D/^&lt;M#6]$R#6[8GN9F&gt;6#+&gt;Y!U+\GU&amp;(H,&lt;&gt;]6O!*8Q.]:(B!LEGG=+,)]S]$SGX]@TSZLK:&gt;0UJ8WF]LU9NHPR&lt;O?PS9GHQYPWA_HU`GD&gt;TFU62N`;$PW/*`5_.[XBDU\/9\`I`WU@GO`Z,^1^&amp;\?S^MO&gt;R&gt;`"(`^&gt;`""\5&amp;%47J1H7LNV[V^EC&gt;ZEC&gt;ZEC&gt;ZE!&gt;ZE!&gt;ZE!?ZETOZETOZETOZE2OZE2OZE2NZ0]B&amp;,H+21UI74R:+*EUG3$J$5@+7?"*0YEE]@&amp;8C34S**`%E(LII]33?R*.Y%A`$F(A34_**0)G(K&lt;IE_U'/*`%QP1*0Y!E]A3@QM+1#4Q!)&amp;AMG$C;"I;!R/!E]A3@Q=+L!%XA#4_!*0$1L]!3?Q".Y!A^$_KZ%V\3$(!`4S0%Y(M@D?"Q05]PR/"\(YXA=$]P*]4A?"_%M[%Q/1=YAJY0TR@%Y(D\E?"S0YX%]DI?G@I7]\UT4N)-=D_%R0)&lt;(]"A?JJ$B-4S'R`!9(K;6Y4%]BM@Q'"[7EO%R0)&lt;(A"C,MLS-S9S"2C=D-$S]_NVC`3J&amp;FVA`J,JZ64?F[G:4X53KGU.VU6585X726*OPWF46:KEW1@8(K&gt;!KD'I2V?$754P?N^32/F$8V"6V36V1Z^2:'`L+(8?\H&lt;&lt;&lt;L=:RV$!-7K`87KV77C[87CQ7GM`HGMVGJ]@!&amp;Y\4!_(]8"K``&gt;J]``HV9&lt;D_P(G]PXFYP,`^]9`_0`](TU:^V/^LM%&gt;0GSB]\Q!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">587235328</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
@@ -25,6 +33,8 @@
 				<Item Name="ICLshutdown Argument--cluster.ctl" Type="VI" URL="../ICLshutdown Argument--cluster.ctl"/>
 				<Item Name="SendJSONandAskForReply Argument--cluster.ctl" Type="VI" URL="../SendJSONandAskForReply Argument--cluster.ctl"/>
 				<Item Name="SendJSONandAskForReply (Reply Payload)--cluster.ctl" Type="VI" URL="../SendJSONandAskForReply (Reply Payload)--cluster.ctl"/>
+				<Item Name="DiscoverDevices Argument--cluster.ctl" Type="VI" URL="../DiscoverDevices Argument--cluster.ctl"/>
+				<Item Name="DiscoverDevices (Reply Payload)--cluster.ctl" Type="VI" URL="../DiscoverDevices (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -42,6 +52,7 @@
 			<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
 			<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
 			<Item Name="SendJSONandAskForReply.vi" Type="VI" URL="../SendJSONandAskForReply.vi"/>
+			<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>

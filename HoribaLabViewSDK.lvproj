@@ -12,25 +12,33 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Communicator.lvclass" Type="LVClass" URL="../Source/Classes/Communicator/Communicator.lvclass"/>
-			<Item Name="DeviceManager.lvclass" Type="LVClass" URL="../Source/Classes/DeviceManager/DeviceManager.lvclass"/>
+			<Item Name="GenericDevice.lvclass" Type="LVClass" URL="../Source/Classes/GenericDevice/GenericDevice.lvclass"/>
+			<Item Name="Monochromator.lvclass" Type="LVClass" URL="../Source/Classes/Mono/Monochromator.lvclass"/>
+			<Item Name="CCD.lvclass" Type="LVClass" URL="../Source/Classes/CCD/CCD.lvclass"/>
+			<Item Name="SCD.lvclass" Type="LVClass" URL="../Source/Classes/SCD/SCD.lvclass"/>
 		</Item>
 		<Item Name="Modules" Type="Folder">
 			<Item Name="DeviceManager.lvlib" Type="Library" URL="../Source/Libraries/DeviceManager/DeviceManager.lvlib"/>
 		</Item>
-		<Item Name="Tests" Type="Folder">
+		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
 					<Item Name="Test_SendAndAskForReply.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_SendAndAskForReply.vi"/>
 				</Item>
-				<Item Name="DeviceManager" Type="Folder">
-					<Item Name="Test ICL running.vi" Type="VI" URL="../Source/Tests/Classes/DeviceManager/Test ICL running.vi"/>
-					<Item Name="Test OpenDeviceManager.vi" Type="VI" URL="../Source/Tests/Classes/DeviceManager/Test OpenDeviceManager.vi"/>
-				</Item>
 				<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
 			</Item>
+			<Item Name="DeviceManager" Type="Folder">
+				<Item Name="DeviceManager setup.vi" Type="VI" URL="../Unit Tests/DeviceManager/DeviceManager setup.vi"/>
+				<Item Name="DeviceManager teardown.vi" Type="VI" URL="../Unit Tests/DeviceManager/DeviceManager teardown.vi"/>
+				<Item Name="Test - DeviceManager - OpenWebSocketCommunication 1.vi" Type="VI" URL="../Unit Tests/DeviceManager/Test - DeviceManager - OpenWebSocketCommunication 1.vi"/>
+				<Item Name="Test - DeviceManager - StartICL 1.vi" Type="VI" URL="../Unit Tests/DeviceManager/Test - DeviceManager - StartICL 1.vi"/>
+			</Item>
 		</Item>
+		<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
+		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="7F74EC14CB6F87B712ADB3E4000AA489Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7F74EC14CB6F87B712ADB3E4000AA489Array Size(s)__ogtk.vi"/>
