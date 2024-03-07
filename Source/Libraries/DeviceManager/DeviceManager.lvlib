@@ -35,6 +35,8 @@
 				<Item Name="SendJSONandAskForReply (Reply Payload)--cluster.ctl" Type="VI" URL="../SendJSONandAskForReply (Reply Payload)--cluster.ctl"/>
 				<Item Name="DiscoverDevices Argument--cluster.ctl" Type="VI" URL="../DiscoverDevices Argument--cluster.ctl"/>
 				<Item Name="DiscoverDevices (Reply Payload)--cluster.ctl" Type="VI" URL="../DiscoverDevices (Reply Payload)--cluster.ctl"/>
+				<Item Name="return connected devices Argument--cluster.ctl" Type="VI" URL="../return connected devices Argument--cluster.ctl"/>
+				<Item Name="return connected devices (Reply Payload)--cluster.ctl" Type="VI" URL="../return connected devices (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -53,6 +55,7 @@
 			<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
 			<Item Name="SendJSONandAskForReply.vi" Type="VI" URL="../SendJSONandAskForReply.vi"/>
 			<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
+			<Item Name="return connected devices.vi" Type="VI" URL="../return connected devices.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
@@ -79,6 +82,7 @@
 			</Item>
 			<Item Name="ICLstartNotification.vi" Type="VI" URL="../ICLstartNotification.vi"/>
 		</Item>
+		<Item Name="Ask for Connected Devices.vi" Type="VI" URL="../Ask for Connected Devices.vi"/>
 		<Item Name="Request Events--cluster.ctl" Type="VI" URL="../Request Events--cluster.ctl"/>
 		<Item Name="Obtain Request Events.vi" Type="VI" URL="../Obtain Request Events.vi"/>
 		<Item Name="Destroy Request Events.vi" Type="VI" URL="../Destroy Request Events.vi"/>
