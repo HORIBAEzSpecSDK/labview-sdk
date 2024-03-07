@@ -24,6 +24,10 @@
 		</Item>
 		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
+				<Item Name="CCD" Type="Folder">
+					<Item Name="test_ExposureTimeJsonGet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonGet.vi"/>
+					<Item Name="test_ExposureTimeJsonSet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonSet.vi"/>
+				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
 					<Item Name="Test_SendAndAskForReply.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_SendAndAskForReply.vi"/>
