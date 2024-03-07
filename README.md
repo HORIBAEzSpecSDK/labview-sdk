@@ -7,4 +7,4 @@ The following VIPM dependencies exist in order to open this project without erro
 - Caraya
 - DQMH
 - JKI .net system exec
-- JDP JSON
+- JDP JSONtext
