@@ -82,7 +82,7 @@
 			</Item>
 			<Item Name="ICLstartNotification.vi" Type="VI" URL="../ICLstartNotification.vi"/>
 		</Item>
-		<Item Name="Ask for Connected Devices.vi" Type="VI" URL="../Ask for Connected Devices.vi"/>
+		<Item Name="Ask for Connected Device.vi" Type="VI" URL="../Ask for Connected Device.vi"/>
 		<Item Name="Request Events--cluster.ctl" Type="VI" URL="../Request Events--cluster.ctl"/>
 		<Item Name="Obtain Request Events.vi" Type="VI" URL="../Obtain Request Events.vi"/>
 		<Item Name="Destroy Request Events.vi" Type="VI" URL="../Destroy Request Events.vi"/>
