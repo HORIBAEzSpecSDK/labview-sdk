@@ -24,6 +24,10 @@
 		</Item>
 		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="Generic" Type="Folder">
+					<Item Name="test_GetChipSize.vi" Type="VI" URL="../Source/Classes/GenericDevice/test_GetChipSize.vi"/>
+				</Item>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="test_ExposureTimeJsonGet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonGet.vi"/>
 					<Item Name="test_ExposureTimeJsonSet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonSet.vi"/>
