@@ -31,6 +31,7 @@
 				<Item Name="CCD" Type="Folder">
 					<Item Name="test_ExposureTimeJsonGet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonGet.vi"/>
 					<Item Name="test_ExposureTimeJsonSet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonSet.vi"/>
+					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
