@@ -35,6 +35,7 @@
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
 					<Item Name="Test_SendAndAskForReply.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_SendAndAskForReply.vi"/>
+					<Item Name="Test_ParseResultsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseResultsFromAnswer.vi"/>
 				</Item>
 				<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
 			</Item>
