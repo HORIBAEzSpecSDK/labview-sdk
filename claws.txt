@@ -1,9 +1,0 @@
- ws://127.0.0.1:25010
- {"command":"ccd_discover","parameters":{"index": 0}}
- {"command":"ccd_open","errors":[],"id":0,"results":{}} 
- 
-set ROI
-acquisition start
-Is acquisition done
-getAcquisitionData
-
