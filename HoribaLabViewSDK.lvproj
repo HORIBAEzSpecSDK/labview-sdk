@@ -37,6 +37,9 @@
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
 					<Item Name="Test_SendAndAskForReply.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_SendAndAskForReply.vi"/>
 					<Item Name="Test_ParseResultsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseResultsFromAnswer.vi"/>
+					<Item Name="Test_ParseCommandFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseCommandFromAnswer.vi"/>
+					<Item Name="Test_ParseErrorsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseErrorsFromAnswer.vi"/>
+					<Item Name="Test_ParseIDFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseIDFromAnswer.vi"/>
 				</Item>
 				<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
 			</Item>
