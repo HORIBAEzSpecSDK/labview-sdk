@@ -25,14 +25,14 @@
 		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
-				<Item Name="Generic" Type="Folder">
-					<Item Name="test_GetChipSize.vi" Type="VI" URL="../Source/Classes/GenericDevice/test_GetChipSize.vi"/>
-				</Item>
+				<Item Name="Generic" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="test_ExposureTimeJsonGet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonGet.vi"/>
 					<Item Name="test_ExposureTimeJsonSet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonSet.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
+					<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
+					<Item Name="test_CCDIsOpen.vi" Type="VI" URL="../Source/Classes/CCD/test_CCDIsOpen.vi"/>
 				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
