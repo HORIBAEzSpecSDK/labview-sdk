@@ -45,24 +45,19 @@
 		<Item Name="Requests" Type="Folder">
 			<Item Name="Show Panel.vi" Type="VI" URL="../Show Panel.vi"/>
 			<Item Name="Hide Panel.vi" Type="VI" URL="../Hide Panel.vi"/>
-			<Item Name="Stop Module.vi" Type="VI" URL="../Stop Module.vi"/>
+			<Item Name="Null Broadcast Events--constant.vi" Type="VI" URL="../Null Broadcast Events--constant.vi"/>
 			<Item Name="Get Module Execution Status.vi" Type="VI" URL="../Get Module Execution Status.vi"/>
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
-			<Item Name="StartICL.vi" Type="VI" URL="../StartICL.vi"/>
-			<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
-			<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
 			<Item Name="SendJSONandAskForReply.vi" Type="VI" URL="../SendJSONandAskForReply.vi"/>
-			<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
+		<Item Name="Stop Module.vi" Type="VI" URL="../Stop Module.vi"/>
+		<Item Name="StartICL.vi" Type="VI" URL="../StartICL.vi"/>
+		<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
+		<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
+		<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
 		<Item Name="Obtain Broadcast Events for Registration.vi" Type="VI" URL="../Obtain Broadcast Events for Registration.vi"/>
-		<Item Name="Null Broadcast Events--constant.vi" Type="VI" URL="../Null Broadcast Events--constant.vi"/>
-		<Item Name="AskForConnectedMonos.vi" Type="VI" URL="../AskForConnectedMonos.vi"/>
-		<Item Name="AskForConnectedCCDs.vi" Type="VI" URL="../AskForConnectedCCDs.vi"/>
-		<Item Name="AskForConnectedSCDs.vi" Type="VI" URL="../AskForConnectedSCDs.vi"/>
-		<Item Name="Decode JSON List Of Devices.vi" Type="VI" URL="../Decode JSON List Of Devices.vi"/>
-		<Item Name="ReadDevicesList.vi" Type="VI" URL="../ReadDevicesList.vi"/>
 	</Item>
 	<Item Name="Broadcasts" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -113,6 +108,11 @@
 			<Item Name="ICLcommuncationData.ctl" Type="VI" URL="../ICLcommuncationData.ctl"/>
 			<Item Name="Module Data--cluster.ctl" Type="VI" URL="../Module Data--cluster.ctl"/>
 		</Item>
+		<Item Name="AskForConnectedCCDs.vi" Type="VI" URL="../AskForConnectedCCDs.vi"/>
+		<Item Name="AskForConnectedMonos.vi" Type="VI" URL="../AskForConnectedMonos.vi"/>
+		<Item Name="AskForConnectedSCDs.vi" Type="VI" URL="../AskForConnectedSCDs.vi"/>
+		<Item Name="Decode JSON List Of Devices.vi" Type="VI" URL="../Decode JSON List Of Devices.vi"/>
+		<Item Name="ReadDevicesList.vi" Type="VI" URL="../ReadDevicesList.vi"/>
 	</Item>
 	<Item Name="Module Sync" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>

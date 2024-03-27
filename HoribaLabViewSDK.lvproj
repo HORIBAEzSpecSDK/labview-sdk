@@ -32,7 +32,7 @@
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
 					<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
-					<Item Name="test_CCDIsOpen.vi" Type="VI" URL="../Source/Classes/CCD/test_CCDIsOpen.vi"/>
+					<Item Name="test_CCDIsOpen.vi" Type="VI" URL="../Unit Tests/Classes/test_CCDIsOpen.vi"/>
 				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
@@ -41,6 +41,7 @@
 					<Item Name="Test_ParseCommandFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseCommandFromAnswer.vi"/>
 					<Item Name="Test_ParseErrorsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseErrorsFromAnswer.vi"/>
 					<Item Name="Test_ParseIDFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseIDFromAnswer.vi"/>
+					<Item Name="test_add_ID.vi" Type="VI" URL="../Unit Tests/Classes/test_add_ID.vi"/>
 				</Item>
 				<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
 			</Item>
@@ -55,6 +56,9 @@
 		<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Array Size(s)__ogtk.vi"/>
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Array to Array of VData__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Array to Array of VData__ogtk.vi"/>
@@ -234,10 +238,11 @@
 				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="ccdCount.ctl" Type="VI" URL="../Source/Classes/CCD/ccdCount.ctl"/>
+			<Item Name="ccdDiscover.vi" Type="VI" URL="../Source/Classes/CCD/ccdDiscover.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="return connected devices.vi" Type="VI" URL="../Source/Libraries/DeviceManager/return connected devices.vi"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
