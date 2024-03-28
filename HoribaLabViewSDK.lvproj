@@ -238,8 +238,6 @@
 				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="ccdCount.ctl" Type="VI" URL="../Source/Classes/CCD/ccdCount.ctl"/>
-			<Item Name="ccdDiscover.vi" Type="VI" URL="../Source/Classes/CCD/ccdDiscover.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
