@@ -58,6 +58,8 @@
 		<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
 		<Item Name="Obtain Broadcast Events for Registration.vi" Type="VI" URL="../Obtain Broadcast Events for Registration.vi"/>
+		<Item Name="OpenConnectionWithDevice.vi" Type="VI" URL="../OpenConnectionWithDevice.vi"/>
+		<Item Name="CloseConnectionWithDevice.vi" Type="VI" URL="../CloseConnectionWithDevice.vi"/>
 	</Item>
 	<Item Name="Broadcasts" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
