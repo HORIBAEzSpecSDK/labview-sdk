@@ -27,8 +27,8 @@
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Generic" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
-					<Item Name="test_ExposureTimeJsonGet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonGet.vi"/>
-					<Item Name="test_ExposureTimeJsonSet.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_ExposureTimeJsonSet.vi"/>
+					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
+					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
 					<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
