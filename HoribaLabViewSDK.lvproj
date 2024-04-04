@@ -36,6 +36,8 @@
 					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
+					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
+					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
