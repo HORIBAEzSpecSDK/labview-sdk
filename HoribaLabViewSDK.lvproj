@@ -55,7 +55,6 @@
 				<Item Name="DeviceManager teardown.vi" Type="VI" URL="../Unit Tests/DeviceManager/DeviceManager teardown.vi"/>
 				<Item Name="Test - DeviceManager - OpenWebSocketCommunication 1.vi" Type="VI" URL="../Unit Tests/DeviceManager/Test - DeviceManager - OpenWebSocketCommunication 1.vi"/>
 				<Item Name="Test - DeviceManager - StartICL 1.vi" Type="VI" URL="../Unit Tests/DeviceManager/Test - DeviceManager - StartICL 1.vi"/>
-				<Item Name="TestDeviceListReadOut.vi" Type="VI" URL="../Source/Libraries/DeviceManager/TestDeviceListReadOut.vi"/>
 			</Item>
 		</Item>
 		<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>

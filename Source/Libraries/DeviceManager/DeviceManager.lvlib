@@ -113,8 +113,6 @@
 		<Item Name="AskForConnectedCCDs.vi" Type="VI" URL="../AskForConnectedCCDs.vi"/>
 		<Item Name="AskForConnectedMonos.vi" Type="VI" URL="../AskForConnectedMonos.vi"/>
 		<Item Name="AskForConnectedSCDs.vi" Type="VI" URL="../AskForConnectedSCDs.vi"/>
-		<Item Name="Decode JSON List Of Devices.vi" Type="VI" URL="../Decode JSON List Of Devices.vi"/>
-		<Item Name="ReadDevicesList.vi" Type="VI" URL="../ReadDevicesList.vi"/>
 	</Item>
 	<Item Name="Module Sync" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
