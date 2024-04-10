@@ -87,7 +87,7 @@
 	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		<Property Name="NI.SortType" Type="Int">0</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Constants" Type="Folder">
 			<Item Name="Module Name--constant.vi" Type="VI" URL="../Module Name--constant.vi"/>
 			<Item Name="Module Timeout--constant.vi" Type="VI" URL="../Module Timeout--constant.vi"/>
@@ -110,6 +110,9 @@
 			<Item Name="ICLcommuncationData.ctl" Type="VI" URL="../ICLcommuncationData.ctl"/>
 			<Item Name="Module Data--cluster.ctl" Type="VI" URL="../Module Data--cluster.ctl"/>
 		</Item>
+		<Item Name="AskForConnectedCCDsMODIFIED.vi" Type="VI" URL="../AskForConnectedCCDsMODIFIED.vi"/>
+		<Item Name="AskForConnectedMonosMODIFIED.vi" Type="VI" URL="../AskForConnectedMonosMODIFIED.vi"/>
+		<Item Name="AskForConnectedSCDsMODIFIED.vi" Type="VI" URL="../AskForConnectedSCDsMODIFIED.vi"/>
 		<Item Name="AskForConnectedCCDs.vi" Type="VI" URL="../AskForConnectedCCDs.vi"/>
 		<Item Name="AskForConnectedMonos.vi" Type="VI" URL="../AskForConnectedMonos.vi"/>
 		<Item Name="AskForConnectedSCDs.vi" Type="VI" URL="../AskForConnectedSCDs.vi"/>
