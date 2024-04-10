@@ -110,12 +110,15 @@
 			<Item Name="ICLcommuncationData.ctl" Type="VI" URL="../ICLcommuncationData.ctl"/>
 			<Item Name="Module Data--cluster.ctl" Type="VI" URL="../Module Data--cluster.ctl"/>
 		</Item>
-		<Item Name="AskForConnectedCCDsMODIFIED.vi" Type="VI" URL="../AskForConnectedCCDsMODIFIED.vi"/>
-		<Item Name="AskForConnectedMonosMODIFIED.vi" Type="VI" URL="../AskForConnectedMonosMODIFIED.vi"/>
-		<Item Name="AskForConnectedSCDsMODIFIED.vi" Type="VI" URL="../AskForConnectedSCDsMODIFIED.vi"/>
-		<Item Name="AskForConnectedCCDs.vi" Type="VI" URL="../AskForConnectedCCDs.vi"/>
 		<Item Name="AskForConnectedMonos.vi" Type="VI" URL="../AskForConnectedMonos.vi"/>
+		<Item Name="AskForConnectedCCDs.vi" Type="VI" URL="../AskForConnectedCCDs.vi"/>
 		<Item Name="AskForConnectedSCDs.vi" Type="VI" URL="../AskForConnectedSCDs.vi"/>
+		<Item Name="MonoDiscover.vi" Type="VI" URL="../../../Classes/GenericDevice/MonoDiscover.vi"/>
+		<Item Name="MonoList.vi" Type="VI" URL="../../../Classes/GenericDevice/MonoList.vi"/>
+		<Item Name="CCDDiscover.vi" Type="VI" URL="../../../Classes/GenericDevice/CCDDiscover.vi"/>
+		<Item Name="CCDList.vi" Type="VI" URL="../../../Classes/GenericDevice/CCDList.vi"/>
+		<Item Name="SCDDiscover.vi" Type="VI" URL="../../../Classes/GenericDevice/SCDDiscover.vi"/>
+		<Item Name="SCDList.vi" Type="VI" URL="../../../Classes/GenericDevice/SCDList.vi"/>
 	</Item>
 	<Item Name="Module Sync" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
