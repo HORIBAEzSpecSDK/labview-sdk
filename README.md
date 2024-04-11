@@ -9,3 +9,4 @@ The following VIPM dependencies exist in order to open this project without erro
 - JKI .net system exec
 - JDP JSONtext
 - OpenG Error
+- HSE Logger
