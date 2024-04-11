@@ -57,6 +57,7 @@
 				<Item Name="Test - DeviceManager - StartICL 1.vi" Type="VI" URL="../Unit Tests/DeviceManager/Test - DeviceManager - StartICL 1.vi"/>
 			</Item>
 		</Item>
+		<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
