@@ -2,6 +2,7 @@
 <Project Type="Project" LVVersion="23008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -21,6 +22,10 @@
 		</Item>
 		<Item Name="Modules" Type="Folder">
 			<Item Name="DeviceManager.lvlib" Type="Library" URL="../Source/Libraries/DeviceManager/DeviceManager.lvlib"/>
+		</Item>
+		<Item Name="Helper Files" Type="Folder">
+			<Item Name="CreateLogger.vi" Type="VI" URL="../LogCommands/CreateLogger.vi"/>
+			<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
 		</Item>
 		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
@@ -57,7 +62,6 @@
 				<Item Name="Test - DeviceManager - StartICL 1.vi" Type="VI" URL="../Unit Tests/DeviceManager/Test - DeviceManager - StartICL 1.vi"/>
 			</Item>
 		</Item>
-		<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
