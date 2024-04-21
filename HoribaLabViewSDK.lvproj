@@ -32,7 +32,6 @@
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Generic" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
-					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_CCD_Setup_Testenvironment.vi"/>
 					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
@@ -44,7 +43,6 @@
 					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
 					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
-					<Item Name="test_CCD_Teardown_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_CCD_Teardown_Testenvironment.vi"/>
 				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
@@ -56,6 +54,9 @@
 					<Item Name="test_add_ID.vi" Type="VI" URL="../Unit Tests/Classes/test_add_ID.vi"/>
 				</Item>
 				<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
+				<Item Name="test_Setup_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_Setup_Testenvironment.vi"/>
+				<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_Teardown_Testenvironment.vi"/>
+				<Item Name="test_Template.vi" Type="VI" URL="../Unit Tests/Classes/test_Template.vi"/>
 			</Item>
 			<Item Name="DeviceManager" Type="Folder">
 				<Item Name="DeviceManager setup.vi" Type="VI" URL="../Unit Tests/DeviceManager/DeviceManager setup.vi"/>
