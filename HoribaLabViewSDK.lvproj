@@ -32,6 +32,7 @@
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Generic" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
+					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_CCD_Setup_Testenvironment.vi"/>
 					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
