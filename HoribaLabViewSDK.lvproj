@@ -33,17 +33,17 @@
 				<Item Name="Generic" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="test_CCDTemplate.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDTemplate.vi"/>
-					<Item Name="test_CCDIsOpen.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDIsOpen.vi"/>
+					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
+					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
+					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
+					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
-					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
-					<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
-					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
-					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
+					<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
 				</Item>
 				<Item Name="Communicator" Type="Folder">
 					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
