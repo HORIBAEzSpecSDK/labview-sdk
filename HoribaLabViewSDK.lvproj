@@ -32,12 +32,13 @@
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Generic" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
+					<Item Name="test_CCDTemplate.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDTemplate.vi"/>
+					<Item Name="test_CCDIsOpen.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDIsOpen.vi"/>
 					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
 					<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
-					<Item Name="test_CCDIsOpen.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDIsOpen.vi"/>
 					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
