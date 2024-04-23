@@ -38,8 +38,8 @@
 					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
 					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
-					<Item Name="CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
+					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
