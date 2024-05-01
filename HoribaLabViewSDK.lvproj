@@ -77,6 +77,7 @@
 				<Item Name="test_DeviceManager_OpenWebSocketCommunication.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_OpenWebSocketCommunication.vi"/>
 				<Item Name="test_DeviceManager_StartICL.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_StartICL.vi"/>
 				<Item Name="test_DevicesDiscover.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DevicesDiscover.vi"/>
+				<Item Name="test_DevicesList.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DevicesList.vi"/>
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
