@@ -40,8 +40,11 @@
 					<Item Name="test_add_ID.vi" Type="VI" URL="../Source/Tests/Classes/test_add_ID.vi"/>
 				</Item>
 				<Item Name="GenericDevice" Type="Folder"/>
-				<Item Name="Monochromator" Type="Folder"/>
+				<Item Name="Monochromator" Type="Folder">
+					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
+				</Item>
 				<Item Name="CCD" Type="Folder">
+					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCD_Setup_Testenvironment.vi"/>
 					<Item Name="test_CCDAllTests.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAllTests.vi"/>
 					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
@@ -56,7 +59,6 @@
 					<Item Name="test_CCDSetAndGetAcquisitionCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetAcquisitionCount.vi"/>
 					<Item Name="test_CCDSetAndGetCleanCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetCleanCount.vi"/>
 					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
-					<Item Name="test_CCDTemplate.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDTemplate.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
@@ -64,10 +66,12 @@
 					<Item Name="test_CCDAcquisitionSequence.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequence.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 				</Item>
-				<Item Name="SCD" Type="Folder"/>
+				<Item Name="SCD" Type="Folder">
+					<Item Name="test_SCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/SCD/test_SCD_Setup_Testenvironment.vi"/>
+				</Item>
 				<Item Name="Helper Files" Type="Folder">
 					<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
-					<Item Name="test_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Setup_Testenvironment.vi"/>
+					<Item Name="test_Setup_Device_Connection.vi" Type="VI" URL="../Source/Tests/Classes/test_Setup_Device_Connection.vi"/>
 					<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Teardown_Testenvironment.vi"/>
 					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
 				</Item>
