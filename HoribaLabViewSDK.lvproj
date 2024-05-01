@@ -42,9 +42,11 @@
 				<Item Name="GenericDevice" Type="Folder"/>
 				<Item Name="Monochromator" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
+					<Item Name="test_CCDAllTests.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAllTests.vi"/>
 					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
 					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
+					<Item Name="test_CCDSetAndGetNumberOfAvgs.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAvgs.vi"/>
 					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
@@ -53,10 +55,10 @@
 					<Item Name="test_CCDSetAndGetXAxisConversionType.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetXAxisConversionType.vi"/>
 					<Item Name="test_CCDSetAndGetAcquisitionCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetAcquisitionCount.vi"/>
 					<Item Name="test_CCDSetAndGetCleanCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetCleanCount.vi"/>
+					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
 					<Item Name="test_CCDTemplate.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDTemplate.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
-					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
 					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
 					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
 					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
@@ -81,7 +83,6 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
-		<Item Name="test_CCDAllTests.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAllTests.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
