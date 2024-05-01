@@ -42,6 +42,7 @@
 				<Item Name="GenericDevice" Type="Folder"/>
 				<Item Name="Monochromator" Type="Folder">
 					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
+					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
 				</Item>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCD_Setup_Testenvironment.vi"/>
