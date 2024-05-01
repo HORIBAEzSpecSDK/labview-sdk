@@ -27,7 +27,7 @@
 			<Item Name="CreateLogger.vi" Type="VI" URL="../LogCommands/CreateLogger.vi"/>
 			<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
 		</Item>
-		<Item Name="Unit Tests" Type="Folder">
+		<Item Name="Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Communicator" Type="Folder">
@@ -37,46 +37,46 @@
 					<Item Name="Test_ParseCommandFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseCommandFromAnswer.vi"/>
 					<Item Name="Test_ParseErrorsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseErrorsFromAnswer.vi"/>
 					<Item Name="Test_ParseIDFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseIDFromAnswer.vi"/>
-					<Item Name="test_add_ID.vi" Type="VI" URL="../Unit Tests/Classes/test_add_ID.vi"/>
+					<Item Name="test_add_ID.vi" Type="VI" URL="../Source/Tests/Classes/test_add_ID.vi"/>
 				</Item>
 				<Item Name="GenericDevice" Type="Folder"/>
 				<Item Name="Monochromator" Type="Folder"/>
 				<Item Name="CCD" Type="Folder">
-					<Item Name="test_CCDTemplate.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDTemplate.vi"/>
-					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
-					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
-					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
-					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
-					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
-					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
-					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
-					<Item Name="test_CCDSetAndGetTimerResolution.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetTimerResolution.vi"/>
-					<Item Name="test_CCDSetAndGetXAxisConversionType.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetXAxisConversionType.vi"/>
-					<Item Name="test_CCDSetAndGetAcquisitionCount.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetAcquisitionCount.vi"/>
-					<Item Name="test_CCDSetAndGetCleanCount.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetCleanCount.vi"/>
-					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
-					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
-					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
-					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
-					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
-					<Item Name="test_CCDAcquisitionSequence.vi" Type="VI" URL="../Unit Tests/Classes/CCD/test_CCDAcquisitionSequence.vi"/>
-					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
+					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
+					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
+					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
+					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
+					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
+					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
+					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
+					<Item Name="test_CCDSetAndGetTimerResolution.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTimerResolution.vi"/>
+					<Item Name="test_CCDSetAndGetXAxisConversionType.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetXAxisConversionType.vi"/>
+					<Item Name="test_CCDSetAndGetAcquisitionCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetAcquisitionCount.vi"/>
+					<Item Name="test_CCDSetAndGetCleanCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetCleanCount.vi"/>
+					<Item Name="test_CCDTemplate.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDTemplate.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
+					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
+					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
+					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
+					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
+					<Item Name="test_CCDSetAndGetNumberOfAverages.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAverages.vi"/>
+					<Item Name="test_CCDAcquisitionSequence.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequence.vi"/>
+					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 				</Item>
 				<Item Name="SCD" Type="Folder"/>
 				<Item Name="Helper Files" Type="Folder">
 					<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
-					<Item Name="test_Setup_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_Setup_Testenvironment.vi"/>
-					<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Unit Tests/Classes/test_Teardown_Testenvironment.vi"/>
-					<Item Name="test_Template.vi" Type="VI" URL="../Unit Tests/Classes/test_Template.vi"/>
+					<Item Name="test_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Setup_Testenvironment.vi"/>
+					<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Teardown_Testenvironment.vi"/>
+					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
 				</Item>
 			</Item>
 			<Item Name="DeviceManager" Type="Folder">
-				<Item Name="test_DeviceManager_Setup.vi" Type="VI" URL="../Unit Tests/DeviceManager/test_DeviceManager_Setup.vi"/>
-				<Item Name="test_DeviceManager_Teardown.vi" Type="VI" URL="../Unit Tests/DeviceManager/test_DeviceManager_Teardown.vi"/>
-				<Item Name="test_DeviceManager_OpenWebSocketCommunication.vi" Type="VI" URL="../Unit Tests/DeviceManager/test_DeviceManager_OpenWebSocketCommunication.vi"/>
-				<Item Name="test_DeviceManager_StartICL.vi" Type="VI" URL="../Unit Tests/DeviceManager/test_DeviceManager_StartICL.vi"/>
-				<Item Name="test_CCDDiscover.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDDiscover.vi"/>
+				<Item Name="test_DeviceManager_Setup.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_Setup.vi"/>
+				<Item Name="test_DeviceManager_Teardown.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_Teardown.vi"/>
+				<Item Name="test_DeviceManager_OpenWebSocketCommunication.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_OpenWebSocketCommunication.vi"/>
+				<Item Name="test_DeviceManager_StartICL.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_StartICL.vi"/>
+				<Item Name="test_DevicesDiscover.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DevicesDiscover.vi"/>
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>

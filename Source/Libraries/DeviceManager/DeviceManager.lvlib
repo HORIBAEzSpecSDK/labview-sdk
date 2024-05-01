@@ -35,6 +35,8 @@
 				<Item Name="SendJSONandAskForReply (Reply Payload)--cluster.ctl" Type="VI" URL="../SendJSONandAskForReply (Reply Payload)--cluster.ctl"/>
 				<Item Name="DiscoverDevices Argument--cluster.ctl" Type="VI" URL="../DiscoverDevices Argument--cluster.ctl"/>
 				<Item Name="DiscoverDevices (Reply Payload)--cluster.ctl" Type="VI" URL="../DiscoverDevices (Reply Payload)--cluster.ctl"/>
+				<Item Name="DevicesList Argument--cluster.ctl" Type="VI" URL="../DevicesList Argument--cluster.ctl"/>
+				<Item Name="DevicesList (Reply Payload)--cluster.ctl" Type="VI" URL="../DevicesList (Reply Payload)--cluster.ctl"/>
 			</Item>
 			<Item Name="Broadcast" Type="Folder">
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
@@ -56,6 +58,7 @@
 		<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
 		<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
 		<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
+		<Item Name="DevicesList.vi" Type="VI" URL="../DevicesList.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
 		<Item Name="Obtain Broadcast Events for Registration.vi" Type="VI" URL="../Obtain Broadcast Events for Registration.vi"/>
 		<Item Name="OpenConnectionWithDevice.vi" Type="VI" URL="../OpenConnectionWithDevice.vi"/>
