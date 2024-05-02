@@ -1,85 +1,433 @@
-2024-04-13 15:42:58.374 - DEBUG    - {"command":"icl_shutdown","errors":[],"id":0,"results":{"state":"shutting down"}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.14900061->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.295 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.316 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.319 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.329 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.332 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.375 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.377 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.386 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.388 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.406 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.409 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.420 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.422 - DEBUG    - {
-  "command":"ccd_open",
+2024-05-02 17:30:20.187 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.210 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.212 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.222 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.225 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.268 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.270 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.280 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.282 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.299 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.301 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.311 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.313 - DEBUG    - {
+  "command":"mono_isOpen",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.514 - DEBUG    - {"command":"ccd_open","errors":[],"id":0,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.518 - DEBUG    - {
-  "command":"ccd_setExposureTime",
-  "parameters":{"index":0,"time":120},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.521 - DEBUG    - {"command":"ccd_setExposureTime","errors":[],"id":0,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.524 - DEBUG    - {
-  "command":"ccd_getChipSize",
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.314 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.316 - DEBUG    - {
+  "command":"mono_open",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.528 - DEBUG    - {"command":"ccd_getChipSize","errors":[],"id":0,"results":{"x":1024,"y":256}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.532 - DEBUG    - {
-  "command":"ccd_getExposureTime",
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.415 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.417 - DEBUG    - {
+  "command":"mono_close",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.533 - DEBUG    - {"command":"ccd_getExposureTime","errors":[],"id":0,"results":{"time":120}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.536 - DEBUG    - {
-  "command":"ccd_close",
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.518 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.522 - DEBUG    - {"id":9,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:30:20.639 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.3F3000B0->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.003 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.019 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.021 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.031 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.032 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.066 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.067 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.078 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.079 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.093 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.095 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.106 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.108 - DEBUG    - {
+  "command":"mono_isOpen",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:43:18.537 - DEBUG    - {"command":"ccd_close","errors":[],"id":0,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.1540005E->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.826 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.851 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.853 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.863 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.864 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.911 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.913 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.922 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.924 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.942 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.944 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.956 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:00.958 - DEBUG    - {
-  "command":"ccd_open",
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.110 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.113 - DEBUG    - {
+  "command":"mono_open",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.055 - DEBUG    - {"command":"ccd_open","errors":[],"id":0,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.059 - DEBUG    - {
-  "command":"ccd_setExposureTime",
-  "parameters":{"index":0,"time":120},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.061 - DEBUG    - {"command":"ccd_setExposureTime","errors":[],"id":0,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.063 - DEBUG    - {
-  "command":"ccd_getChipSize",
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.213 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.215 - DEBUG    - {
+  "command":"mono_close",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.067 - DEBUG    - {"command":"ccd_getChipSize","errors":[],"id":0,"results":{"x":1024,"y":256}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.070 - DEBUG    - {
-  "command":"ccd_getExposureTime",
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.315 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.317 - DEBUG    - {"id":9,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:35:34.435 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.468000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.437 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.454 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.456 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.467 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.467 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.505 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.507 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.517 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.519 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.534 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.536 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.548 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.550 - DEBUG    - {
+  "command":"mono_isOpen",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.072 - DEBUG    - {"command":"ccd_getExposureTime","errors":[],"id":0,"results":{"time":120}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.074 - DEBUG    - {
-  "command":"ccd_close",
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.551 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.552 - DEBUG    - {
+  "command":"mono_open",
   "parameters":{"index":0},
-  "id":0
-} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
-2024-04-13 15:44:01.075 - DEBUG    - {"command":"ccd_close","errors":[],"id":0,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.15F00060->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:12.653 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.202 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.204 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.207 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":9
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.208 - DEBUG    - {"command":"mono_close","errors":[],"id":8,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.211 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":10
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.213 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":9,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.215 - DEBUG    - {"id":11,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:14.217 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":10,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5B2000B2->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.443 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.459 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.461 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.472 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.473 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.507 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.509 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.519 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.521 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.536 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.537 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:51.549 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:52.477 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:52.484 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:53.123 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:37:53.224 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.154 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.162 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.164 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":9
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.165 - DEBUG    - {"command":"mono_close","errors":[],"id":8,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.166 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":10
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.168 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":9,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.169 - DEBUG    - {"id":11,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:38:05.170 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":10,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.5D0000AE->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.568 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.587 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.589 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.601 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.603 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.646 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.648 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.659 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.662 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.678 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.679 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.689 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.691 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.692 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:12.694 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.028 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.030 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.031 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":8,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.033 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":9
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.036 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":9,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.037 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":10
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.050 - DEBUG    - {"command":"mono_open","errors":["[E];-501;Mono already open"],"id":10,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.053 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":11
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.054 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":11,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.056 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":12
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.058 - DEBUG    - {"command":"mono_close","errors":[],"id":12,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.060 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":13
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.062 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":13,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.064 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":14
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.065 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":14,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.067 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":15
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.168 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.175 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":16
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.276 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.278 - DEBUG    - {"id":17,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:13.387 - DEBUG    - {"command":"mono_open","errors":[],"id":15,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.759000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.228 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.251 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.253 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.263 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.265 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.310 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.312 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.323 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.327 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.344 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.345 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.356 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.358 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.360 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.361 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.695 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.697 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:39.698 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":8,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:41.587 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":9
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:41.589 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":9,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:41.993 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":10
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:42.007 - DEBUG    - {"command":"mono_open","errors":["[E];-501;Mono already open"],"id":10,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:42.611 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":11
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:42.620 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":11,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.144 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":12
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.151 - DEBUG    - {"command":"mono_close","errors":[],"id":12,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.153 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":13
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.155 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":13,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.464 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":14
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.465 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":14,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:43.943 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":15
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:44.044 - DEBUG    -  - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.344 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":16
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.352 - DEBUG    - {"command":"mono_open","errors":[],"id":15,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.353 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":17
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.354 - DEBUG    - {"command":"mono_close","errors":[],"id":16,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.356 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":18
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.357 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":17,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.359 - DEBUG    - {"id":19,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:42:46.360 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":18,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.76E000A6->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.177 - DEBUG    - {"command":"mono_discover","id":0} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.200 - DEBUG    - {"command":"mono_discover","errors":[],"id":0,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.202 - DEBUG    - {"command":"mono_list","id":1} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.213 - DEBUG    - {"command":"mono_list","errors":[],"id":1,"results":{"devices":[{"deviceType":"HORIBA Scientific iHR","index":0,"serialNumber":"1745B-2017-iHR320       "}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedMonos.vi->DeviceManager.lvlib:MonoList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.215 - DEBUG    - {"command":"ccd_discover","id":2} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.261 - DEBUG    - {"command":"ccd_discover","errors":[],"id":2,"results":{"count":1}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.263 - DEBUG    - {"command":"ccd_list","id":3} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.273 - DEBUG    - {"command":"ccd_list","errors":[],"id":3,"results":{"devices":[{"deviceType":"HORIBA Scientific Syncerity","index":0,"productId":13,"serialNumber":"Camera SN:  2244"}]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedCCDs.vi->DeviceManager.lvlib:CCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.276 - DEBUG    - {"command":"scd_discover","id":4} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.295 - DEBUG    - {"command":"scd_discover","errors":[],"id":4,"results":{"count":0}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDDiscover.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.296 - DEBUG    - {"command":"scd_list","id":5} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.307 - DEBUG    - {"command":"scd_list","errors":[],"id":5,"results":{"list":[]}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->DeviceManager.lvlib:AskForConnectedSCDs.vi->DeviceManager.lvlib:SCDList.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.309 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":6
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.311 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":6,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.313 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":7
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.650 - DEBUG    - {"command":"mono_open","errors":[],"id":7,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.652 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":8
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:16.653 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":8,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:18.545 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":9
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:18.553 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":9,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:18.951 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":10
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:18.966 - DEBUG    - {"command":"mono_open","errors":["[E];-501;Mono already open"],"id":10,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:19.562 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":11
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:19.564 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":11,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.055 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":12
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.063 - DEBUG    - {"command":"mono_close","errors":[],"id":12,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.065 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":13
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.067 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":13,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.380 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":14
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.382 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":14,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:20.856 - DEBUG    - {
+  "command":"mono_open",
+  "parameters":{"index":0},
+  "id":15
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:21.187 - DEBUG    - {"command":"mono_open","errors":[],"id":15,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:21.189 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":16
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:21.190 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":16,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:21.515 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":17
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:21.517 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":17,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:22.657 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":18
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:22.664 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":18,"results":{"open":true}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.442 - DEBUG    - {
+  "command":"mono_close",
+  "parameters":{"index":0},
+  "id":19
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.449 - DEBUG    - {"command":"mono_close","errors":[],"id":19,"results":{}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.451 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":20
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.453 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":20,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.456 - DEBUG    - {
+  "command":"mono_isOpen",
+  "parameters":{"index":0},
+  "id":21
+} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.457 - DEBUG    - {"command":"mono_isOpen","errors":[],"id":21,"results":{"open":false}} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
+2024-05-02 17:43:26.459 - DEBUG    - {"id":22,"command":"icl_shutdown"} - DeviceManager.lvlib:Main.vi.ACBRProxyCaller.78A000A5->DeviceManager.lvlib:Main.vi->Communicator.lvclass:SendAndAskForReply.vi - 0 -  |  | 
