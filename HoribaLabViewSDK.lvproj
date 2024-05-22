@@ -281,7 +281,6 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="setGainByEnumDel.vi" Type="VI" URL="../Source/Classes/CCD/setGainByEnumDel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
