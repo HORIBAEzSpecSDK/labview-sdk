@@ -45,6 +45,8 @@
 					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
 				</Item>
 				<Item Name="CCD" Type="Folder">
+					<Item Name="GainTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/GainTokenEnum.ctl"/>
+					<Item Name="SpeedTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/SpeedTokenEnum.ctl"/>
 					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCD_Setup_Testenvironment.vi"/>
 					<Item Name="test_CCDAllTests.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAllTests.vi"/>
 					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
@@ -88,7 +90,6 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
-		<Item Name="setGainByToken.vi" Type="VI" URL="../Source/Classes/CCD/setGainByToken.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
@@ -280,6 +281,7 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="setGainByEnumDel.vi" Type="VI" URL="../Source/Classes/CCD/setGainByEnumDel.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
