@@ -88,6 +88,7 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
+		<Item Name="setGainByToken.vi" Type="VI" URL="../Source/Classes/CCD/setGainByToken.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
