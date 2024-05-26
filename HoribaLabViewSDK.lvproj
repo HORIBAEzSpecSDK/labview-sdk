@@ -67,7 +67,8 @@
 					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
 					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
 					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
-					<Item Name="test_CCDAcquisitionSequence.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequence.vi"/>
+					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
+					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 				</Item>
 				<Item Name="SCD" Type="Folder">
