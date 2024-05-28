@@ -55,11 +55,11 @@
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
 					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
 					<Item Name="test_CCDSetAndGetNumberOfAvgs.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAvgs.vi"/>
-					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
-					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDGetSpeedAndGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetSpeedAndGain.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
+					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
+					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 					<Item Name="test_CCDSetAndGetTimerResolution.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTimerResolution.vi"/>
 					<Item Name="test_CCDSetAndGetXAxisConversionType.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetXAxisConversionType.vi"/>
 					<Item Name="test_CCDSetAndGetAcquisitionCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetAcquisitionCount.vi"/>
@@ -67,6 +67,7 @@
 					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
 					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
 					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
+					<Item Name="test_CCDSetRoi.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetRoi.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
@@ -92,6 +93,7 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
+		<Item Name="SupportedFeaturesBool.ctl" Type="VI" URL="../Source/Classes/CCD/SupportedFeaturesBool.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
