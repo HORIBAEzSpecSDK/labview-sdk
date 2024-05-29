@@ -80,7 +80,7 @@
 					<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
 					<Item Name="test_Setup_Device_Connection.vi" Type="VI" URL="../Source/Tests/Classes/test_Setup_Device_Connection.vi"/>
 					<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Teardown_Testenvironment.vi"/>
-					<Item Name="CCDAcqSingleSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/CCDAcqSingleSpectrum.vi"/>
+					<Item Name="CCDWriteRoiValues.vi" Type="VI" URL="../Source/Tests/Classes/CCD/CCDWriteRoiValues.vi"/>
 					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
 				</Item>
 			</Item>
