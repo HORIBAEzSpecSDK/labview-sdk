@@ -417,7 +417,7 @@
 		</Item>
 	</Item>
 	<Item Name="Controls" Type="Folder">
-		<Item Name="getConfigGetTriggerIn" Type="Folder">
+		<Item Name="getConfigANDGetTriggerIn" Type="Folder">
 			<Item Name="ConfigGains.ctl" Type="VI" URL="../ConfigGains.ctl">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"9!!!!!Q!/1$$`````"%FO:G]!!!N!"A!&amp;6'^L:7Y!.Q$R!!!!!!!!!!),1U.%,GRW9WRB=X-/1W^O:GFH2W&amp;J&lt;CZD&gt;'Q!&amp;%"1!!)!!!!""%&gt;B;7Y!!!%!!A!!!!!</Property>
 				<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>

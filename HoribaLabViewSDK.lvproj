@@ -43,6 +43,11 @@
 				<Item Name="Monochromator" Type="Folder">
 					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
 					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
+					<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
+					<Item Name="test_MonoMoveToPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToPosition.vi"/>
+					<Item Name="test_MonoMoveToAndGetGratingPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToAndGetGratingPosition.vi"/>
+					<Item Name="test_MonoMoveAndGetFilterWheelPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetFilterWheelPosition.vi"/>
+					<Item Name="test_MonoMoveAndGetMirrorPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetMirrorPosition.vi"/>
 				</Item>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="GainTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/GainTokenEnum.ctl"/>
