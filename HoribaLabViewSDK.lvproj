@@ -99,7 +99,6 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
-		<Item Name="SupportedFeaturesBool.ctl" Type="VI" URL="../Source/Classes/CCD/SupportedFeaturesBool.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
@@ -291,6 +290,7 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="SupportedFeaturesStrings.ctl" Type="VI" URL="../Source/Classes/CCD/SupportedFeaturesStrings.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
