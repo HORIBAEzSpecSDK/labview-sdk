@@ -44,11 +44,13 @@
 					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
 					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
 					<Item Name="test_MonoOpenAndInit.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndInit.vi"/>
+					<Item Name="test_MonoGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoGetConfig.vi"/>
 					<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
 					<Item Name="test_MonoMoveToPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToPosition.vi"/>
 					<Item Name="test_MonoMoveToAndGetGratingPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToAndGetGratingPosition.vi"/>
 					<Item Name="test_MonoMoveAndGetFilterWheelPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetFilterWheelPosition.vi"/>
 					<Item Name="test_MonoMoveAndGetMirrorPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetMirrorPosition.vi"/>
+					<Item Name="test_MonoMoveAndGetSlitPositionInMM.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetSlitPositionInMM.vi"/>
 				</Item>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="GainTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/GainTokenEnum.ctl"/>
@@ -291,6 +293,7 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="ShutterStatusOld.ctl" Type="VI" URL="../Source/Classes/Mono/ShutterStatusOld.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
