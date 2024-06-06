@@ -43,6 +43,7 @@
 				<Item Name="Monochromator" Type="Folder">
 					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
 					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
+					<Item Name="test_MonoOpenAndInit.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndInit.vi"/>
 					<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
 					<Item Name="test_MonoMoveToPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToPosition.vi"/>
 					<Item Name="test_MonoMoveToAndGetGratingPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToAndGetGratingPosition.vi"/>
