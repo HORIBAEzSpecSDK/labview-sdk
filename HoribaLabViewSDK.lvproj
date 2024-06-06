@@ -42,6 +42,7 @@
 				<Item Name="GenericDevice" Type="Folder"/>
 				<Item Name="Monochromator" Type="Folder">
 					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
+					<Item Name="test_MonoAllTests.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoAllTests.vi"/>
 					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
 					<Item Name="test_MonoOpenAndInit.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndInit.vi"/>
 					<Item Name="test_MonoGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoGetConfig.vi"/>
