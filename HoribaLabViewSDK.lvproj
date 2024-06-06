@@ -290,7 +290,6 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="SupportedFeaturesStrings.ctl" Type="VI" URL="../Source/Classes/CCD/SupportedFeaturesStrings.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
