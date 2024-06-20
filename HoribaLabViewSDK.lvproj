@@ -294,7 +294,6 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ShutterStatusOld.ctl" Type="VI" URL="../Source/Classes/Mono/ShutterStatusOld.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
