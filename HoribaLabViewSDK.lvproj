@@ -294,6 +294,8 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="setSignalOutOBSOLETE.vi" Type="VI" URL="../Source/Classes/CCD/setSignalOutOBSOLETE.vi"/>
+			<Item Name="getSignalOutOBSOLETE.vi" Type="VI" URL="../Source/Classes/CCD/getSignalOutOBSOLETE.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
