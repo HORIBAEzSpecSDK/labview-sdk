@@ -37,7 +37,6 @@
 					<Item Name="Test_ParseCommandFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseCommandFromAnswer.vi"/>
 					<Item Name="Test_ParseErrorsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseErrorsFromAnswer.vi"/>
 					<Item Name="Test_ParseIDFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseIDFromAnswer.vi"/>
-					<Item Name="test_add_ID.vi" Type="VI" URL="../Source/Tests/Classes/test_add_ID.vi"/>
 				</Item>
 				<Item Name="GenericDevice" Type="Folder"/>
 				<Item Name="Monochromator" Type="Folder">
@@ -294,6 +293,8 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="getNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/getNumberOfAvgs.vi"/>
+			<Item Name="setNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/setNumberOfAvgs.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
