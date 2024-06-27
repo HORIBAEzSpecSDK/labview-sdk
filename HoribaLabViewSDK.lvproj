@@ -78,8 +78,6 @@
 					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
 					<Item Name="test_CCDSetRoi.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetRoi.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
-					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
-					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 				</Item>
 				<Item Name="SCD" Type="Folder">
 					<Item Name="test_SCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/SCD/test_SCD_Setup_Testenvironment.vi"/>
@@ -89,6 +87,8 @@
 					<Item Name="test_Setup_Device_Connection.vi" Type="VI" URL="../Source/Tests/Classes/test_Setup_Device_Connection.vi"/>
 					<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Teardown_Testenvironment.vi"/>
 					<Item Name="CCDWriteRoiValues.vi" Type="VI" URL="../Source/Tests/Classes/CCD/CCDWriteRoiValues.vi"/>
+					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
+					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
 					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
 				</Item>
 			</Item>
@@ -294,8 +294,7 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="setSignalOutOBSOLETE.vi" Type="VI" URL="../Source/Classes/CCD/setSignalOutOBSOLETE.vi"/>
-			<Item Name="getSignalOutOBSOLETE.vi" Type="VI" URL="../Source/Classes/CCD/getSignalOutOBSOLETE.vi"/>
+			<Item Name="test_CCDSetAndGetSignalOut_DELETE.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut_DELETE.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
