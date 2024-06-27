@@ -75,7 +75,7 @@
 					<Item Name="test_CCDSetAndGetCleanCount.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetCleanCount.vi"/>
 					<Item Name="test_CCDGetDataSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetDataSize.vi"/>
 					<Item Name="test_CCDSetAndGetTriggerIn.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTriggerIn.vi"/>
-					<Item Name="test_CCDSetAndGetSignalOutNEW.vi" Type="VI" URL="/&lt;vilib&gt;/Spectrometer Company/Test Spectrometer Module/Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOutNEW.vi"/>
+					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
 					<Item Name="test_CCDSetRoi.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetRoi.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
 				</Item>
