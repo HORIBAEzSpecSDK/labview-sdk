@@ -122,6 +122,8 @@
 		<Item Name="CCDList.vi" Type="VI" URL="../../../Classes/GenericDevice/CCDList.vi"/>
 		<Item Name="SCDDiscover.vi" Type="VI" URL="../../../Classes/GenericDevice/SCDDiscover.vi"/>
 		<Item Name="SCDList.vi" Type="VI" URL="../../../Classes/GenericDevice/SCDList.vi"/>
+		<Item Name="ListDevicesAfterDiscovery.vi" Type="VI" URL="../ListDevicesAfterDiscovery.vi"/>
+		<Item Name="CheckIclRunning.vi" Type="VI" URL="../CheckIclRunning.vi"/>
 	</Item>
 	<Item Name="Module Sync" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>

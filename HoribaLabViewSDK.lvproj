@@ -25,7 +25,6 @@
 		</Item>
 		<Item Name="Helper Files" Type="Folder">
 			<Item Name="CreateLogger.vi" Type="VI" URL="../LogCommands/CreateLogger.vi"/>
-			<Item Name="CCD Example.vi" Type="VI" URL="../Icons/CCD Example.vi"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
@@ -77,6 +76,7 @@
 					<Item Name="test_CCDSetAndGetSignalOut.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSignalOut.vi"/>
 					<Item Name="test_CCDSetRoi.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetRoi.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
+					<Item Name="test_CCDAcquireSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquireSpectrum.vi"/>
 				</Item>
 				<Item Name="SCD" Type="Folder">
 					<Item Name="test_SCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/SCD/test_SCD_Setup_Testenvironment.vi"/>
@@ -89,6 +89,8 @@
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
 					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
+					<Item Name="getNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/getNumberOfAvgs.vi"/>
+					<Item Name="setNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/setNumberOfAvgs.vi"/>
 				</Item>
 			</Item>
 			<Item Name="DeviceManager" Type="Folder">
@@ -101,7 +103,6 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
-		<Item Name="test_CCDAcquireSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquireSpectrum.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
@@ -286,6 +287,7 @@
 				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 			</Item>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -293,8 +295,6 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="getNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/getNumberOfAvgs.vi"/>
-			<Item Name="setNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/setNumberOfAvgs.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
