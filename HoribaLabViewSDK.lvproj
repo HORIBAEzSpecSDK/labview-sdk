@@ -51,11 +51,15 @@
 					<Item Name="test_MonoMoveAndGetSlitPositionInMM.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetSlitPositionInMM.vi"/>
 				</Item>
 				<Item Name="CCD" Type="Folder">
+					<Item Name="parsingTests" Type="Folder">
+						<Item Name="test_parseRangeMode.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_parseRangeMode.vi"/>
+					</Item>
+					<Item Name="subTests" Type="Folder">
+						<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
+					</Item>
 					<Item Name="GainTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/GainTokenEnum.ctl"/>
 					<Item Name="SpeedTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/SpeedTokenEnum.ctl"/>
 					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCD_Setup_Testenvironment.vi"/>
-					<Item Name="test_CCDAllTests.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAllTests.vi"/>
-					<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
@@ -75,6 +79,7 @@
 					<Item Name="test_CCDSetRoi.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetRoi.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
 					<Item Name="test_CCDAcquireSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquireSpectrum.vi"/>
+					<Item Name="test_ccd_all.vi" Type="VI" URL="../Source/Tests/test_ccd_all.vi"/>
 				</Item>
 				<Item Name="SCD" Type="Folder">
 					<Item Name="test_SCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/SCD/test_SCD_Setup_Testenvironment.vi"/>
