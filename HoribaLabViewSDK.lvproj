@@ -37,7 +37,6 @@
 					<Item Name="Test_ParseErrorsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseErrorsFromAnswer.vi"/>
 					<Item Name="Test_ParseIDFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseIDFromAnswer.vi"/>
 				</Item>
-				<Item Name="GenericDevice" Type="Folder"/>
 				<Item Name="Monochromator" Type="Folder">
 					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
 					<Item Name="test_MonoAllTests.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoAllTests.vi"/>
@@ -61,7 +60,6 @@
 					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
 					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
 					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
-					<Item Name="test_CCDSetAndGetNumberOfAvgs.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetNumberOfAvgs.vi"/>
 					<Item Name="test_CCDGetSpeedAndGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetSpeedAndGain.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
@@ -89,8 +87,6 @@
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
 					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
-					<Item Name="getNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/getNumberOfAvgs.vi"/>
-					<Item Name="setNumberOfAvgs.vi" Type="VI" URL="../Source/Classes/CCD/setNumberOfAvgs.vi"/>
 				</Item>
 			</Item>
 			<Item Name="DeviceManager" Type="Folder">
@@ -295,6 +291,7 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="setFitParams.vi" Type="VI" URL="../Source/Classes/CCD/setFitParams.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
