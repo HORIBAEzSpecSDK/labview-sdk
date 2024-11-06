@@ -1,0 +1,5 @@
+== DQMH(R)
+
+Copyright (C) 2021 DQMH(R) Consortium, LLC. All Rights Reserved.
+
+Find more details on https://dqmh.org/[DQMH(R) Consortium] website

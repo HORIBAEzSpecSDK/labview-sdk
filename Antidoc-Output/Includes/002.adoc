@@ -1,0 +1,40 @@
+== Modules overview
+
+This project contains 1 singleton module and 0 cloneable module.
+
+.Modules list
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Singleton |Cloneable
+
+|<<DeviceManager.lvlib>>
+|
+|===
+
+This graph represents the links between all DQMH modules.
+
+[graphviz, format="png", align="center"]
+....
+digraph G713229 {
+rankdir=LR;
+edge[dir=both color=black  arrowhead=normal arrowtail=none style=filled penwidth=1]
+node[color=black shape=box]
+"DeviceManager"[color=black shape=component]
+"test_DeviceManager_Setup"[color=skyblue shape=note]
+"test_DeviceManager_Teardown"[color=skyblue shape=note]
+"test_DeviceManager_StartICL"[color=skyblue shape=note]
+"test_DevicesList"[color=skyblue shape=note]
+"test_DevicesDiscover"[color=skyblue shape=note]
+"test_DeviceManager_OpenWebSocketCommunication"[color=skyblue shape=note]
+"GenericDevice.lvclass:Send Receive Parse"[color=skyblue shape=note]
+"DeviceManager" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
+"test_DeviceManager_Setup" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
+"test_DeviceManager_Teardown" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
+"test_DeviceManager_StartICL" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
+"test_DevicesList" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
+"test_DevicesDiscover" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
+"test_DeviceManager_OpenWebSocketCommunication" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
+"GenericDevice.lvclass:Send Receive Parse" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
+"DeviceManager" -> "DeviceManager" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1];
+}
+....

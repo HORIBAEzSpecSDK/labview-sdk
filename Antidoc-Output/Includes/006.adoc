@@ -1,0 +1,183 @@
+== GenericDevice.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.7
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "GenericDevice" {
+{field} -deviceTerm : String
+{field} -deviceType : String
+{field} -index : I32
+{field} -open : Boolean
+{field} -serialNumber : String
+{field} +productId : I32
+{static} {method} +Send Receive Parse()
+{static} {method} +ReadDeviceJSONList()
+{static} {method} +DecodeDeviceJSONList()
+{static} {method} +ReadDeviceTypeAsString()
+{method} +DeviceClose()
+{method} +DeviceOpen()
+{method} +DeviceIsOpen()
+
+}
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|DeviceClose
+|image:GenericDevice.lvclass_DeviceClose.vi.png[GenericDevice.lvclass:DeviceClose.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceOpen
+|image:GenericDevice.lvclass_DeviceOpen.vi.png[GenericDevice.lvclass:DeviceOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceIsOpen
+|image:GenericDevice.lvclass_DeviceIsOpen.vi.png[GenericDevice.lvclass:DeviceIsOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Send Receive Parse
+|image:GenericDevice.lvclass_Send_Receive_Parse.vi.png[GenericDevice.lvclass:Send Receive Parse.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|ReadDeviceJSONList
+|image:GenericDevice.lvclass_ReadDeviceJSONList.vi.png[GenericDevice.lvclass:ReadDeviceJSONList.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DecodeDeviceJSONList
+|image:GenericDevice.lvclass_DecodeDeviceJSONList.vi.png[GenericDevice.lvclass:DecodeDeviceJSONList.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|ReadDeviceTypeAsString
+|image:GenericDevice.lvclass_ReadDeviceTypeAsString.vi.png[GenericDevice.lvclass:ReadDeviceTypeAsString.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read isOpen
+|image:GenericDevice.lvclass_Read_isOpen.vi.png[GenericDevice.lvclass:Read isOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write isOpen
+|image:GenericDevice.lvclass_Write_isOpen.vi.png[GenericDevice.lvclass:Write isOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read DeviceTerm
+|image:GenericDevice.lvclass_Read_DeviceTerm.vi.png[GenericDevice.lvclass:Read DeviceTerm.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write DeviceTerm
+|image:GenericDevice.lvclass_Write_DeviceTerm.vi.png[GenericDevice.lvclass:Write DeviceTerm.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read DeviceType
+|image:GenericDevice.lvclass_Read_DeviceType.vi.png[GenericDevice.lvclass:Read DeviceType.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write DeviceType
+|image:GenericDevice.lvclass_Write_DeviceType.vi.png[GenericDevice.lvclass:Write DeviceType.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Index
+|image:GenericDevice.lvclass_Read_Index.vi.png[GenericDevice.lvclass:Read Index.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Index
+|image:GenericDevice.lvclass_Write_Index.vi.png[GenericDevice.lvclass:Write Index.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read productId
+|image:GenericDevice.lvclass_Read_productId.vi.png[GenericDevice.lvclass:Read productId.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write productId
+|image:GenericDevice.lvclass_Write_productId.vi.png[GenericDevice.lvclass:Write productId.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read SerialNumber
+|image:GenericDevice.lvclass_Read_SerialNumber.vi.png[GenericDevice.lvclass:Read SerialNumber.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write SerialNumber
+|image:GenericDevice.lvclass_Write_SerialNumber.vi.png[GenericDevice.lvclass:Write SerialNumber.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined

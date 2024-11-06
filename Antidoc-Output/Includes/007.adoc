@@ -1,0 +1,300 @@
+== Monochromator.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Monochromator" {
+{static} {method} +sortGetConfig()
+{static} {method} +isBusy()
+{static} {method} +Init()
+{static} {method} +isInitialized()
+{static} {method} +getConfig()
+{static} {method} +parseConfigData()
+{static} {method} +getPosition()
+{static} {method} +setPosition()
+{static} {method} +moveToPosition()
+{static} {method} +getGratingPosition()
+{static} {method} +moveGrating()
+{static} {method} +getFilterWheelPosition()
+{static} {method} +moveFilterWheel()
+{static} {method} +getMirrorPosition()
+{static} {method} +moveMirror()
+{static} {method} +getSlitPositionInMM()
+{static} {method} +moveSlitMM()
+{static} {method} +shutterSelect()
+{static} {method} +shutterOpen()
+{static} {method} +shutterClose()
+{static} {method} +getShutterStatus()
+{method} +DeviceClose()
+{method} +DeviceOpen()
+{method} +DeviceIsOpen()
+
+}
+"GenericDevice" <|-- "Monochromator"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|sortGetConfig
+|image:Monochromator.lvclass_sortGetConfig.vi.png[Monochromator.lvclass:sortGetConfig.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceClose
+|image:Monochromator.lvclass_DeviceClose.vi.png[Monochromator.lvclass:DeviceClose.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceOpen
+|image:Monochromator.lvclass_DeviceOpen.vi.png[Monochromator.lvclass:DeviceOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceIsOpen
+|image:Monochromator.lvclass_DeviceIsOpen.vi.png[Monochromator.lvclass:DeviceIsOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|isBusy
+|image:Monochromator.lvclass_isBusy.vi.png[Monochromator.lvclass:isBusy.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Init
+|image:Monochromator.lvclass_Init.vi.png[Monochromator.lvclass:Init.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|isInitialized
+|image:Monochromator.lvclass_isInitialized.vi.png[Monochromator.lvclass:isInitialized.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getConfig
+|image:Monochromator.lvclass_getConfig.vi.png[Monochromator.lvclass:getConfig.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|parseConfigData
+|image:Monochromator.lvclass_parseConfigData.vi.png[Monochromator.lvclass:parseConfigData.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getPosition
+|image:Monochromator.lvclass_getPosition.vi.png[Monochromator.lvclass:getPosition.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|setPosition
+|image:Monochromator.lvclass_setPosition.vi.png[Monochromator.lvclass:setPosition.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|moveToPosition
+|image:Monochromator.lvclass_moveToPosition.vi.png[Monochromator.lvclass:moveToPosition.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getGratingPosition
+|image:Monochromator.lvclass_getGratingPosition.vi.png[Monochromator.lvclass:getGratingPosition.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|moveGrating
+|image:Monochromator.lvclass_moveGrating.vi.png[Monochromator.lvclass:moveGrating.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getFilterWheelPosition
+|image:Monochromator.lvclass_getFilterWheelPosition.vi.png[Monochromator.lvclass:getFilterWheelPosition.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|moveFilterWheel
+|image:Monochromator.lvclass_moveFilterWheel.vi.png[Monochromator.lvclass:moveFilterWheel.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getMirrorPosition
+|image:Monochromator.lvclass_getMirrorPosition.vi.png[Monochromator.lvclass:getMirrorPosition.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|moveMirror
+|image:Monochromator.lvclass_moveMirror.vi.png[Monochromator.lvclass:moveMirror.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getSlitPositionInMM
+|image:Monochromator.lvclass_getSlitPositionInMM.vi.png[Monochromator.lvclass:getSlitPositionInMM.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|moveSlitMM
+|image:Monochromator.lvclass_moveSlitMM.vi.png[Monochromator.lvclass:moveSlitMM.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|shutterSelect
+|image:Monochromator.lvclass_shutterSelect.vi.png[Monochromator.lvclass:shutterSelect.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|shutterOpen
+|image:Monochromator.lvclass_shutterOpen.vi.png[Monochromator.lvclass:shutterOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|shutterClose
+|image:Monochromator.lvclass_shutterClose.vi.png[Monochromator.lvclass:shutterClose.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|getShutterStatus
+|image:Monochromator.lvclass_getShutterStatus.vi.png[Monochromator.lvclass:getShutterStatus.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read DeviceTerm
+|image:Monochromator.lvclass_Read_DeviceTerm.vi.png[Monochromator.lvclass:Read DeviceTerm.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write DeviceTerm
+|image:Monochromator.lvclass_Write_DeviceTerm.vi.png[Monochromator.lvclass:Write DeviceTerm.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read DeviceType
+|image:Monochromator.lvclass_Read_DeviceType.vi.png[Monochromator.lvclass:Read DeviceType.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write DeviceType
+|image:Monochromator.lvclass_Write_DeviceType.vi.png[Monochromator.lvclass:Write DeviceType.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Index
+|image:Monochromator.lvclass_Read_Index.vi.png[Monochromator.lvclass:Read Index.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Index
+|image:Monochromator.lvclass_Write_Index.vi.png[Monochromator.lvclass:Write Index.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read productId
+|image:Monochromator.lvclass_Read_productId.vi.png[Monochromator.lvclass:Read productId.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write productId
+|image:Monochromator.lvclass_Write_productId.vi.png[Monochromator.lvclass:Write productId.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read serialNumber
+|image:Monochromator.lvclass_Read_serialNumber.vi.png[Monochromator.lvclass:Read serialNumber.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write serialNumber
+|image:Monochromator.lvclass_Write_serialNumber.vi.png[Monochromator.lvclass:Write serialNumber.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined

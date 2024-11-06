@@ -1,0 +1,32 @@
+== Custom errors
+
+[TIP]
+====
+Custom errors are added via vi named `*--error.vi`.
+====
+
+.Custom errors
+[cols="<.<3d,<.<2d,<.<7d,<.<4d", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Code |Description |Owned by
+
+|Module Not Running
+|0
+|
+|<<DeviceManager.lvlib>>
+
+|Module Not Stopped
+|0
+|
+|<<DeviceManager.lvlib>>
+
+|Module Not Synced
+|0
+|
+|<<DeviceManager.lvlib>>
+
+|Request and Wait for Reply Timeout
+|0
+|
+|<<DeviceManager.lvlib>>
+|===

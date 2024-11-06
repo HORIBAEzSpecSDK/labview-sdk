@@ -1,0 +1,132 @@
+== SCD.lvclass
+
+*Responsibility:*
+No description found (add content in lvclass description)
+
+*Version:* 1.0.0.1
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "SCD" {
+{method} +DeviceClose()
+{method} +DeviceOpen()
+{method} +DeviceIsOpen()
+
+}
+"GenericDevice" <|-- "SCD"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|DeviceClose
+|image:SCD.lvclass_DeviceClose.vi.png[SCD.lvclass:DeviceClose.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceOpen
+|image:SCD.lvclass_DeviceOpen.vi.png[SCD.lvclass:DeviceOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|DeviceIsOpen
+|image:SCD.lvclass_DeviceIsOpen.vi.png[SCD.lvclass:DeviceIsOpen.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read DeviceTerm
+|image:SCD.lvclass_Read_DeviceTerm.vi.png[SCD.lvclass:Read DeviceTerm.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write DeviceTerm
+|image:SCD.lvclass_Write_DeviceTerm.vi.png[SCD.lvclass:Write DeviceTerm.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read DeviceType
+|image:SCD.lvclass_Read_DeviceType.vi.png[SCD.lvclass:Read DeviceType.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write DeviceType
+|image:SCD.lvclass_Write_DeviceType.vi.png[SCD.lvclass:Write DeviceType.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read Index
+|image:SCD.lvclass_Read_Index.vi.png[SCD.lvclass:Read Index.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write Index
+|image:SCD.lvclass_Write_Index.vi.png[SCD.lvclass:Write Index.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read productId
+|image:SCD.lvclass_Read_productId.vi.png[SCD.lvclass:Read productId.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write productId
+|image:SCD.lvclass_Write_productId.vi.png[SCD.lvclass:Write productId.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Read serialNumber
+|image:SCD.lvclass_Read_serialNumber.vi.png[SCD.lvclass:Read serialNumber.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Write serialNumber
+|image:SCD.lvclass_Write_serialNumber.vi.png[SCD.lvclass:Write serialNumber.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined

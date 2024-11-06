@@ -1,0 +1,141 @@
+== Communicator.lvclass
+
+*Responsibility:*
++++This class handles the communication between LV and the ICL via websocket requests.+++
+
+
+*Version:* 1.0.0.4
+
+[plantuml, format="svg", align="center"]
+....
+@startuml
+set namespaceSeparator :
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor #555555
+skinparam ClassFontColor #000000
+skinparam ClassHeaderBackgroundColor #808080
+
+skinparam top to bottom direction
+class "Communicator" {
+{field} -WebSocket Connection : LV Class
+{field} -ID counter : I32
+{field} -connectionEstablished? : Boolean
+{static} {method} +JSON Parse Command()
+{static} {method} +JSON Parse Errors()
+{static} {method} +JSON Parse ID()
+{static} {method} +JSON Parse Info()
+{static} {method} +JSON Parse Results()
+{static} {method} +Overwrite ID()
+{method} +OpenConnection()
+{method} +CloseConnection()
+{method} +SendAndAskForReply()
+{method} #ReceiveJson()
+{method} #SendJson()
+
+}
+"Communicator" *-- "WebSockets.lvlib:WebSocket Client"
+
+
+
+@enduml
+....
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
+
+|OpenConnection
+|image:Communicator.lvclass_OpenConnection.vi.png[Communicator.lvclass:OpenConnection.vi]
+|+++Opens a connection to the ICL via werbsocket.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CloseConnection
+|image:Communicator.lvclass_CloseConnection.vi.png[Communicator.lvclass:CloseConnection.vi]
+|+++Closes the websocket connection.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|SendAndAskForReply
+|image:Communicator.lvclass_SendAndAskForReply.vi.png[Communicator.lvclass:SendAndAskForReply.vi]
+|+++Wrapper around send and receive for the websocket communication.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|JSON Parse Command
+|image:Communicator.lvclass_JSON_Parse_Command.vi.png[Communicator.lvclass:JSON Parse Command.vi]
+|+++Parses the original command.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|JSON Parse Errors
+|image:Communicator.lvclass_JSON_Parse_Errors.vi.png[Communicator.lvclass:JSON Parse Errors.vi]
+|+++Parses the returned error into an LV error.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|JSON Parse ID
+|image:Communicator.lvclass_JSON_Parse_ID.vi.png[Communicator.lvclass:JSON Parse ID.vi]
+|+++Parses the message ID to follow communication.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|JSON Parse Info
+|image:Communicator.lvclass_JSON_Parse_Info.vi.png[Communicator.lvclass:JSON Parse Info.vi]
+|+++Wrapper around all other VIs that parse an answer from the ICL.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|JSON Parse Results
+|image:Communicator.lvclass_JSON_Parse_Results.vi.png[Communicator.lvclass:JSON Parse Results.vi]
+|+++Parses the results from the ICL.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Overwrite ID
+|image:Communicator.lvclass_Overwrite_ID.vi.png[Communicator.lvclass:Overwrite ID.vi]
+|+++Overwrites the message ID if a custom ID is to be used for messaging to the ICL.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|ReceiveJson
+|image:Communicator.lvclass_ReceiveJson.vi.png[Communicator.lvclass:ReceiveJson.vi]
+|+++Receives the reply from the synchronous communication to the ICL.+++
+
+|image:scope-protected.png[scope-protected.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|SendJson
+|image:Communicator.lvclass_SendJson.vi.png[Communicator.lvclass:SendJson.vi]
+|+++Sends the request for a synchronous communication to the ICL.+++
+
+|image:scope-protected.png[scope-protected.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
+
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
+
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
+
+**I**nlining: image:inlined.png[] -> Inlined
