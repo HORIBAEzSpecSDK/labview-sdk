@@ -1,7 +1,8 @@
 == GenericDevice.lvclass
 
 *Responsibility:*
-No description found (add content in lvclass description)
++++This parent class for all devices provides base functionality like discovering, opening and closing devices on the ICL.+++
+
 
 *Version:* 1.0.0.7
 
@@ -44,133 +45,152 @@ class "GenericDevice" {
 
 |DeviceClose
 |image:GenericDevice.lvclass_DeviceClose.vi.png[GenericDevice.lvclass:DeviceClose.vi]
-|No description found (add content in vi description)
+|+++Closes communications with the CCD indicated by the index.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |DeviceOpen
 |image:GenericDevice.lvclass_DeviceOpen.vi.png[GenericDevice.lvclass:DeviceOpen.vi]
-|No description found (add content in vi description)
+|+++This command initializes the CCD and gets it’s the CCD configuration from the device. The device is also connected to the API. Since a CCD hardware initialization occurs, all CCD parameters, including any previously set parameters, will be reset to their default values.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |DeviceIsOpen
 |image:GenericDevice.lvclass_DeviceIsOpen.vi.png[GenericDevice.lvclass:DeviceIsOpen.vi]
-|No description found (add content in vi description)
+|+++Returns true if selected CCD is open.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Send Receive Parse
 |image:GenericDevice.lvclass_Send_Receive_Parse.vi.png[GenericDevice.lvclass:Send Receive Parse.vi]
-|No description found (add content in vi description)
+|+++Wrapper around the send and receive calls.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |ReadDeviceJSONList
 |image:GenericDevice.lvclass_ReadDeviceJSONList.vi.png[GenericDevice.lvclass:ReadDeviceJSONList.vi]
-|No description found (add content in vi description)
+|+++Parses the returned devies into a string array.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |DecodeDeviceJSONList
 |image:GenericDevice.lvclass_DecodeDeviceJSONList.vi.png[GenericDevice.lvclass:DecodeDeviceJSONList.vi]
-|No description found (add content in vi description)
+|+++Decodes the answer from the ICL into a device.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |ReadDeviceTypeAsString
 |image:GenericDevice.lvclass_ReadDeviceTypeAsString.vi.png[GenericDevice.lvclass:ReadDeviceTypeAsString.vi]
-|No description found (add content in vi description)
+|+++Return the device class name as string.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Read isOpen
 |image:GenericDevice.lvclass_Read_isOpen.vi.png[GenericDevice.lvclass:Read isOpen.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Write isOpen
 |image:GenericDevice.lvclass_Write_isOpen.vi.png[GenericDevice.lvclass:Write isOpen.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Read DeviceTerm
 |image:GenericDevice.lvclass_Read_DeviceTerm.vi.png[GenericDevice.lvclass:Read DeviceTerm.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Write DeviceTerm
 |image:GenericDevice.lvclass_Write_DeviceTerm.vi.png[GenericDevice.lvclass:Write DeviceTerm.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Read DeviceType
 |image:GenericDevice.lvclass_Read_DeviceType.vi.png[GenericDevice.lvclass:Read DeviceType.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Write DeviceType
 |image:GenericDevice.lvclass_Write_DeviceType.vi.png[GenericDevice.lvclass:Write DeviceType.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Read Index
 |image:GenericDevice.lvclass_Read_Index.vi.png[GenericDevice.lvclass:Read Index.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Write Index
 |image:GenericDevice.lvclass_Write_Index.vi.png[GenericDevice.lvclass:Write Index.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Read productId
 |image:GenericDevice.lvclass_Read_productId.vi.png[GenericDevice.lvclass:Read productId.vi]
-|No description found (add content in vi description)
+|+++Accesor to the product ID.s+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Write productId
 |image:GenericDevice.lvclass_Write_productId.vi.png[GenericDevice.lvclass:Write productId.vi]
-|No description found (add content in vi description)
+|+++Accessor to the product ID.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Read SerialNumber
 |image:GenericDevice.lvclass_Read_SerialNumber.vi.png[GenericDevice.lvclass:Read SerialNumber.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
 |Write SerialNumber
 |image:GenericDevice.lvclass_Write_SerialNumber.vi.png[GenericDevice.lvclass:Write SerialNumber.vi]
-|No description found (add content in vi description)
+|+++Accessor VI for this class property.+++
+
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]

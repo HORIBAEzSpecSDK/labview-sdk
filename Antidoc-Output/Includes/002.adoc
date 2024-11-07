@@ -15,7 +15,7 @@ This graph represents the links between all DQMH modules.
 
 [graphviz, format="png", align="center"]
 ....
-digraph G713229 {
+digraph G20733 {
 rankdir=LR;
 edge[dir=both color=black  arrowhead=normal arrowtail=none style=filled penwidth=1]
 node[color=black shape=box]

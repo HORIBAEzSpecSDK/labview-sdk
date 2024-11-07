@@ -8,7 +8,9 @@
 	<Property Name="EndevoGOOP_ColorTextBody" Type="UInt">0</Property>
 	<Property Name="EndevoGOOP_ColorTextHeader" Type="UInt">16777215</Property>
 	<Property Name="EndevoGOOP_FrameThickness" Type="UInt">1</Property>
-	<Property Name="NI.Lib.Description" Type="Str">This DQMH module takes care of starting and stoping the ICL as well as monitoring any output from the ICL.</Property>
+	<Property Name="NI.Lib.Description" Type="Str">This DQMH module takes care of starting and stoping the ICL as well as monitoring any output from the ICL.
+It also handles any communication to and from the ICL via Websocket requests.</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*(!!!*Q(C=\&gt;5`&lt;BJ"&amp;-@R8S)8;:&amp;SA)D/^&lt;M#6]$R#6[8GN9F&gt;6#+&gt;Y!U+\GU&amp;(H,&lt;&gt;]6O!*8Q.]:(B!LEGG=+,)]S]$SGX]@TSZLK:&gt;0UJ8WF]LU9NHPR&lt;O?PS9GHQYPWA_HU`GD&gt;TFU62N`;$PW/*`5_.[XBDU\/9\`I`WU@GO`Z,^1^&amp;\?S^MO&gt;R&gt;`"(`^&gt;`""\5&amp;%47J1H7LNV[V^EC&gt;ZEC&gt;ZEC&gt;ZE!&gt;ZE!&gt;ZE!?ZETOZETOZETOZE2OZE2OZE2NZ0]B&amp;,H+21UI74R:+*EUG3$J$5@+7?"*0YEE]@&amp;8C34S**`%E(LII]33?R*.Y%A`$F(A34_**0)G(K&lt;IE_U'/*`%QP1*0Y!E]A3@QM+1#4Q!)&amp;AMG$C;"I;!R/!E]A3@Q=+L!%XA#4_!*0$1L]!3?Q".Y!A^$_KZ%V\3$(!`4S0%Y(M@D?"Q05]PR/"\(YXA=$]P*]4A?"_%M[%Q/1=YAJY0TR@%Y(D\E?"S0YX%]DI?G@I7]\UT4N)-=D_%R0)&lt;(]"A?JJ$B-4S'R`!9(K;6Y4%]BM@Q'"[7EO%R0)&lt;(A"C,MLS-S9S"2C=D-$S]_NVC`3J&amp;FVA`J,JZ64?F[G:4X53KGU.VU6585X726*OPWF46:KEW1@8(K&gt;!KD'I2V?$754P?N^32/F$8V"6V36V1Z^2:'`L+(8?\H&lt;&lt;&lt;L=:RV$!-7K`87KV77C[87CQ7GM`HGMVGJ]@!&amp;Y\4!_(]8"K``&gt;J]``HV9&lt;D_P(G]PXFYP,`^]9`_0`](TU:^V/^LM%&gt;0GSB]\Q!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">587235328</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>

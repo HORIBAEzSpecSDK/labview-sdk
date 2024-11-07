@@ -1,6 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="23008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str">The HORIBA SDK is a powerful tool for anyone working with HORIBA scientific instruments. It simplifies the process of instrument control and data acquisition, allowing users to focus on their research and development tasks. Whether you are conducting experiments, performing quality control, or developing new applications, this SDK provides the necessary tools to streamline your workflow and enhance productivity.</Property>
+	<Property Name="NI.Project.SaveVersion" Type="Str">Editor version</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -49,6 +51,7 @@
 					<Item Name="test_MonoMoveAndGetFilterWheelPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetFilterWheelPosition.vi"/>
 					<Item Name="test_MonoMoveAndGetMirrorPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetMirrorPosition.vi"/>
 					<Item Name="test_MonoMoveAndGetSlitPositionInMM.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetSlitPositionInMM.vi"/>
+					<Item Name="sortGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/sortGetConfig.vi"/>
 				</Item>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="parsingTests" Type="Folder">
@@ -67,7 +70,6 @@
 					<Item Name="test_CCDGetSpeedAndGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetSpeedAndGain.vi"/>
 					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
 					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
-					<Item Name="test_CCDSetAndGetFitParams.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetFitParams.vi"/>
 					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 					<Item Name="test_CCDSetAndGetTimerResolution.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTimerResolution.vi"/>
 					<Item Name="test_CCDSetAndGetXAxisConversionType.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetXAxisConversionType.vi"/>
@@ -295,7 +297,6 @@
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="setFitParams.vi" Type="VI" URL="../Source/Classes/CCD/setFitParams.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
