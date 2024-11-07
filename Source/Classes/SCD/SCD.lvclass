@@ -9,7 +9,10 @@
 	<Property Name="EndevoGOOP_ColorTextBody" Type="UInt">0</Property>
 	<Property Name="EndevoGOOP_ColorTextHeader" Type="UInt">0</Property>
 	<Property Name="EndevoGOOP_FrameThickness" Type="UInt">1</Property>
+	<Property Name="NI.Lib.Description" Type="Str">This class contains all functionality needed for Horiba's Single-Channel-detectors.</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*K!!!*Q(C=V:4"&lt;?-Q%%7`ABQ7?`.7%,C%H&gt;.?!V=1Q#X-?@@EKYZO99"5Y"&lt;=QL4A&amp;NS#]E1RAB,,U1:)A'4IE;A`Z-QT36!K^E/[6&lt;&gt;E@^_U3&lt;S-(&lt;S&lt;C8@VU1W0O@H41:@R=?J]@+B[P@YV`C6LX\4XR,P*\`XR?;KR^R,E5H\&amp;_3J?-E[T&gt;W0A"&gt;R&amp;`T`D1]ZJ`$PG8VC@K6XG8^C@J@U&gt;M;[@HTF&lt;0.\=!]O$0NGE2PV&amp;B#=?O//G0N1F?K)H?K)H?K)(?K!(?K!(?K!\OK-\OK-\OK-&lt;OK%&lt;OK%&lt;OK'8BCZUI1O&gt;65G+*Y73J%G#:$!I3BY*4]+4]#1]@#LB38A3HI1HY7')%J[%*_&amp;*?")?JCHB38A3HI1HY3&amp;6)=H3U/&amp;*?%CPA#@A#8A#HI#(EAJY!I#A7*!Y3!+'AG$1#8A#HI#(LA+?A#@A#8A#(M)+?!+?A#@A#8C95F9F#EX@U/%BD2Q?B]@B=8A=(F,,Y8&amp;Y("[(R_'BH"Q?B]?"=!I[S5'1-]E:Y(QY0!Y0,TE]$I`$Y`!Y0)4+$HF:G:[G&lt;_DQ'$Q'D]&amp;D]"A]J*$"9`!90!;0Q5.;'4Q'D]&amp;D]"A]F*,"9`!90!;)5:4S-J):%YV"BG$Q]#OHR=IO23'RUK2[?&amp;50J?JB5TV%KI&gt;$&gt;&gt;.6.V.VEV188X6262&gt;,&gt;2&amp;5`ZQKN#K-;B(6S@V!H8G?]#._Q0@Y$N`C'XS.L`KJ(TTQ@$\L&gt;$LJ?$TK=$BIP^^LN^NJO^VKM^FIP6ZLN6LJW?ZIAT80^V*,P`XTW,4X$UX\_V@4`O4^DW`UT\_8PM,&gt;K"M.\X'.HA$70&amp;V,!!!!!!</Property>
+	<Property Name="NI.Lib.LocalName" Type="Str">SCD</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">587235328</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.1</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
@@ -161,13 +164,13 @@
 		<Property Name="NI.ClassItem.Property.ShortName" Type="Str">serialNumber</Property>
 		<Property Name="NI.ClassItem.Property.SortKey" Type="Int">-1</Property>
 		<Item Name="Read serialNumber.vi" Type="VI" URL="../Read serialNumber.vi">
-			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%0!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!":!-0````]-=W6S;7&amp;M4H6N9G6S!!!?1(!!(A!!$1N41U1O&lt;(:D&lt;'&amp;T=Q!(5U.%)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!"Z!=!!?!!!.#V.$2#ZM&gt;G.M98.T!!:41U1A;7Y!!&amp;1!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!Q!!?!!!$1A!!!!!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!#3!!!!!!%!#1!!!!!</Property>
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%0!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!":!-0````]-=W6S;7&amp;M4H6N9G6S!!!?1(!!(A!!$1N41U1O&lt;(:D&lt;'&amp;T=Q!(5U.%)'^V&gt;!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!"Z!=!!?!!!.#V.$2#ZM&gt;G.M98.T!!:41U1A;7Y!!&amp;1!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!Q!!?!!!$1A!!!!!!!!*!!!!C1!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!#1!!!!!!%!#1!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1082401296</Property>
 		</Item>
 		<Item Name="Write serialNumber.vi" Type="VI" URL="../Write serialNumber.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%0!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"Z!=!!?!!!.#V.$2#ZM&gt;G.M98.T!!&gt;41U1A&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!&amp;E!Q`````QRT:8*J97R/&gt;7VC:8)!!"Z!=!!?!!!.#V.$2#ZM&gt;G.M98.T!!:41U1A;7Y!!&amp;1!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!B!!!!#3!!!!!!%!#1!!!!!</Property>
