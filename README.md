@@ -1,9 +1,23 @@
 # HORIBA LabVIEW SDK
 
-Welcome to the HORIBA LabVIEW SDK! This repository contains the LabVIEW implementation of the HORIBA SDK, designed to facilitate communication and control of HORIBA scientific instruments..
+Welcome to the HORIBA LabVIEW SDK! This repository contains the LabVIEW implementation of the HORIBA SDK, designed to facilitate communication and control of HORIBA scientific instruments. For the current version this SDK supports Horiba's monochromators and multi-channel detectors (CCD cameras).
+
+## How this SDK works
+The functionality is distributed over two parts, the `instrument control layer (ICL)` and the `github source code`. This split is shown in the following image:
+![SDK Split](docs/SDK_Overview_Dark.png#gh-dark-mode-only "SDK Split")
+![SDK Split](docs/SDK_Overview_Dark.png#gh-light-mode-only "SDK Split")
+
+The ICL itself is sold and distributed by Horiba. The source code to communicate with the ICL and drive the instruments is located in this repo for LabVIEW, but can be also found for C#, C++ and Python.
+
+# Getting Started
+1. On the right side of this page, go to `Releases` and download the latest *.vip and install it along its dependencies with the VI package manager.
+2. Open LabVIEW (2023 or higher), create a new VI
+3. Go to the Block Diagram, right-click, go to `Toolkits` -> `Horiba SDK` -> `Examples` -> chose an example that fits to your hardware, e.g. a monochromator or ccd
+4. Run the example
+5. Build your own code following the examples for the devices.
 
 ## Dependencies
-The following VIPM dependencies exist in order to open this project without errors:
+When installing the vip package, the following dependencies will be installed automatically. If you want to to contribute to this repo, the following VIPM dependencies exist in order to open this project without errors:
 - WebSockets
 - Caraya
 - DQMH
