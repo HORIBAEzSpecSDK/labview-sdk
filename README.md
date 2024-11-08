@@ -26,7 +26,9 @@ When installing the vip package, the following dependencies will be installed au
 - OpenG Error
 - HSE Logger
 
-
+## Developer Documentation
+This section descibes all functionality that is available for each device.
+View in [Github Pages](https://horibaezspecsdk.github.io/labview-sdk/)
 
 
 
