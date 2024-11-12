@@ -8,6 +8,8 @@
 	<Property Name="EndevoGOOP_ColorTextBody" Type="UInt">0</Property>
 	<Property Name="EndevoGOOP_ColorTextHeader" Type="UInt">16777215</Property>
 	<Property Name="EndevoGOOP_FrameThickness" Type="UInt">1</Property>
+	<Property Name="NI.Lib.ContainingLib" Type="Str">horiba.lvlib</Property>
+	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../horiba.lvlib</Property>
 	<Property Name="NI.Lib.Description" Type="Str">This DQMH module takes care of starting and stoping the ICL as well as monitoring any output from the ICL.
 It also handles any communication to and from the ICL via Websocket requests.</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>

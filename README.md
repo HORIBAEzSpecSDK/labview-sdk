@@ -30,6 +30,10 @@ When installing the vip package, the following dependencies will be installed au
 This section descibes all functionality that is available for each device.
 View in [Github Pages](https://horibaezspecsdk.github.io/labview-sdk/)
 
+> [!IMPORTANT]  
+> Note about `tokens` win this SDK:
+    > Contrary to what might be expected from developes, this SDK does not use the data type `ENUM` for settings like *gain* or *speed* on some device types. The reason is that although CCDs might be of the same type (e.g. Syncerity), it is likely that each camera is configured to the user's specific needs. This results in different hardware elements, e.g. the chip that is used in that camera. This leads to the fact that only the device itself knows which speed or gain settings it supports. To simplify development, a developer has the possibility to query all available settings on the sepcific device with `xxx_getConfig`, where `xxx` can be either *ccd*, *scd* or *mono*. When retrieving this configuration, enums or rings can be built that resemble the tokens the device understands.
+
 
 
 ## Project Description

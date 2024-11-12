@@ -16,15 +16,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="Helper Files" Type="Folder">
-				<Item Name="CreateLogger.vi" Type="VI" URL="../LogCommands/CreateLogger.vi"/>
-			</Item>
-			<Item Name="Communicator.lvclass" Type="LVClass" URL="../Source/Classes/Communicator/Communicator.lvclass"/>
-			<Item Name="GenericDevice.lvclass" Type="LVClass" URL="../Source/Classes/GenericDevice/GenericDevice.lvclass"/>
-			<Item Name="Monochromator.lvclass" Type="LVClass" URL="../Source/Classes/Mono/Monochromator.lvclass"/>
-			<Item Name="CCD.lvclass" Type="LVClass" URL="../Source/Classes/CCD/CCD.lvclass"/>
-			<Item Name="SCD.lvclass" Type="LVClass" URL="../Source/Classes/SCD/SCD.lvclass"/>
-			<Item Name="DeviceManager.lvlib" Type="Library" URL="../Source/Classes/DeviceManager/DeviceManager.lvlib"/>
+			<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
 		</Item>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="CCD" Type="Folder">
