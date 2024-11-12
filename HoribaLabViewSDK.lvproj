@@ -14,10 +14,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Classes" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
-		</Item>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="CCD" Type="Folder">
 				<Item Name="subVIs" Type="Folder">
@@ -30,9 +26,10 @@
 			</Item>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
+		<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
+				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
