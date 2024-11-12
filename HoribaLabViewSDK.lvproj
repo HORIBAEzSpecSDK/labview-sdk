@@ -14,25 +14,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Classes" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">3</Property>
-			<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
-		</Item>
 		<Item Name="Examples" Type="Folder">
-			<Item Name="CCD" Type="Folder">
-				<Item Name="subVIs" Type="Folder">
-					<Item Name="Setup Example.vi" Type="VI" URL="../Source/Classes/CCD/Setup Example.vi"/>
-					<Item Name="Teardown Example.vi" Type="VI" URL="../Source/Classes/CCD/Teardown Example.vi"/>
-				</Item>
-				<Item Name="CCD Open Close.vi" Type="VI" URL="../Source/Examples/CCD/CCD Open Close.vi"/>
-				<Item Name="CCD Get Config.vi" Type="VI" URL="../Source/Examples/CCD/CCD Get Config.vi"/>
-				<Item Name="CCD Example.vi" Type="VI" URL="../Source/Examples/CCD/CCD Example.vi"/>
-			</Item>
+			<Item Name="Examples.lvlib" Type="Library" URL="../Source/Examples/Examples.lvlib"/>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
+		<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
+				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -52,7 +41,6 @@
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
-				<Item Name="dotnet_system_exec.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/JKI/JKI DotNet System Exec/dotnet_system_exec/dotnet_system_exec.lvclass"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
@@ -116,12 +104,6 @@
 				<Item Name="WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/MediaMongrels Ltd/WebSockets/WebSockets/WebSockets.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
-			</Item>
-			<Item Name="mscorlib" Type="VI" URL="mscorlib">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="System" Type="VI" URL="System">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
