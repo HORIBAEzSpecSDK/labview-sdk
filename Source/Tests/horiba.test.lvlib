@@ -71,7 +71,6 @@
 			<Item Name="test_MonoMirrorPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMirrorPosition.vi"/>
 			<Item Name="test_MonoMove.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMove.vi"/>
 			<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Classes/Monochromator/test_MonoOpenAndClose.vi"/>
-			<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
 			<Item Name="test_MonoSlitInMM.vi" Type="VI" URL="../Classes/Monochromator/test_MonoSlitInMM.vi"/>
 		</Item>
 		<Item Name="test_mono_main.vi" Type="VI" URL="../Classes/Monochromator/test_mono_main.vi"/>
