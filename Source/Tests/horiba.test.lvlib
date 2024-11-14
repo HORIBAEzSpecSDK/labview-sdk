@@ -14,13 +14,21 @@
 	<Item Name="CCD" Type="Folder">
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="helper_CCD_Setup.vi" Type="VI" URL="../Classes/CCD/helper_CCD_Setup.vi"/>
+			<Item Name="test_ccd_acqCount.vi" Type="VI" URL="../Classes/CCD/test_ccd_acqCount.vi"/>
+			<Item Name="test_ccd_centerWavelength.vi" Type="VI" URL="../Classes/CCD/test_ccd_centerWavelength.vi"/>
 			<Item Name="test_ccd_chipSize.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipSize.vi"/>
 			<Item Name="test_ccd_chipTemperature.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipTemperature.vi"/>
+			<Item Name="test_ccd_cleanCount.vi" Type="VI" URL="../Classes/CCD/test_ccd_cleanCount.vi"/>
 			<Item Name="test_ccd_exposureTime.vi" Type="VI" URL="../Classes/CCD/test_ccd_exposureTime.vi"/>
 			<Item Name="test_ccd_gain.vi" Type="VI" URL="../Classes/CCD/test_ccd_gain.vi"/>
 			<Item Name="test_ccd_GetConfig.vi" Type="VI" URL="../Classes/CCD/test_ccd_GetConfig.vi"/>
 			<Item Name="test_ccd_OpenAndClose.vi" Type="VI" URL="../Classes/CCD/test_ccd_OpenAndClose.vi"/>
+			<Item Name="test_ccd_roi.vi" Type="VI" URL="../Classes/CCD/test_ccd_roi.vi"/>
+			<Item Name="test_ccd_signalOut.vi" Type="VI" URL="../Classes/CCD/test_ccd_signalOut.vi"/>
 			<Item Name="test_ccd_speed.vi" Type="VI" URL="../Classes/CCD/test_ccd_speed.vi"/>
+			<Item Name="test_ccd_timerResolution.vi" Type="VI" URL="../Classes/CCD/test_ccd_timerResolution.vi"/>
+			<Item Name="test_ccd_trigger.vi" Type="VI" URL="../Classes/CCD/test_ccd_trigger.vi"/>
+			<Item Name="test_ccd_xAxisConversionType.vi" Type="VI" URL="../Classes/CCD/test_ccd_xAxisConversionType.vi"/>
 			<Item Name="test_parseRangeMode.vi" Type="VI" URL="../Classes/CCD/test_parseRangeMode.vi"/>
 		</Item>
 		<Item Name="test_ccd_main.vi" Type="VI" URL="../Classes/CCD/test_ccd_main.vi"/>
@@ -68,5 +76,6 @@
 		</Item>
 		<Item Name="test_mono_main.vi" Type="VI" URL="../Classes/Monochromator/test_mono_main.vi"/>
 	</Item>
+	<Item Name="test_ccd_acquireSpectrum.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireSpectrum.vi"/>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
 </Library>
