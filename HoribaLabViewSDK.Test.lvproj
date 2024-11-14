@@ -19,22 +19,10 @@
 			<Item Name="Classes" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="CCD" Type="Folder">
-					<Item Name="parsingTests" Type="Folder">
-						<Item Name="test_parseRangeMode.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_parseRangeMode.vi"/>
-					</Item>
-					<Item Name="subTests" Type="Folder">
-						<Item Name="test_CCDOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDOpenAndClose.vi"/>
-					</Item>
 					<Item Name="GainTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/GainTokenEnum.ctl"/>
 					<Item Name="SpeedTokenEnum.ctl" Type="VI" URL="../Source/Classes/CCD/SpeedTokenEnum.ctl"/>
 					<Item Name="test_CCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCD_Setup_Testenvironment.vi"/>
 					<Item Name="test_CCDRestart.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDRestart.vi"/>
-					<Item Name="test_CCDGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetConfig.vi"/>
-					<Item Name="test_CCDGetChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipSize.vi"/>
-					<Item Name="test_CCDGetChipTemperature.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetChipTemperature.vi"/>
-					<Item Name="test_CCDGetSpeedAndGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDGetSpeedAndGain.vi"/>
-					<Item Name="test_CCDSetAndGetGain.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetGain.vi"/>
-					<Item Name="test_CCDSetAndGetSpeed.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetSpeed.vi"/>
 					<Item Name="test_CCDSetAndGetExposureTime.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetExposureTime.vi"/>
 					<Item Name="test_CCDSetAndGetTimerResolution.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetTimerResolution.vi"/>
 					<Item Name="test_CCDSetAndGetXAxisConversionType.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetAndGetXAxisConversionType.vi"/>
@@ -46,7 +34,6 @@
 					<Item Name="test_CCDSetRoi.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDSetRoi.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceSpectrum.vi"/>
 					<Item Name="test_CCDAcquireSpectrum.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquireSpectrum.vi"/>
-					<Item Name="test_ccd_all.vi" Type="VI" URL="../Source/Tests/test_ccd_all.vi"/>
 				</Item>
 				<Item Name="SCD" Type="Folder">
 					<Item Name="test_SCD_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/SCD/test_SCD_Setup_Testenvironment.vi"/>
@@ -256,10 +243,8 @@
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 			</Item>
-			<Item Name="OpenConnectionWithDevice.vi" Type="VI" URL="../Source/Libraries/DeviceManager/OpenConnectionWithDevice.vi"/>
 			<Item Name="getPosition.vi" Type="VI" URL="../Source/Classes/Mono/getPosition.vi"/>
 			<Item Name="setPosition.vi" Type="VI" URL="../Source/Classes/Mono/setPosition.vi"/>
-			<Item Name="Example - Open Close CCD.vi" Type="VI" URL="../Source/Classes/CCD/Example - Open Close CCD.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

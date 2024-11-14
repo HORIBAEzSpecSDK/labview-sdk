@@ -11,6 +11,21 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">587235328</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="CCD" Type="Folder">
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="helper_CCD_Setup.vi" Type="VI" URL="../Classes/CCD/helper_CCD_Setup.vi"/>
+			<Item Name="test_ccd_chipSize.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipSize.vi"/>
+			<Item Name="test_ccd_chipTemperature.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipTemperature.vi"/>
+			<Item Name="test_ccd_exposureTime.vi" Type="VI" URL="../Classes/CCD/test_ccd_exposureTime.vi"/>
+			<Item Name="test_ccd_gain.vi" Type="VI" URL="../Classes/CCD/test_ccd_gain.vi"/>
+			<Item Name="test_ccd_GetConfig.vi" Type="VI" URL="../Classes/CCD/test_ccd_GetConfig.vi"/>
+			<Item Name="test_ccd_OpenAndClose.vi" Type="VI" URL="../Classes/CCD/test_ccd_OpenAndClose.vi"/>
+			<Item Name="test_ccd_speed.vi" Type="VI" URL="../Classes/CCD/test_ccd_speed.vi"/>
+			<Item Name="test_parseRangeMode.vi" Type="VI" URL="../Classes/CCD/test_parseRangeMode.vi"/>
+		</Item>
+		<Item Name="test_ccd_main.vi" Type="VI" URL="../Classes/CCD/test_ccd_main.vi"/>
+		<Item Name="test_ccd_template.vi" Type="VI" URL="../Classes/CCD/test_ccd_template.vi"/>
+	</Item>
 	<Item Name="Communicator" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="SubVIs" Type="Folder">
@@ -51,7 +66,7 @@
 			<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
 			<Item Name="test_MonoSlitInMM.vi" Type="VI" URL="../Classes/Monochromator/test_MonoSlitInMM.vi"/>
 		</Item>
-		<Item Name="test_MonoAllTests.vi" Type="VI" URL="../Classes/Monochromator/test_MonoAllTests.vi"/>
+		<Item Name="test_mono_main.vi" Type="VI" URL="../Classes/Monochromator/test_mono_main.vi"/>
 	</Item>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
 </Library>
