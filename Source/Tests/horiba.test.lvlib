@@ -39,17 +39,17 @@
 	</Item>
 	<Item Name="Monochromator" Type="Folder">
 		<Item Name="SubVIs" Type="Folder">
-			<Item Name="sortGetConfig.vi" Type="VI" URL="../Classes/Monochromator/sortGetConfig.vi"/>
-			<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
+			<Item Name="helper_checkForMonoBusy.vi" Type="VI" URL="../Classes/Monochromator/helper_checkForMonoBusy.vi"/>
+			<Item Name="helper_Mono_Setup.vi" Type="VI" URL="../Classes/Monochromator/helper_Mono_Setup.vi"/>
+			<Item Name="test_MonoFilterWheel.vi" Type="VI" URL="../Classes/Monochromator/test_MonoFilterWheel.vi"/>
 			<Item Name="test_MonoGetConfig.vi" Type="VI" URL="../Classes/Monochromator/test_MonoGetConfig.vi"/>
-			<Item Name="test_MonoMoveAndGetFilterWheelPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMoveAndGetFilterWheelPosition.vi"/>
-			<Item Name="test_MonoMoveAndGetMirrorPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMoveAndGetMirrorPosition.vi"/>
-			<Item Name="test_MonoMoveAndGetSlitPositionInMM.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMoveAndGetSlitPositionInMM.vi"/>
-			<Item Name="test_MonoMoveToAndGetGratingPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMoveToAndGetGratingPosition.vi"/>
-			<Item Name="test_MonoMoveToPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMoveToPosition.vi"/>
+			<Item Name="test_MonoGrating.vi" Type="VI" URL="../Classes/Monochromator/test_MonoGrating.vi"/>
+			<Item Name="test_MonoInit.vi" Type="VI" URL="../Classes/Monochromator/test_MonoInit.vi"/>
+			<Item Name="test_MonoMirrorPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMirrorPosition.vi"/>
+			<Item Name="test_MonoMove.vi" Type="VI" URL="../Classes/Monochromator/test_MonoMove.vi"/>
 			<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Classes/Monochromator/test_MonoOpenAndClose.vi"/>
-			<Item Name="test_MonoOpenAndInit.vi" Type="VI" URL="../Classes/Monochromator/test_MonoOpenAndInit.vi"/>
 			<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
+			<Item Name="test_MonoSlitInMM.vi" Type="VI" URL="../Classes/Monochromator/test_MonoSlitInMM.vi"/>
 		</Item>
 		<Item Name="test_MonoAllTests.vi" Type="VI" URL="../Classes/Monochromator/test_MonoAllTests.vi"/>
 	</Item>
