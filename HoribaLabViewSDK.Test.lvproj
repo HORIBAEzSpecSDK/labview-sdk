@@ -18,28 +18,6 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Classes" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
-				<Item Name="Communicator" Type="Folder">
-					<Item Name="Test_OpenCloseCommunicator.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_OpenCloseCommunicator.vi"/>
-					<Item Name="Test_SendAndAskForReply.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_SendAndAskForReply.vi"/>
-					<Item Name="Test_ParseResultsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseResultsFromAnswer.vi"/>
-					<Item Name="Test_ParseCommandFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseCommandFromAnswer.vi"/>
-					<Item Name="Test_ParseErrorsFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseErrorsFromAnswer.vi"/>
-					<Item Name="Test_ParseIDFromAnswer.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_ParseIDFromAnswer.vi"/>
-				</Item>
-				<Item Name="Monochromator" Type="Folder">
-					<Item Name="test_Mono_Setup_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_Mono_Setup_Testenvironment.vi"/>
-					<Item Name="test_MonoAllTests.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoAllTests.vi"/>
-					<Item Name="test_MonoOpenAndClose.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndClose.vi"/>
-					<Item Name="test_MonoOpenAndInit.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoOpenAndInit.vi"/>
-					<Item Name="test_MonoGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoGetConfig.vi"/>
-					<Item Name="test_MonoSetAndGetPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoSetAndGetPosition.vi"/>
-					<Item Name="test_MonoMoveToPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToPosition.vi"/>
-					<Item Name="test_MonoMoveToAndGetGratingPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveToAndGetGratingPosition.vi"/>
-					<Item Name="test_MonoMoveAndGetFilterWheelPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetFilterWheelPosition.vi"/>
-					<Item Name="test_MonoMoveAndGetMirrorPosition.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetMirrorPosition.vi"/>
-					<Item Name="test_MonoMoveAndGetSlitPositionInMM.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/test_MonoMoveAndGetSlitPositionInMM.vi"/>
-					<Item Name="sortGetConfig.vi" Type="VI" URL="../Source/Tests/Classes/Monochromator/sortGetConfig.vi"/>
-				</Item>
 				<Item Name="CCD" Type="Folder">
 					<Item Name="parsingTests" Type="Folder">
 						<Item Name="test_parseRangeMode.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_parseRangeMode.vi"/>
@@ -76,24 +54,13 @@
 				<Item Name="Helper Files" Type="Folder">
 					<Item Name="Test_Main.vi" Type="VI" URL="../Source/Tests/Classes/Communicator/Test_Main.vi"/>
 					<Item Name="test_Setup_Device_Connection.vi" Type="VI" URL="../Source/Tests/Classes/test_Setup_Device_Connection.vi"/>
-					<Item Name="test_Teardown_Testenvironment.vi" Type="VI" URL="../Source/Tests/Classes/test_Teardown_Testenvironment.vi"/>
 					<Item Name="CCDWriteRoiValues.vi" Type="VI" URL="../Source/Tests/Classes/CCD/CCDWriteRoiValues.vi"/>
 					<Item Name="test_CCDParseChipSize.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDParseChipSize.vi"/>
 					<Item Name="test_CCDAcquisitionSequenceImage.vi" Type="VI" URL="../Source/Tests/Classes/CCD/test_CCDAcquisitionSequenceImage.vi"/>
 					<Item Name="test_Template.vi" Type="VI" URL="../Source/Tests/Classes/test_Template.vi"/>
 				</Item>
 			</Item>
-			<Item Name="DeviceManager" Type="Folder">
-				<Item Name="SubVIs" Type="Folder">
-					<Item Name="test_DeviceManager_Setup.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_Setup.vi"/>
-					<Item Name="test_DeviceManager_Teardown.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_Teardown.vi"/>
-					<Item Name="test_DeviceManager_OpenWebSocketCommunication.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_OpenWebSocketCommunication.vi"/>
-					<Item Name="test_DeviceManager_StartICL.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DeviceManager_StartICL.vi"/>
-					<Item Name="test_DiscoverDevices.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_DiscoverDevices.vi"/>
-					<Item Name="test_ICLshutdown.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_ICLshutdown.vi"/>
-				</Item>
-				<Item Name="test_deviceManagerMain.vi" Type="VI" URL="../Source/Tests/DeviceManager/test_deviceManagerMain.vi"/>
-			</Item>
+			<Item Name="horiba.test.lvlib" Type="Library" URL="../Source/Tests/horiba.test.lvlib"/>
 		</Item>
 		<Item Name="Unit Tests" Type="Folder">
 			<Item Name="DeviceManager" Type="Folder"/>
@@ -103,6 +70,7 @@
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
+				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
@@ -283,16 +251,13 @@
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Search 1D Array (String)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Search 1D Array (String)__ogtk.vi"/>
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Filter 1D Array (String)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Filter 1D Array (String)__ogtk.vi"/>
 				<Item Name="7842910552F72B45FFAA5B67DFEBCBC5Empty 1D Array (String)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/7842910552F72B45FFAA5B67DFEBCBC5Empty 1D Array (String)__ogtk.vi"/>
+				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
+				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 			</Item>
 			<Item Name="OpenConnectionWithDevice.vi" Type="VI" URL="../Source/Libraries/DeviceManager/OpenConnectionWithDevice.vi"/>
-			<Item Name="isBusy.vi" Type="VI" URL="../Source/Classes/Mono/isBusy.vi"/>
 			<Item Name="getPosition.vi" Type="VI" URL="../Source/Classes/Mono/getPosition.vi"/>
-			<Item Name="getGratingPosition.vi" Type="VI" URL="../Source/Classes/Mono/getGratingPosition.vi"/>
-			<Item Name="moveGrating.vi" Type="VI" URL="../Source/Classes/Mono/moveGrating.vi"/>
-			<Item Name="getFilterWheelPosition.vi" Type="VI" URL="../Source/Classes/Mono/getFilterWheelPosition.vi"/>
-			<Item Name="moveFilterWheel.vi" Type="VI" URL="../Source/Classes/Mono/moveFilterWheel.vi"/>
-			<Item Name="getMirrorPosition.vi" Type="VI" URL="../Source/Classes/Mono/getMirrorPosition.vi"/>
-			<Item Name="moveMirror.vi" Type="VI" URL="../Source/Classes/Mono/moveMirror.vi"/>
 			<Item Name="setPosition.vi" Type="VI" URL="../Source/Classes/Mono/setPosition.vi"/>
 			<Item Name="Example - Open Close CCD.vi" Type="VI" URL="../Source/Classes/CCD/Example - Open Close CCD.vi"/>
 		</Item>
