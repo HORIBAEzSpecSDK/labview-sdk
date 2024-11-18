@@ -46,6 +46,9 @@ It also handles any communication to and from the ICL via Websocket requests.</P
 				<Item Name="Did Init Argument--cluster.ctl" Type="VI" URL="../Did Init Argument--cluster.ctl"/>
 				<Item Name="Status Updated Argument--cluster.ctl" Type="VI" URL="../Status Updated Argument--cluster.ctl"/>
 				<Item Name="Error Reported Argument--cluster.ctl" Type="VI" URL="../Error Reported Argument--cluster.ctl"/>
+				<Item Name="iclStarted Argument--cluster.ctl" Type="VI" URL="../iclStarted Argument--cluster.ctl"/>
+				<Item Name="websocketConnectionOpened Argument--cluster.ctl" Type="VI" URL="../websocketConnectionOpened Argument--cluster.ctl"/>
+				<Item Name="devicesDiscovered Argument--cluster.ctl" Type="VI" URL="../devicesDiscovered Argument--cluster.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Requests" Type="Folder">
@@ -55,18 +58,18 @@ It also handles any communication to and from the ICL via Websocket requests.</P
 			<Item Name="Get Module Execution Status.vi" Type="VI" URL="../Get Module Execution Status.vi"/>
 			<Item Name="Show Diagram.vi" Type="VI" URL="../Show Diagram.vi"/>
 			<Item Name="SendJSONandAskForReply.vi" Type="VI" URL="../SendJSONandAskForReply.vi"/>
+			<Item Name="StartICL.vi" Type="VI" URL="../StartICL.vi"/>
+			<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
+			<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
+			<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
+			<Item Name="DevicesList.vi" Type="VI" URL="../DevicesList.vi"/>
+			<Item Name="OpenConnectionWithDevice.vi" Type="VI" URL="../OpenConnectionWithDevice.vi"/>
+			<Item Name="CloseConnectionWithDevice.vi" Type="VI" URL="../CloseConnectionWithDevice.vi"/>
 		</Item>
 		<Item Name="Start Module.vi" Type="VI" URL="../Start Module.vi"/>
 		<Item Name="Stop Module.vi" Type="VI" URL="../Stop Module.vi"/>
-		<Item Name="StartICL.vi" Type="VI" URL="../StartICL.vi"/>
-		<Item Name="OpenWebSocketCommunication.vi" Type="VI" URL="../OpenWebSocketCommunication.vi"/>
-		<Item Name="ICLshutdown.vi" Type="VI" URL="../ICLshutdown.vi"/>
-		<Item Name="DiscoverDevices.vi" Type="VI" URL="../DiscoverDevices.vi"/>
-		<Item Name="DevicesList.vi" Type="VI" URL="../DevicesList.vi"/>
 		<Item Name="Synchronize Module Events.vi" Type="VI" URL="../Synchronize Module Events.vi"/>
 		<Item Name="Obtain Broadcast Events for Registration.vi" Type="VI" URL="../Obtain Broadcast Events for Registration.vi"/>
-		<Item Name="OpenConnectionWithDevice.vi" Type="VI" URL="../OpenConnectionWithDevice.vi"/>
-		<Item Name="CloseConnectionWithDevice.vi" Type="VI" URL="../CloseConnectionWithDevice.vi"/>
 	</Item>
 	<Item Name="Broadcasts" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -79,6 +82,9 @@ It also handles any communication to and from the ICL via Websocket requests.</P
 		<Item Name="Error Reported.vi" Type="VI" URL="../Error Reported.vi"/>
 		<Item Name="Module Did Stop.vi" Type="VI" URL="../Module Did Stop.vi"/>
 		<Item Name="Update Module Execution Status.vi" Type="VI" URL="../Update Module Execution Status.vi"/>
+		<Item Name="iclExeIsRunning.vi" Type="VI" URL="../iclExeIsRunning.vi"/>
+		<Item Name="websocketConnectionOpened.vi" Type="VI" URL="../websocketConnectionOpened.vi"/>
+		<Item Name="devicesDiscovered.vi" Type="VI" URL="../devicesDiscovered.vi"/>
 	</Item>
 	<Item Name="Requests" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
