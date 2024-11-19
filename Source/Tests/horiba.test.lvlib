@@ -15,6 +15,8 @@
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="helper_CCD_Setup.vi" Type="VI" URL="../Classes/CCD/helper_CCD_Setup.vi"/>
 			<Item Name="test_ccd_acqCount.vi" Type="VI" URL="../Classes/CCD/test_ccd_acqCount.vi"/>
+			<Item Name="test_ccd_acquireImage.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireImage.vi"/>
+			<Item Name="test_ccd_acquireSpectrum.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireSpectrum.vi"/>
 			<Item Name="test_ccd_centerWavelength.vi" Type="VI" URL="../Classes/CCD/test_ccd_centerWavelength.vi"/>
 			<Item Name="test_ccd_chipSize.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipSize.vi"/>
 			<Item Name="test_ccd_chipTemperature.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipTemperature.vi"/>
@@ -76,7 +78,5 @@
 		</Item>
 		<Item Name="test_mono_main.vi" Type="VI" URL="../Classes/Monochromator/test_mono_main.vi"/>
 	</Item>
-	<Item Name="test_ccd_acquireImage.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireImage.vi"/>
-	<Item Name="test_ccd_acquireSpectrum.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireSpectrum.vi"/>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
 </Library>
