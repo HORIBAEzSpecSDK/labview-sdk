@@ -18,7 +18,7 @@
 			<Item Name="Setup Example.vi" Type="VI" URL="../../Classes/CCD/Setup Example.vi"/>
 			<Item Name="Teardown Example.vi" Type="VI" URL="../../Classes/CCD/Teardown Example.vi"/>
 		</Item>
-		<Item Name="CCD Example.vi" Type="VI" URL="../CCD/CCD Example.vi"/>
+		<Item Name="CCD Acquire Image.vi" Type="VI" URL="../CCD/CCD Acquire Image.vi"/>
 		<Item Name="CCD Get Config.vi" Type="VI" URL="../CCD/CCD Get Config.vi"/>
 	</Item>
 	<Item Name="Mono" Type="Folder">
@@ -35,4 +35,5 @@
 		<Item Name="Mono Shutter.vi" Type="VI" URL="../Mono/Mono Shutter.vi"/>
 		<Item Name="Mono Slit.vi" Type="VI" URL="../Mono/Mono Slit.vi"/>
 	</Item>
+	<Item Name="CCD Acquire Spectrum.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum.vi"/>
 </Library>

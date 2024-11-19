@@ -1,3 +1,5 @@
 HoribaLabViewSDK.aliases
 HoribaLabViewSDK.lvlps
 LogCommands/LogFile.log
+*.aliases
+*.lvlps
