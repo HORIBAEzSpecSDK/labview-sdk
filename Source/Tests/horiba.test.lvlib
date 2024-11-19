@@ -23,6 +23,7 @@
 			<Item Name="test_ccd_gain.vi" Type="VI" URL="../Classes/CCD/test_ccd_gain.vi"/>
 			<Item Name="test_ccd_GetConfig.vi" Type="VI" URL="../Classes/CCD/test_ccd_GetConfig.vi"/>
 			<Item Name="test_ccd_OpenAndClose.vi" Type="VI" URL="../Classes/CCD/test_ccd_OpenAndClose.vi"/>
+			<Item Name="test_ccd_parseImageData.vi" Type="VI" URL="../Classes/CCD/test_ccd_parseImageData.vi"/>
 			<Item Name="test_ccd_roi.vi" Type="VI" URL="../Classes/CCD/test_ccd_roi.vi"/>
 			<Item Name="test_ccd_signalOut.vi" Type="VI" URL="../Classes/CCD/test_ccd_signalOut.vi"/>
 			<Item Name="test_ccd_speed.vi" Type="VI" URL="../Classes/CCD/test_ccd_speed.vi"/>
@@ -75,6 +76,7 @@
 		</Item>
 		<Item Name="test_mono_main.vi" Type="VI" URL="../Classes/Monochromator/test_mono_main.vi"/>
 	</Item>
+	<Item Name="test_ccd_acquireImage.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireImage.vi"/>
 	<Item Name="test_ccd_acquireSpectrum.vi" Type="VI" URL="../Classes/CCD/test_ccd_acquireSpectrum.vi"/>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
 </Library>
