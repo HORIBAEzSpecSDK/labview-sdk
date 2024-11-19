@@ -30,11 +30,323 @@
 		<Removed>TRUE</Removed>
 	</Item>
 	<Item>
-		<Path>"Unit Tests"</Path>
+		<Path>"Source\\Tests"</Path>
 		<Removed>TRUE</Removed>
 	</Item>
 	<Item>
-		<Path>"Source\\Tests"</Path>
+		<Path>"Source\\Classes\\DeviceManager\\Acquire Module Semaphore.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\AskForConnectedCCDs.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\AskForConnectedMonos.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\AskForConnectedSCDs.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Broadcast Events--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\CheckIclRunning.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Close Module.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\CloseConnectionWithDevice.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Destroy Broadcast Events.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Destroy Module Semaphore Reference.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Destroy Request Events.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Destroy Sync Refnums.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\devicesDiscovered Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\devicesDiscovered.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\DevicesList (Reply Payload)--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\DevicesList Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Did Init Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\DiscoverDevices (Reply Payload)--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\DiscoverDevices Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\DiscoverDevices.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Error Reported Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Error Reported.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Get Module Execution Status Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Get Module Execution Status.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Get Module Main VI Information.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Get Sync Refnums.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Handle Exit.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Hide Panel Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Hide Panel.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Hide VI Panel.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\ICLcommuncationData.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\iclExeIsRunning.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\ICLshutdown Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\ICLshutdown.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\iclStarted Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\ICLstartNotification Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\ICLstartNotification.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Init Module.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Data--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Did Init.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Did Stop.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Name--constant.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Not Running--error.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Not Stopped--error.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Not Synced--error.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Module Timeout--constant.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Null Broadcast Events--constant.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Obtain Broadcast Events for Registration.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Obtain Broadcast Events.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Obtain Module Semaphore.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Obtain Request Events.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Open VI Panel.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\OpenWebSocketCommunication (Reply Payload)--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\OpenWebSocketCommunication Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\OpenWebSocketCommunication.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Release Module Semaphore.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Request and Wait for Reply Timeout--error.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Request Events--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\SendJSONandAskForReply (Reply Payload)--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\SendJSONandAskForReply Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\SendJSONandAskForReply.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Show Diagram Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Show Diagram.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Show Panel Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Show Panel.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Start Module.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\StartICL Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\StartICL.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Status Updated Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Status Updated.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Stop Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Stop Module.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Synchronize Caller Events.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Synchronize Module Events.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Update Module Execution Status.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Wait on Event Sync.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\Wait on Module Sync.vi"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\websocketConnectionOpened Argument--cluster.ctl"</Path>
+		<Removed>TRUE</Removed>
+	</Item>
+	<Item>
+		<Path>"Source\\Classes\\DeviceManager\\websocketConnectionOpened.vi"</Path>
 		<Removed>TRUE</Removed>
 	</Item>
 </ItemsToAnalyze>
@@ -995,6 +1307,46 @@
 		</Controls>
 	</Test>
 	<Test>
+		<Name>"Front Panel Property and Invoke Nodes"</Name>
+		<Ranking>1</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW"</BasePath>
+		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Front Panel Property and Invoke Nodes.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"Timed Structures in Time Critical VIs"</Name>
+		<Ranking>1</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW"</BasePath>
+		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Timed Structures in Time Critical VIs.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"Unbounded Code in Time Critical VIs"</Name>
+		<Ranking>1</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW"</BasePath>
+		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Unbounded Code in Time Critical VIs.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"Unbounded Code in Timed Structures"</Name>
+		<Ranking>1</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW"</BasePath>
+		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Unbounded Code in Timed Structures.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
 		<Name>"Connector Inputs and Outputs"</Name>
 		<Ranking>0</Ranking>
 		<MaxFailures>5</MaxFailures>
@@ -1080,6 +1432,46 @@
 		<MaxFailures>5</MaxFailures>
 		<BasePath>"LabVIEW"</BasePath>
 		<RelativePath>"project\\_VI Analyzer\\_tests\\VI Metrics\\Wire Sources.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"Broken Wire Check"</Name>
+		<Ranking>2</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW Data"</BasePath>
+		<RelativePath>"VI Analyzer Tests\\Broken Wire Check.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"Check For Breakpoints in BD"</Name>
+		<Ranking>2</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW Data"</BasePath>
+		<RelativePath>"VI Analyzer Tests\\Check For Breakpoints in BD.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"CheckReferencesAreClosed"</Name>
+		<Ranking>1</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW Data"</BasePath>
+		<RelativePath>"VI Analyzer Tests\\CheckReferencesAreClosed.llb"</RelativePath>
+		<Selected>FALSE</Selected>
+		<Controls>
+		</Controls>
+	</Test>
+	<Test>
+		<Name>"Forked Event Reg Refnum Wire"</Name>
+		<Ranking>1</Ranking>
+		<MaxFailures>5</MaxFailures>
+		<BasePath>"LabVIEW Data"</BasePath>
+		<RelativePath>"VI Analyzer Tests\\Forked Event Reg Refnum Wire.llb"</RelativePath>
 		<Selected>FALSE</Selected>
 		<Controls>
 		</Controls>

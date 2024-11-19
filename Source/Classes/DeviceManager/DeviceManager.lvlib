@@ -132,7 +132,6 @@ It also handles any communication to and from the ICL via Websocket requests.</P
 		<Item Name="CCDList.vi" Type="VI" URL="../../GenericDevice/CCDList.vi"/>
 		<Item Name="SCDDiscover.vi" Type="VI" URL="../../GenericDevice/SCDDiscover.vi"/>
 		<Item Name="SCDList.vi" Type="VI" URL="../../GenericDevice/SCDList.vi"/>
-		<Item Name="ListDevicesAfterDiscovery.vi" Type="VI" URL="../ListDevicesAfterDiscovery.vi"/>
 		<Item Name="CheckIclRunning.vi" Type="VI" URL="../CheckIclRunning.vi"/>
 	</Item>
 	<Item Name="Module Sync" Type="Folder">

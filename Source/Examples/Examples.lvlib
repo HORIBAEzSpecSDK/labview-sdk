@@ -20,7 +20,6 @@
 		</Item>
 		<Item Name="CCD Example.vi" Type="VI" URL="../CCD/CCD Example.vi"/>
 		<Item Name="CCD Get Config.vi" Type="VI" URL="../CCD/CCD Get Config.vi"/>
-		<Item Name="CCD Open Close.vi" Type="VI" URL="../CCD/CCD Open Close.vi"/>
 	</Item>
 	<Item Name="Mono" Type="Folder">
 		<Item Name="SubVIs" Type="Folder">
