@@ -15,10 +15,14 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="CCD" Type="Folder">
 		<Item Name="subVIs" Type="Folder">
-			<Item Name="Setup Example.vi" Type="VI" URL="../../Classes/CCD/Setup Example.vi"/>
+			<Item Name="Setup Example CCD.vi" Type="VI" URL="../../Classes/CCD/Setup Example CCD.vi"/>
 			<Item Name="Teardown Example.vi" Type="VI" URL="../../Classes/CCD/Teardown Example.vi"/>
 		</Item>
 		<Item Name="CCD Acquire Image.vi" Type="VI" URL="../CCD/CCD Acquire Image.vi"/>
+		<Item Name="CCD Acquire Spectrum vs Pixels.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Pixels.vi"/>
+		<Item Name="CCD Acquire Spectrum vs Wavelength.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength.vi"/>
+		<Item Name="CCD Acquire Spectrum vs Wavenumbers.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavenumbers.vi"/>
+		<Item Name="CCD Acquire Spectrum with Darkcount Subtract.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum with Darkcount Subtract.vi"/>
 		<Item Name="CCD Get Config.vi" Type="VI" URL="../CCD/CCD Get Config.vi"/>
 	</Item>
 	<Item Name="Mono" Type="Folder">
@@ -35,5 +39,10 @@
 		<Item Name="Mono Shutter.vi" Type="VI" URL="../Mono/Mono Shutter.vi"/>
 		<Item Name="Mono Slit.vi" Type="VI" URL="../Mono/Mono Slit.vi"/>
 	</Item>
-	<Item Name="CCD Acquire Spectrum.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum.vi"/>
+	<Item Name="MonoAndCCD" Type="Folder">
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Setup Example All Devices.vi" Type="VI" URL="../../Classes/CCD/Setup Example All Devices.vi"/>
+		</Item>
+		<Item Name="CCD Acquire Spectrum vs Wavelength Range Mode.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength Range Mode.vi"/>
+	</Item>
 </Library>
