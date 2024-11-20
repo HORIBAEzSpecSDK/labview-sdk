@@ -36,6 +36,14 @@ View in [Github Pages](https://horibaezspecsdk.github.io/labview-sdk/)
 > To simplify development, a developer has the possibility to query all available settings on the sepcific device with `xxx_getConfig`, where `xxx` can be either *ccd*, *scd* or *mono*. When retrieving this configuration, enums or rings can be built that resemble the tokens the device understands.
 
 
+### Saving Data to Files
+This SDK delivers just a small introduction to saving data to files in the [Examples Folder](Source/Examples).
+For saving data as images, the following ressources can be used:
+- [Exporting a LabVIEW Graph, Chart or 2D Picture to an Image File](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YHq2CAG&l=en-CH)
+- [Save chart/graph as image file](https://forums.ni.com/t5/LabVIEW/Save-chart-graph-as-image-file/td-p/1112477)
+- [How to Save an Intensity Graph as a TIFF File](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000001Dm4CCAS&l=en-CH)
+
+
 
 ## Project Description
 

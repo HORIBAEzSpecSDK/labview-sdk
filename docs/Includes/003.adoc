@@ -16,7 +16,7 @@
 
 |Start Module
 |image:empty.png[empty.png]
-|image:DeviceManager.lvlib_Start_Module.vi.png[DeviceManager.lvlib:Start Module.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Start_Module.vi.png[horiba.lvlib:DeviceManager.lvlib:Start Module.vi]
 |+++Launches the module Main VI. After calling this VI, you can optionally register for broadcast events from the module by wiring the broadcast events output of this VI to a <b>Register For Events</b> function. +++
 
 +++After the optional Register For Events function call, you should always call the <b>Synchronize Module Events.vi</b> for this module with the 'Wait for Event Sync?' output of this VI to the corresponding input of the Synchronize Module Events.vi. +++
@@ -29,7 +29,7 @@
 
 |Stop Module
 |image:empty.png[empty.png]
-|image:DeviceManager.lvlib_Stop_Module.vi.png[DeviceManager.lvlib:Stop Module.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Stop_Module.vi.png[horiba.lvlib:DeviceManager.lvlib:Stop Module.vi]
 |+++Send the Stop request to the Module's Main.vi.+++
 
 +++If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.+++
@@ -42,7 +42,7 @@
 
 |Show Panel
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_Show_Panel.vi.png[DeviceManager.lvlib:Show Panel.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Show_Panel.vi.png[horiba.lvlib:DeviceManager.lvlib:Show Panel.vi]
 |+++Send the Show Panel request to the Module's Main.vi.+++
 
 |image:empty.png[empty.png]
@@ -51,7 +51,7 @@
 
 |Hide Panel
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_Hide_Panel.vi.png[DeviceManager.lvlib:Hide Panel.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Hide_Panel.vi.png[horiba.lvlib:DeviceManager.lvlib:Hide Panel.vi]
 |+++Send the Hide Panel request to the Module's Main.vi.+++
 
 |image:empty.png[empty.png]
@@ -60,7 +60,7 @@
 
 |Get Module Execution Status
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_Get_Module_Execution_Status.vi.png[DeviceManager.lvlib:Get Module Execution Status.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Get_Module_Execution_Status.vi.png[horiba.lvlib:DeviceManager.lvlib:Get Module Execution Status.vi]
 |+++Fire the Get Module Execution Status request.+++
 
 |image:empty.png[empty.png]
@@ -69,7 +69,7 @@
 
 |Show Diagram
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_Show_Diagram.vi.png[DeviceManager.lvlib:Show Diagram.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Show_Diagram.vi.png[horiba.lvlib:DeviceManager.lvlib:Show Diagram.vi]
 |+++This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).+++
 
 
@@ -80,7 +80,7 @@
 
 |SendJSONandAskForReply
 |image:request-and-wait-for-reply.png[request-and-wait-for-reply.png]
-|image:DeviceManager.lvlib_SendJSONandAskForReply.vi.png[DeviceManager.lvlib:SendJSONandAskForReply.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_SendJSONandAskForReply.vi.png[horiba.lvlib:DeviceManager.lvlib:SendJSONandAskForReply.vi]
 |+++This request asks in a synchronous manner to send a JSON string to the ICL, waits the specified time in [ms] and querries the websocket for a reply.+++
 
 
@@ -90,7 +90,7 @@
 
 |StartICL
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_StartICL.vi.png[DeviceManager.lvlib:StartICL.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_StartICL.vi.png[horiba.lvlib:DeviceManager.lvlib:StartICL.vi]
 |+++This command starts the ICL.exe and its monitoring+++
 
 
@@ -100,7 +100,7 @@
 
 |OpenWebSocketCommunication
 |image:request-and-wait-for-reply.png[request-and-wait-for-reply.png]
-|image:DeviceManager.lvlib_OpenWebSocketCommunication.vi.png[DeviceManager.lvlib:OpenWebSocketCommunication.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_OpenWebSocketCommunication.vi.png[horiba.lvlib:DeviceManager.lvlib:OpenWebSocketCommunication.vi]
 |+++This event opens the websocket communcation from the DeviceManager to the ICL.exe+++
 
 
@@ -110,7 +110,7 @@
 
 |ICLshutdown
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_ICLshutdown.vi.png[DeviceManager.lvlib:ICLshutdown.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_ICLshutdown.vi.png[horiba.lvlib:DeviceManager.lvlib:ICLshutdown.vi]
 |+++This request sends the command to shutdown the ICL.exe via websocket communication.+++
 
 
@@ -120,7 +120,7 @@
 
 |DiscoverDevices
 |image:request-and-wait-for-reply.png[request-and-wait-for-reply.png]
-|image:DeviceManager.lvlib_DiscoverDevices.vi.png[DeviceManager.lvlib:DiscoverDevices.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_DiscoverDevices.vi.png[horiba.lvlib:DeviceManager.lvlib:DiscoverDevices.vi]
 |+++Requests from the ICL to discover monochromators, cameras and single channel detectors.+++
 
 
@@ -130,7 +130,7 @@
 
 |DevicesList
 |image:request-and-wait-for-reply.png[request-and-wait-for-reply.png]
-|image:DeviceManager.lvlib_DevicesList.vi.png[DeviceManager.lvlib:DevicesList.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_DevicesList.vi.png[horiba.lvlib:DeviceManager.lvlib:DevicesList.vi]
 |+++This event calls mono_list, ccd_list, and scd_list.+++
 
 
@@ -140,7 +140,7 @@
 
 |Module Did Init
 |image:broadcast.png[broadcast.png]
-|image:DeviceManager.lvlib_Module_Did_Init.vi.png[DeviceManager.lvlib:Module Did Init.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Module_Did_Init.vi.png[horiba.lvlib:DeviceManager.lvlib:Module Did Init.vi]
 |+++Send the Module Did Init event to any VI registered to listen to this module's broadcast events.+++
 
 |image:empty.png[empty.png]
@@ -149,7 +149,7 @@
 
 |Status Updated
 |image:broadcast.png[broadcast.png]
-|image:DeviceManager.lvlib_Status_Updated.vi.png[DeviceManager.lvlib:Status Updated.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Status_Updated.vi.png[horiba.lvlib:DeviceManager.lvlib:Status Updated.vi]
 |+++Send the Status Updated event to any VI registered to listen to events from the owning module.+++
 
 |image:empty.png[empty.png]
@@ -158,7 +158,7 @@
 
 |Error Reported
 |image:broadcast.png[broadcast.png]
-|image:DeviceManager.lvlib_Error_Reported.vi.png[DeviceManager.lvlib:Error Reported.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Error_Reported.vi.png[horiba.lvlib:DeviceManager.lvlib:Error Reported.vi]
 |+++Send the Error Reported event to any VI registered to listen to events from the owning module.+++
 
 |image:empty.png[empty.png]
@@ -167,7 +167,7 @@
 
 |Module Did Stop
 |image:broadcast.png[broadcast.png]
-|image:DeviceManager.lvlib_Module_Did_Stop.vi.png[DeviceManager.lvlib:Module Did Stop.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Module_Did_Stop.vi.png[horiba.lvlib:DeviceManager.lvlib:Module Did Stop.vi]
 |+++Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.+++
 
 |image:empty.png[empty.png]
@@ -176,8 +176,38 @@
 
 |Update Module Execution Status
 |image:broadcast.png[broadcast.png]
-|image:DeviceManager.lvlib_Update_Module_Execution_Status.vi.png[DeviceManager.lvlib:Update Module Execution Status.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_Update_Module_Execution_Status.vi.png[horiba.lvlib:DeviceManager.lvlib:Update Module Execution Status.vi]
 |+++Broadcast event to specify whether or not the module is running.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|iclExeIsRunning
+|image:broadcast.png[broadcast.png]
+|image:horiba.lvlib_DeviceManager.lvlib_iclExeIsRunning.vi.png[horiba.lvlib:DeviceManager.lvlib:iclExeIsRunning.vi]
+|+++This broadcast is sent when the ICL has been launched or a already running ICL has been detected.+++
+
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|websocketConnectionOpened
+|image:broadcast.png[broadcast.png]
+|image:horiba.lvlib_DeviceManager.lvlib_websocketConnectionOpened.vi.png[horiba.lvlib:DeviceManager.lvlib:websocketConnectionOpened.vi]
+|+++This broadcast is fired when the websocket connection is opened.+++
+
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|devicesDiscovered
+|image:broadcast.png[broadcast.png]
+|image:horiba.lvlib_DeviceManager.lvlib_devicesDiscovered.vi.png[horiba.lvlib:DeviceManager.lvlib:devicesDiscovered.vi]
+|+++This broadcast is being fired when devices where trying to be discovered. It returns a list of found Monos, CCDs and SCDs.+++
+
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
@@ -185,7 +215,7 @@
 
 |ICLstartNotification
 |image:request.png[request.png]
-|image:DeviceManager.lvlib_ICLstartNotification.vi.png[DeviceManager.lvlib:ICLstartNotification.vi]
+|image:horiba.lvlib_DeviceManager.lvlib_ICLstartNotification.vi.png[horiba.lvlib:DeviceManager.lvlib:ICLstartNotification.vi]
 |+++This private event is used to tell the ICLcommunication loop that the ICL is running and a communcation via websocket can be established+++
 
 
@@ -206,29 +236,18 @@
 
 [graphviz, format="png", align="center"]
 ....
-digraph G495786 {
+digraph G17824 {
 rankdir=LR;
 edge[dir=both color=black  arrowhead=normal arrowtail=none style=filled penwidth=1]
 node[color=black shape=box]
 "DeviceManager"[color=slateblue shape=component]
-"test_DeviceManager_Setup"[color=skyblue shape=note]
-"test_DeviceManager_Teardown"[color=skyblue shape=note]
-"test_DeviceManager_StartICL"[color=skyblue shape=note]
-"test_DevicesList"[color=skyblue shape=note]
-"test_DevicesDiscover"[color=skyblue shape=note]
-"test_DeviceManager_OpenWebSocketCommunication"[color=skyblue shape=note]
 "GenericDevice.lvclass:Send Receive Parse"[color=skyblue shape=note]
+"horiba"[color=black shape=component]
 "DeviceManager" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
-"test_DeviceManager_Setup" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
-"test_DeviceManager_Teardown" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
-"test_DeviceManager_StartICL" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
-"test_DevicesList" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
-"test_DevicesDiscover" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
-"test_DeviceManager_OpenWebSocketCommunication" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
 "GenericDevice.lvclass:Send Receive Parse" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
 "DeviceManager" -> "DeviceManager" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1];
 "DeviceManager" -> "DeviceManager" [label="  " dir=both color=goldenrod  arrowhead=onormal arrowtail=none style=dashed penwidth=1];
-"DeviceManager" -> "DeviceManager" [label="   " dir=both color=forestgreen  arrowhead=onormal arrowtail=none style=filled penwidth=1];
+"DeviceManager" -> "horiba" [label="   " dir=both color=forestgreen  arrowhead=onormal arrowtail=none style=filled penwidth=1];
 }
 ....
 
@@ -237,48 +256,44 @@ node[color=black shape=box]
 |===
 |Request Name |Callers
 
-|DevicesList
-|DeviceManager.lvlib:Test DeviceManager API.vi +
-test_DevicesList.vi
+|DeviceManager.lvlib:DevicesList
+|DeviceManager.lvlib:Test DeviceManager API.vi
 
-|DiscoverDevices
+|DeviceManager.lvlib:DiscoverDevices
 |DeviceManager.lvlib:OpenConnectionWithDevice.vi +
-DeviceManager.lvlib:Test DeviceManager API.vi +
-test_DevicesDiscover.vi
+DeviceManager.lvlib:Test DeviceManager API.vi
 
-|Get Module Execution Status
+|DeviceManager.lvlib:Get Module Execution Status
 |DeviceManager.lvlib:Obtain Broadcast Events for Registration.vi +
 DeviceManager.lvlib:Start Module.vi
 
-|Hide Panel
+|DeviceManager.lvlib:Hide Panel
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|ICLshutdown
+|DeviceManager.lvlib:ICLshutdown
 |DeviceManager.lvlib:CloseConnectionWithDevice.vi +
 DeviceManager.lvlib:Test DeviceManager API.vi
 
-|ICLstartNotification
+|DeviceManager.lvlib:ICLstartNotification
 |DeviceManager.lvlib:Main.vi
 
-|OpenWebSocketCommunication
+|DeviceManager.lvlib:OpenWebSocketCommunication
 |DeviceManager.lvlib:OpenConnectionWithDevice.vi +
-DeviceManager.lvlib:Test DeviceManager API.vi +
-test_DeviceManager_OpenWebSocketCommunication.vi
+DeviceManager.lvlib:Test DeviceManager API.vi
 
-|SendJSONandAskForReply
+|DeviceManager.lvlib:SendJSONandAskForReply
 |DeviceManager.lvlib:Test DeviceManager API.vi +
 GenericDevice.lvclass:Send Receive Parse.vi
 
-|Show Diagram
+|DeviceManager.lvlib:Show Diagram
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|Show Panel
+|DeviceManager.lvlib:Show Panel
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|StartICL
+|DeviceManager.lvlib:StartICL
 |DeviceManager.lvlib:OpenConnectionWithDevice.vi +
-DeviceManager.lvlib:Test DeviceManager API.vi +
-test_DeviceManager_StartICL.vi
+DeviceManager.lvlib:Test DeviceManager API.vi
 |===
 
 .Broadcasts Listeners
@@ -286,19 +301,28 @@ test_DeviceManager_StartICL.vi
 |===
 |Broadcast Name |Listeners
 
-|Error Reported
+|DeviceManager.lvlib:Error Reported
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|Module Did Init
+|DeviceManager.lvlib:Module Did Init
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|Module Did Stop
+|DeviceManager.lvlib:Module Did Stop
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|Status Updated
+|DeviceManager.lvlib:Status Updated
 |DeviceManager.lvlib:Test DeviceManager API.vi
 
-|Update Module Execution Status
+|DeviceManager.lvlib:Update Module Execution Status
+|DeviceManager.lvlib:Test DeviceManager API.vi
+
+|DeviceManager.lvlib:devicesDiscovered
+|DeviceManager.lvlib:Test DeviceManager API.vi
+
+|DeviceManager.lvlib:iclExeIsRunning
+|
+
+|DeviceManager.lvlib:websocketConnectionOpened
 |DeviceManager.lvlib:Test DeviceManager API.vi
 |===
 
@@ -307,9 +331,9 @@ test_DeviceManager_StartICL.vi
 |===
 |Module |Requests
 
-|DeviceManager.lvlib
-|ICLstartNotification.vi +
-Stop Module.vi
+|horiba.lvlib
+|DeviceManager.lvlib:ICLstartNotification.vi +
+DeviceManager.lvlib:Stop Module.vi
 |===
 
 .Registered broadcast
@@ -322,26 +346,25 @@ Stop Module.vi
 Module Did Init.vi +
 Module Did Stop.vi +
 Status Updated.vi +
-Update Module Execution Status.vi
+Update Module Execution Status.vi +
+devicesDiscovered.vi +
+iclIsRunning.vi +
+websocketConnectionOpened.vi
 |===
 
 === Module Start/Stop calls
 
 [graphviz, format="png", align="center"]
 ....
-digraph G124844 {
+digraph G611281 {
 rankdir=LR;
 edge[dir=both color=black  arrowhead=normal arrowtail=none style=filled penwidth=1]
 node[color=black shape=box]
 "Start Module"[color=yellowgreen shape=note]
 "DeviceManager"[color=black shape=component]
-"test_DeviceManager_Setup"[color=skyblue shape=note]
 "Stop Module"[color=tomato shape=note]
-"test_DeviceManager_Teardown"[color=skyblue shape=note]
 "Start Module" -> "DeviceManager" [dir=both color=yellowgreen  arrowhead=odot arrowtail=inv style=filled penwidth=1];
-"Start Module" -> "test_DeviceManager_Setup" [dir=both color=yellowgreen  arrowhead=odot arrowtail=inv style=filled penwidth=1];
 "Stop Module" -> "DeviceManager" [dir=both color=tomato  arrowhead=odot arrowtail=inv style=dotted penwidth=1];
-"Stop Module" -> "test_DeviceManager_Teardown" [dir=both color=tomato  arrowhead=odot arrowtail=inv style=dotted penwidth=1];
 }
 ....
 
@@ -352,14 +375,12 @@ node[color=black shape=box]
 
 |Start Module
 |DeviceManager.lvlib:OpenConnectionWithDevice.vi +
-DeviceManager.lvlib:Test DeviceManager API.vi +
-test_DeviceManager_Setup.vi
+DeviceManager.lvlib:Test DeviceManager API.vi
 
 |Stop Module
 |DeviceManager.lvlib:Handle Exit.vi +
 DeviceManager.lvlib:CloseConnectionWithDevice.vi +
-DeviceManager.lvlib:Test DeviceManager API.vi +
-test_DeviceManager_Teardown.vi
+DeviceManager.lvlib:Test DeviceManager API.vi
 |===
 
 === Module custom errors

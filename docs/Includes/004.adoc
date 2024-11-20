@@ -1,168 +1,186 @@
-== Classes overview
+== Examples.lvlib
 
-This project contains 5 classes and 0 interface.
+*Responsibility:*
++++This library contains all examples for single or multi device setup for the Horiba Scientific devices.+++
 
-.Classes list
-[cols="", %autowidth, frame=all, grid=all, stripes=none]
+
+*Version:* 1.0.0.0
+
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
 |===
-|Classes |Interfaces
+|Name |Connector pane |Description |S. |R. |I.
 
-|<<Communicator.lvclass>>
-|
+|Setup Example CCD
+|image:Examples.lvlib_Setup_Example_CCD.vi.png[Examples.lvlib:Setup Example CCD.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
 
-|<<GenericDevice.lvclass>>
-|
+|Teardown Example
+|image:Examples.lvlib_Teardown_Example.vi.png[Examples.lvlib:Teardown Example.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
 
-|<<Monochromator.lvclass>>
-|
+|CCD Acquire Image
+|image:Examples.lvlib_CCD_Acquire_Image.vi.png[Examples.lvlib:CCD Acquire Image.vi]
+|+++Example for a CCD spectrum acquisition.+++
 
-|<<CCD.lvclass>>
-|
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
 
-|<<SCD.lvclass>>
-|
+|CCD Acquire Spectrum and Abort Acquisition
+|image:Examples.lvlib_CCD_Acquire_Spectrum_and_Abort_Acquisition.vi.png[Examples.lvlib:CCD Acquire Spectrum and Abort Acquisition.vi]
+|+++Example for a CCD spectrum acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CCD Acquire Spectrum vs Pixels
+|image:Examples.lvlib_CCD_Acquire_Spectrum_vs_Pixels.vi.png[Examples.lvlib:CCD Acquire Spectrum vs Pixels.vi]
+|+++Example for a CCD spectrum acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CCD Acquire Spectrum vs Wavelength
+|image:Examples.lvlib_CCD_Acquire_Spectrum_vs_Wavelength.vi.png[Examples.lvlib:CCD Acquire Spectrum vs Wavelength.vi]
+|+++Example for a CCD spectrum acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CCD Acquire Spectrum vs Wavenumbers
+|image:Examples.lvlib_CCD_Acquire_Spectrum_vs_Wavenumbers.vi.png[Examples.lvlib:CCD Acquire Spectrum vs Wavenumbers.vi]
+|+++Example for a CCD spectrum acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CCD Acquire Spectrum with Darkcount Subtract
+|image:Examples.lvlib_CCD_Acquire_Spectrum_with_Darkcount_Subtract.vi.png[Examples.lvlib:CCD Acquire Spectrum with Darkcount Subtract.vi]
+|+++Example for a CCD spectrum acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CCD Get Config
+|image:Examples.lvlib_CCD_Get_Config.vi.png[Examples.lvlib:CCD Get Config.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Setup Example Mono
+|image:Examples.lvlib_Setup_Example_Mono.vi.png[Examples.lvlib:Setup Example Mono.vi]
+|+++Setup for the mono examples.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Teardown Examples Mono
+|image:Examples.lvlib_Teardown_Examples_Mono.vi.png[Examples.lvlib:Teardown Examples Mono.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Filter Wheel
+|image:Examples.lvlib_Mono_Filter_Wheel.vi.png[Examples.lvlib:Mono Filter Wheel.vi]
+|+++This example shows how to get and set the filter wheel position of the mono.+++
+
++++Note: this example will return an error if no internal filter is available.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Get Config
+|image:Examples.lvlib_Mono_Get_Config.vi.png[Examples.lvlib:Mono Get Config.vi]
+|+++This example shows how to retrieve the condifugration of the mono.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Grating
+|image:Examples.lvlib_Mono_Grating.vi.png[Examples.lvlib:Mono Grating.vi]
+|+++This example shows how to get and set the grating position of the mono.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Init
+|image:Examples.lvlib_Mono_Init.vi.png[Examples.lvlib:Mono Init.vi]
+|+++"Mono init" tells the mono to start the homing procedure. This calls completes immediately but only kicks off the homing procedure. It is necessary to query the mono afterwards to check when the homing has completed.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Mirror
+|image:Examples.lvlib_Mono_Mirror.vi.png[Examples.lvlib:Mono Mirror.vi]
+|+++This example shows how to get and set the mirror position of the mono.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Position
+|image:Examples.lvlib_Mono_Position.vi.png[Examples.lvlib:Mono Position.vi]
+|+++This example shows how to get and set the mirror position of the mono.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Shutter
+|image:Examples.lvlib_Mono_Shutter.vi.png[Examples.lvlib:Mono Shutter.vi]
+|+++This example shows how to get and set the shutter position of the mono.+++
+
++++Note: this example will return an error if no internal shutter is available.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Mono Slit
+|image:Examples.lvlib_Mono_Slit.vi.png[Examples.lvlib:Mono Slit.vi]
+|+++This example shows how to get and set the slit width of the mono.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|Setup Example All Devices
+|image:Examples.lvlib_Setup_Example_All_Devices.vi.png[Examples.lvlib:Setup Example All Devices.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+
+|CCD Acquire Spectrum vs Wavelength Range Mode
+|image:Examples.lvlib_CCD_Acquire_Spectrum_vs_Wavelength_Range_Mode.vi.png[Examples.lvlib:CCD Acquire Spectrum vs Wavelength Range Mode.vi]
+|+++Example for a CCD spectrum acquisition.+++
+
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
 |===
 
-[plantuml, format="svg", align="center"]
-....
-@startuml
-set namespaceSeparator :
-skinparam ClassBackgroundColor #FFFFFF
-skinparam ClassBorderColor #555555
-skinparam ClassFontColor #000000
-skinparam ClassHeaderBackgroundColor #808080
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
 
-skinparam top to bottom direction
-class "Communicator" {
-{field} -WebSocket Connection : LV Class
-{field} -ID counter : I32
-{field} -connectionEstablished? : Boolean
-{static} {method} +JSON Parse Command()
-{static} {method} +JSON Parse Errors()
-{static} {method} +JSON Parse ID()
-{static} {method} +JSON Parse Info()
-{static} {method} +JSON Parse Results()
-{static} {method} +Overwrite ID()
-{method} +OpenConnection()
-{method} +CloseConnection()
-{method} +SendAndAskForReply()
-{method} #ReceiveJson()
-{method} #SendJson()
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
 
-}
-"Communicator" *-- "WebSockets.lvlib:WebSocket Client"
-
-
-class "GenericDevice" {
-{field} -deviceTerm : String
-{field} -deviceType : String
-{field} -index : I32
-{field} -open : Boolean
-{field} -serialNumber : String
-{field} +productId : I32
-{static} {method} +Send Receive Parse()
-{static} {method} +ReadDeviceJSONList()
-{static} {method} +DecodeDeviceJSONList()
-{static} {method} +ReadDeviceTypeAsString()
-{method} +DeviceClose()
-{method} +DeviceOpen()
-{method} +DeviceIsOpen()
-
-}
-
-
-class "Monochromator" {
-{static} {method} +setPosition()
-{static} {method} +getFilterWheelPosition()
-{static} {method} +moveFilterWheel()
-{static} {method} +getGratingPosition()
-{static} {method} +moveGrating()
-{static} {method} +getMirrorPosition()
-{static} {method} +moveMirror()
-{static} {method} +getPosition()
-{static} {method} +moveToPosition()
-{static} {method} +getShutterStatus()
-{static} {method} +shutterClose()
-{static} {method} +shutterOpen()
-{static} {method} +getSlitPositionInMM()
-{static} {method} +moveSlitMM()
-{static} {method} +getConfig()
-{static} {method} +Init()
-{static} {method} +isBusy()
-{static} {method} +isInitialized()
-{static} {method} -parseConfigData()
-{method} +DeviceClose()
-{method} +DeviceIsOpen()
-{method} +DeviceOpen()
-
-}
-"GenericDevice" <|-- "Monochromator"
-
-
-class "CCD" {
-{static} {method} +getSpeedAndGainSettings()
-{static} {method} +parseConfigData()
-{static} {method} +parseImageData()
-{static} {method} +parseRangeMode()
-{static} {method} +parseSpectralData()
-{static} {method} +sortGetConfig()
-{static} {method} +acquisitionAbort()
-{static} {method} +acquisitionStart()
-{static} {method} +calculateRangeModePositions()
-{static} {method} +getAcqCount()
-{static} {method} +getAcquisitionBusy()
-{static} {method} +getAcquisitionData()
-{static} {method} +getAcquisitionReady()
-{static} {method} +getChipTemperature()
-{static} {method} +getCleanCount()
-{static} {method} +getConfig()
-{static} {method} +getDataSize()
-{static} {method} +getExposureTime()
-{static} {method} +getFitParams()
-{static} {method} +getGain()
-{static} {method} +getParallelSpeed()
-{static} {method} +getSignalOut()
-{static} {method} +getSpeed()
-{static} {method} +getTimerResolution()
-{static} {method} +getTriggerIn()
-{static} {method} +getXAxisConversionType()
-{static} {method} +restart()
-{static} {method} +setAcqCount()
-{static} {method} +setAcqFormat()
-{static} {method} +setCenterWavelength()
-{static} {method} +setCleanCount()
-{static} {method} +setExposureTime()
-{static} {method} +setGain()
-{static} {method} +setParallelSpeed()
-{static} {method} +setRoi()
-{static} {method} +setSignalOut()
-{static} {method} +setSpeed()
-{static} {method} +setTimerResolution()
-{static} {method} +setTriggerIn()
-{static} {method} +setXAxisConversionType()
-{static} {method} +Setup Example()
-{static} {method} +Teardown Example()
-{static} {method} +Example - Open Close CCD()
-{static} {method} +Example - Get Config()
-{static} {method} +CCD Example()
-{method} +DeviceClose()
-{method} +DeviceIsOpen()
-{method} +DeviceOpen()
-{method} +getChipSize()
-
-}
-"GenericDevice" <|-- "CCD"
-
-
-class "SCD" {
-{method} +DeviceClose()
-{method} +DeviceOpen()
-{method} +DeviceIsOpen()
-
-}
-"GenericDevice" <|-- "SCD"
-
-
-
-@enduml
-....
+**I**nlining: image:inlined.png[] -> Inlined

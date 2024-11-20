@@ -1,10 +1,27 @@
-== GenericDevice.lvclass
+== Classes overview
 
-*Responsibility:*
-+++This parent class for all devices provides base functionality like discovering, opening and closing devices on the ICL.+++
+This project contains 5 classes and 0 interface.
 
+.Classes list
+[cols="", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Classes |Interfaces
 
-*Version:* 1.0.0.7
+|<<CCD.lvclass>>
+|
+
+|<<Communicator.lvclass>>
+|
+
+|<<GenericDevice.lvclass>>
+|
+
+|<<Monochromator.lvclass>>
+|
+
+|<<SCD.lvclass>>
+|
+|===
 
 [plantuml, format="svg", align="center"]
 ....
@@ -16,7 +33,80 @@ skinparam ClassFontColor #000000
 skinparam ClassHeaderBackgroundColor #808080
 
 skinparam top to bottom direction
-class "GenericDevice" {
+class "horiba.lvlib:CCD" {
+{static} {method} +getSpeedAndGainSettings()
+{static} {method} +parseConfigData()
+{static} {method} +parseImageData()
+{static} {method} +parseRangeMode()
+{static} {method} +parseSpectralData()
+{static} {method} +stitchingModeAverage()
+{static} {method} +stitchingModeSimple()
+{static} {method} +acquisitionAbort()
+{static} {method} +acquisitionStart()
+{static} {method} +calculateRangeModePositions()
+{static} {method} +convertWavelengthToRamanShift()
+{static} {method} +getAcqCount()
+{static} {method} +getAcquisitionBusy()
+{static} {method} +getAcquisitionReady()
+{static} {method} +getChipTemperature()
+{static} {method} +getCleanCount()
+{static} {method} +getConfig()
+{static} {method} +getDataSize()
+{static} {method} +getExposureTime()
+{static} {method} +getFitParams()
+{static} {method} +getGain()
+{static} {method} +getImageData()
+{static} {method} +getParallelSpeed()
+{static} {method} +getSignalOut()
+{static} {method} +getSpectralData()
+{static} {method} +getSpeed()
+{static} {method} +getTimerResolution()
+{static} {method} +getTriggerIn()
+{static} {method} +getXAxisConversionType()
+{static} {method} +restart()
+{static} {method} +setAcqCount()
+{static} {method} +setAcqFormat()
+{static} {method} +setCenterWavelength()
+{static} {method} +setCleanCount()
+{static} {method} +setExposureTime()
+{static} {method} +setGain()
+{static} {method} +setParallelSpeed()
+{static} {method} +setRoi()
+{static} {method} +setSignalOut()
+{static} {method} +setSpeed()
+{static} {method} +setTimerResolution()
+{static} {method} +setTriggerIn()
+{static} {method} +setXAxisConversionType()
+{method} +DeviceClose()
+{method} +DeviceIsOpen()
+{method} +DeviceOpen()
+{method} +getChipSize()
+
+}
+"horiba.lvlib:GenericDevice" <|-- "horiba.lvlib:CCD"
+
+
+class "horiba.lvlib:Communicator" {
+{field} -WebSocket Connection : LV Class
+{field} -ID counter : I32
+{field} -connectionEstablished? : Boolean
+{static} {method} +JSON Parse Command()
+{static} {method} +JSON Parse Errors()
+{static} {method} +JSON Parse ID()
+{static} {method} +JSON Parse Info()
+{static} {method} +JSON Parse Results()
+{static} {method} +Overwrite ID()
+{method} +OpenConnection()
+{method} +CloseConnection()
+{method} +SendAndAskForReply()
+{method} #ReceiveJson()
+{method} #SendJson()
+
+}
+"horiba.lvlib:Communicator" *-- "WebSockets.lvlib:WebSocket Client"
+
+
+class "horiba.lvlib:GenericDevice" {
 {field} -deviceTerm : String
 {field} -deviceType : String
 {field} -index : I32
@@ -34,170 +124,44 @@ class "GenericDevice" {
 }
 
 
+class "horiba.lvlib:Monochromator" {
+{static} {method} +setPosition()
+{static} {method} +getFilterWheelPosition()
+{static} {method} +moveFilterWheel()
+{static} {method} +getGratingPosition()
+{static} {method} +moveGrating()
+{static} {method} +getMirrorPosition()
+{static} {method} +moveMirror()
+{static} {method} +getPosition()
+{static} {method} +moveToPosition()
+{static} {method} +getShutterStatus()
+{static} {method} +shutterClose()
+{static} {method} +shutterOpen()
+{static} {method} +shutterSelect()
+{static} {method} +getSlitPositionInMM()
+{static} {method} +moveSlitMM()
+{static} {method} +getConfig()
+{static} {method} +Init()
+{static} {method} +isBusy()
+{static} {method} +isInitialized()
+{static} {method} -parseConfigData()
+{method} +DeviceClose()
+{method} +DeviceIsOpen()
+{method} +DeviceOpen()
+
+}
+"horiba.lvlib:GenericDevice" <|-- "horiba.lvlib:Monochromator"
+
+
+class "horiba.lvlib:SCD" {
+{method} +DeviceClose()
+{method} +DeviceOpen()
+{method} +DeviceIsOpen()
+
+}
+"horiba.lvlib:GenericDevice" <|-- "horiba.lvlib:SCD"
+
+
 
 @enduml
 ....
-
-.Functions (non private scope only)
-[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
-|===
-|Name |Connector pane |Description |S. |R. |I.
-
-|DeviceClose
-|image:GenericDevice.lvclass_DeviceClose.vi.png[GenericDevice.lvclass:DeviceClose.vi]
-|+++Closes communications with the CCD indicated by the index.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|DeviceOpen
-|image:GenericDevice.lvclass_DeviceOpen.vi.png[GenericDevice.lvclass:DeviceOpen.vi]
-|+++This command initializes the CCD and gets it’s the CCD configuration from the device. The device is also connected to the API. Since a CCD hardware initialization occurs, all CCD parameters, including any previously set parameters, will be reset to their default values.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|DeviceIsOpen
-|image:GenericDevice.lvclass_DeviceIsOpen.vi.png[GenericDevice.lvclass:DeviceIsOpen.vi]
-|+++Returns true if selected CCD is open.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Send Receive Parse
-|image:GenericDevice.lvclass_Send_Receive_Parse.vi.png[GenericDevice.lvclass:Send Receive Parse.vi]
-|+++Wrapper around the send and receive calls.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|ReadDeviceJSONList
-|image:GenericDevice.lvclass_ReadDeviceJSONList.vi.png[GenericDevice.lvclass:ReadDeviceJSONList.vi]
-|+++Parses the returned devies into a string array.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|DecodeDeviceJSONList
-|image:GenericDevice.lvclass_DecodeDeviceJSONList.vi.png[GenericDevice.lvclass:DecodeDeviceJSONList.vi]
-|+++Decodes the answer from the ICL into a device.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|ReadDeviceTypeAsString
-|image:GenericDevice.lvclass_ReadDeviceTypeAsString.vi.png[GenericDevice.lvclass:ReadDeviceTypeAsString.vi]
-|+++Return the device class name as string.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read isOpen
-|image:GenericDevice.lvclass_Read_isOpen.vi.png[GenericDevice.lvclass:Read isOpen.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write isOpen
-|image:GenericDevice.lvclass_Write_isOpen.vi.png[GenericDevice.lvclass:Write isOpen.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read DeviceTerm
-|image:GenericDevice.lvclass_Read_DeviceTerm.vi.png[GenericDevice.lvclass:Read DeviceTerm.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write DeviceTerm
-|image:GenericDevice.lvclass_Write_DeviceTerm.vi.png[GenericDevice.lvclass:Write DeviceTerm.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read DeviceType
-|image:GenericDevice.lvclass_Read_DeviceType.vi.png[GenericDevice.lvclass:Read DeviceType.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write DeviceType
-|image:GenericDevice.lvclass_Write_DeviceType.vi.png[GenericDevice.lvclass:Write DeviceType.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read Index
-|image:GenericDevice.lvclass_Read_Index.vi.png[GenericDevice.lvclass:Read Index.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write Index
-|image:GenericDevice.lvclass_Write_Index.vi.png[GenericDevice.lvclass:Write Index.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read productId
-|image:GenericDevice.lvclass_Read_productId.vi.png[GenericDevice.lvclass:Read productId.vi]
-|+++Accesor to the product ID.s+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write productId
-|image:GenericDevice.lvclass_Write_productId.vi.png[GenericDevice.lvclass:Write productId.vi]
-|+++Accessor to the product ID.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read SerialNumber
-|image:GenericDevice.lvclass_Read_SerialNumber.vi.png[GenericDevice.lvclass:Read SerialNumber.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write SerialNumber
-|image:GenericDevice.lvclass_Write_SerialNumber.vi.png[GenericDevice.lvclass:Write SerialNumber.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|===
-
-**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
-
-**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
-
-**I**nlining: image:inlined.png[] -> Inlined
