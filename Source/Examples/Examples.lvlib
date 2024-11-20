@@ -19,6 +19,7 @@
 			<Item Name="Teardown Example.vi" Type="VI" URL="../../Classes/CCD/Teardown Example.vi"/>
 		</Item>
 		<Item Name="CCD Acquire Image.vi" Type="VI" URL="../CCD/CCD Acquire Image.vi"/>
+		<Item Name="CCD Acquire Spectrum and Abort Acquisition.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum and Abort Acquisition.vi"/>
 		<Item Name="CCD Acquire Spectrum vs Pixels.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Pixels.vi"/>
 		<Item Name="CCD Acquire Spectrum vs Wavelength.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength.vi"/>
 		<Item Name="CCD Acquire Spectrum vs Wavenumbers.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavenumbers.vi"/>
