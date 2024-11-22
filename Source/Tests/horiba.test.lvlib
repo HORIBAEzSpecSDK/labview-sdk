@@ -33,6 +33,7 @@
 			<Item Name="test_ccd_timerResolution.vi" Type="VI" URL="../Classes/CCD/test_ccd_timerResolution.vi"/>
 			<Item Name="test_ccd_trigger.vi" Type="VI" URL="../Classes/CCD/test_ccd_trigger.vi"/>
 			<Item Name="test_ccd_xAxisConversionType.vi" Type="VI" URL="../Classes/CCD/test_ccd_xAxisConversionType.vi"/>
+			<Item Name="test_parseCcdData.vi" Type="VI" URL="../Classes/CCD/test_parseCcdData.vi"/>
 			<Item Name="test_parseRangeMode.vi" Type="VI" URL="../Classes/CCD/test_parseRangeMode.vi"/>
 		</Item>
 		<Item Name="test_ccd_main.vi" Type="VI" URL="../Classes/CCD/test_ccd_main.vi"/>
