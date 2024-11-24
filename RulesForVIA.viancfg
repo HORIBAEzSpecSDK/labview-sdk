@@ -26,10 +26,6 @@
 		<Removed>TRUE</Removed>
 	</Item>
 	<Item>
-		<Path>"SimpleWebsocketTests"</Path>
-		<Removed>TRUE</Removed>
-	</Item>
-	<Item>
 		<Path>"Source\\Tests"</Path>
 		<Removed>TRUE</Removed>
 	</Item>
