@@ -86,4 +86,5 @@
 		</Item>
 	</Item>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
+	<Item Name="test_scd_IsDeviceBusy.vi" Type="VI" URL="../Classes/SCD/test_scd_IsDeviceBusy.vi"/>
 </Library>
