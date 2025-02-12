@@ -79,5 +79,11 @@
 		</Item>
 		<Item Name="test_mono_main.vi" Type="VI" URL="../Classes/Monochromator/test_mono_main.vi"/>
 	</Item>
+	<Item Name="SCD" Type="Folder">
+		<Item Name="subVIs" Type="Folder">
+			<Item Name="helper_SCD_Setup.vi" Type="VI" URL="../Classes/SCD/helper_SCD_Setup.vi"/>
+			<Item Name="test_scd_OpenAndClose.vi" Type="VI" URL="../Classes/SCD/test_scd_OpenAndClose.vi"/>
+		</Item>
+	</Item>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
 </Library>
