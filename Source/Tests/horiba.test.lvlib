@@ -82,8 +82,11 @@
 	<Item Name="SCD" Type="Folder">
 		<Item Name="subVIs" Type="Folder">
 			<Item Name="helper_SCD_Setup.vi" Type="VI" URL="../Classes/SCD/helper_SCD_Setup.vi"/>
+			<Item Name="test_scd_GetFirmwareVersion.vi" Type="VI" URL="../Classes/SCD/test_scd_GetFirmwareVersion.vi"/>
+			<Item Name="test_scd_IsDeviceBusy.vi" Type="VI" URL="../Classes/SCD/test_scd_IsDeviceBusy.vi"/>
 			<Item Name="test_scd_OpenAndClose.vi" Type="VI" URL="../Classes/SCD/test_scd_OpenAndClose.vi"/>
 		</Item>
+		<Item Name="test_scd_main.vi" Type="VI" URL="../Classes/SCD/test_scd_main.vi"/>
 	</Item>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
 </Library>
