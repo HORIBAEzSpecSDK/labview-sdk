@@ -110,8 +110,6 @@
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 			</Item>
-			<Item Name="acquisitionImageData.ctl" Type="VI" URL="../Source/Classes/CCD/acquisitionImageData.ctl"/>
-			<Item Name="getSpectralData.vi" Type="VI" URL="../Source/Classes/CCD/getSpectralData.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

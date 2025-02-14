@@ -1,6 +1,7 @@
 # HORIBA LabVIEW SDK
 
 Welcome to the HORIBA LabVIEW SDK! This repository contains the LabVIEW implementation of the HORIBA SDK, designed to facilitate communication and control of HORIBA scientific instruments. For the current version this SDK supports Horiba's monochromators and multi-channel detectors (CCD cameras).
+See the [Releases Page](https://github.com/HORIBAEzSpecSDK/labview-sdk/releases) for the compatibility of the current SDK package to the ICL version.
 
 ## How this SDK works
 The functionality is distributed over two parts, the `instrument control layer (ICL)` and the `github source code`. This split is shown in the following image:
@@ -9,7 +10,23 @@ The functionality is distributed over two parts, the `instrument control layer (
 
 The ICL itself is sold and distributed by Horiba. The source code to communicate with the ICL and drive the instruments is located in this repo for LabVIEW, but can be also found for C#, C++ and Python.
 
-# Getting Started
+## Compatible Devices
+### Monos:
+
+- iHR320
+- iHR550
+
+### CCDs:
+
+- Syncerity
+- Synapse Plus
+- Synapse EM
+- Synapse IGA
+- Symphony II
+- Symphony II IGA
+
+
+## Getting Started
 1. On the right side of this page, go to `Releases` and download the latest *.vip and install it along its dependencies with the VI package manager.
 2. Open LabVIEW (2023 or higher), create a new VI
 3. Go to the Block Diagram, right-click, go to `Horiba SDK` -> `Examples` -> chose an example that fits to your hardware, e.g. a monochromator or ccd
