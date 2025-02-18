@@ -82,11 +82,19 @@
 	<Item Name="SCD" Type="Folder">
 		<Item Name="subVIs" Type="Folder">
 			<Item Name="helper_SCD_Setup.vi" Type="VI" URL="../Classes/SCD/helper_SCD_Setup.vi"/>
+			<Item Name="test_scd_AcqSet.vi" Type="VI" URL="../Classes/SCD/test_scd_AcqSet.vi"/>
+			<Item Name="test_scd_GetBoardRevision.vi" Type="VI" URL="../Classes/SCD/test_scd_GetBoardRevision.vi"/>
 			<Item Name="test_scd_GetFirmwareVersion.vi" Type="VI" URL="../Classes/SCD/test_scd_GetFirmwareVersion.vi"/>
+			<Item Name="test_scd_GetFpgaVersion.vi" Type="VI" URL="../Classes/SCD/test_scd_GetFpgaVersion.vi"/>
+			<Item Name="test_scd_GetMaxHVVoltageAllowed.vi" Type="VI" URL="../Classes/SCD/test_scd_GetMaxHVVoltageAllowed.vi"/>
+			<Item Name="test_scd_GetSerialNumber.vi" Type="VI" URL="../Classes/SCD/test_scd_GetSerialNumber.vi"/>
+			<Item Name="test_scd_HVBiasVoltage.vi" Type="VI" URL="../Classes/SCD/test_scd_HVBiasVoltage.vi"/>
+			<Item Name="test_scd_IntegrationTime.vi" Type="VI" URL="../Classes/SCD/test_scd_IntegrationTime.vi"/>
 			<Item Name="test_scd_IsDeviceBusy.vi" Type="VI" URL="../Classes/SCD/test_scd_IsDeviceBusy.vi"/>
 			<Item Name="test_scd_OpenAndClose.vi" Type="VI" URL="../Classes/SCD/test_scd_OpenAndClose.vi"/>
 		</Item>
 		<Item Name="test_scd_main.vi" Type="VI" URL="../Classes/SCD/test_scd_main.vi"/>
 	</Item>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
+	<Item Name="test_scd_AcqStart.vi" Type="VI" URL="../Classes/SCD/test_scd_AcqStart.vi"/>
 </Library>
