@@ -1,10 +1,10 @@
-== classy Diagram Viewer
+== Graph Builder
 
-Project website: https://gitlab.com/tatiana.boye/classy-diagram-viewer[classy Diagram Viewer]
+Project website: https://gitlab.com/cgambini/graph-builder[Graph Builder]
 
 BSD 3-Clause License
 
-Copyright (C) 2021, Tatiana Boyé
+Copyright (C) 2020, Cyril GAMBINI
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -31,4 +31,3 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-

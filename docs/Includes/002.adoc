@@ -1,6 +1,6 @@
 == Modules overview
 
-This project contains 1 singleton module and 0 cloneable module.
+This project contains 2 singleton modules and 0 cloneable module.
 
 .Modules list
 [cols="", %autowidth, frame=all, grid=all, stripes=none]
@@ -9,20 +9,26 @@ This project contains 1 singleton module and 0 cloneable module.
 
 |<<DeviceManager.lvlib>>
 |
+
+|<<LiveLogger.lvlib>>
+|
 |===
 
 This graph represents the links between all DQMH modules.
 
 [graphviz, format="png", align="center"]
 ....
-digraph G503347 {
+digraph G81893 {
 rankdir=LR;
 edge[dir=both color=black  arrowhead=normal arrowtail=none style=filled penwidth=1]
 node[color=black shape=box]
 "DeviceManager"[color=black shape=component]
 "GenericDevice.lvclass:Send Receive Parse"[color=skyblue shape=note]
+"LiveLogger"[color=black shape=component]
 "DeviceManager" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
 "GenericDevice.lvclass:Send Receive Parse" -> "DeviceManager" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=vee style=filled penwidth=1];
 "DeviceManager" -> "DeviceManager" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1];
+"LiveLogger" -> "LiveLogger" [label="    " dir=both color=forestgreen  arrowhead=normal arrowtail=none style=filled penwidth=1];
+"LiveLogger" -> "LiveLogger" [label=" " dir=both color=goldenrod  arrowhead=normal arrowtail=none style=dashed penwidth=1];
 }
 ....

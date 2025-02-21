@@ -10,6 +10,9 @@ The functionality is distributed over two parts, the `instrument control layer (
 
 The ICL itself is sold and distributed by Horiba. The source code to communicate with the ICL and drive the instruments is located in this repo for LabVIEW, but can be also found for C#, C++ and Python.
 
+## Compatible ICL Version
+This code version has been tested with ICL version *2.0.0.177*
+
 ## Compatible Devices
 ### Monos:
 
@@ -41,6 +44,8 @@ When installing the vip package, the following dependencies will be installed au
 - JDP JSONtext
 - OpenG Error
 - HSE Logger
+- QControls
+- QControls Rich Text Box
 
 ## Developer Documentation
 This section descibes all functionality that is available for each device.

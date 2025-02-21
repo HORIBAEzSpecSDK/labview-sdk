@@ -1,6 +1,6 @@
-== Asciidoc for LabVIEW(TM)
+== Antidoc
 
-Project website: https://wovalab.gitlab.io/open-source/asciidoc-toolkit/[Asciidoc toolkit] 
+Project website: https://wovalab.gitlab.io/open-source/labview-doc-generator/[Antidoc] 
 
 Maintainer website: https://wovalab.com[Wovalab] 
 

@@ -13,6 +13,7 @@
 	<Item Name="Communicator.lvclass" Type="LVClass" URL="../Communicator/Communicator.lvclass"/>
 	<Item Name="DeviceManager.lvlib" Type="Library" URL="../DeviceManager/DeviceManager.lvlib"/>
 	<Item Name="GenericDevice.lvclass" Type="LVClass" URL="../GenericDevice/GenericDevice.lvclass"/>
+	<Item Name="LiveLogger.lvlib" Type="Library" URL="../LiveLogger/LiveLogger.lvlib"/>
 	<Item Name="Monochromator.lvclass" Type="LVClass" URL="../Mono/Monochromator.lvclass"/>
 	<Item Name="SCD.lvclass" Type="LVClass" URL="../SCD/SCD.lvclass"/>
 </Library>
