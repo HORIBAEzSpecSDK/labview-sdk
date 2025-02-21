@@ -87,8 +87,10 @@
 			<Item Name="test_scd_AcqStop.vi" Type="VI" URL="../Classes/SCD/test_scd_AcqStop.vi"/>
 			<Item Name="test_scd_dataToCluster.vi" Type="VI" URL="../Classes/SCD/test_scd_dataToCluster.vi"/>
 			<Item Name="test_scd_GetBoardRevision.vi" Type="VI" URL="../Classes/SCD/test_scd_GetBoardRevision.vi"/>
+			<Item Name="test_scd_GetErrorLog.vi" Type="VI" URL="../Classes/SCD/test_scd_GetErrorLog.vi"/>
 			<Item Name="test_scd_GetFirmwareVersion.vi" Type="VI" URL="../Classes/SCD/test_scd_GetFirmwareVersion.vi"/>
 			<Item Name="test_scd_GetFpgaVersion.vi" Type="VI" URL="../Classes/SCD/test_scd_GetFpgaVersion.vi"/>
+			<Item Name="test_scd_GetLastError.vi" Type="VI" URL="../Classes/SCD/test_scd_GetLastError.vi"/>
 			<Item Name="test_scd_GetMaxHVVoltageAllowed.vi" Type="VI" URL="../Classes/SCD/test_scd_GetMaxHVVoltageAllowed.vi"/>
 			<Item Name="test_scd_GetSerialNumber.vi" Type="VI" URL="../Classes/SCD/test_scd_GetSerialNumber.vi"/>
 			<Item Name="test_scd_HVBiasVoltage.vi" Type="VI" URL="../Classes/SCD/test_scd_HVBiasVoltage.vi"/>
@@ -100,6 +102,4 @@
 		<Item Name="test_scd_main.vi" Type="VI" URL="../Classes/SCD/test_scd_main.vi"/>
 	</Item>
 	<Item Name="test_main.vi" Type="VI" URL="../test_main.vi"/>
-	<Item Name="test_scd_GetErrorLog.vi" Type="VI" URL="../Classes/SCD/test_scd_GetErrorLog.vi"/>
-	<Item Name="test_scd_GetLastError.vi" Type="VI" URL="../Classes/SCD/test_scd_GetLastError.vi"/>
 </Library>
