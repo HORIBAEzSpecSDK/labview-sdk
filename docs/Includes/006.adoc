@@ -1,167 +1,53 @@
-== Classes overview
+== horiba.lvlib
 
-This project contains 5 classes and 0 interface.
+*Responsibility:*
++++This library contains all code to connect and drive the Horiba hardware.+++
 
-.Classes list
+
+*Version:* 1.0.0.0
+
+.Nested libraries
 [cols="", %autowidth, frame=all, grid=all, stripes=none]
 |===
-|Classes |Interfaces
+|Name |Type
 
 |<<CCD.lvclass>>
-|
+|LVClass
 
 |<<Communicator.lvclass>>
-|
+|LVClass
 
 |<<GenericDevice.lvclass>>
-|
+|LVClass
 
 |<<Monochromator.lvclass>>
-|
+|LVClass
 
 |<<SCD.lvclass>>
-|
+|LVClass
+
+|<<DeviceManager.lvlib>>
+|Library
+
+|<<LiveLogger.lvlib>>
+|Library
 |===
 
-[plantuml, format="svg", align="center"]
-....
-@startuml
-set namespaceSeparator :
-skinparam ClassBackgroundColor #FFFFFF
-skinparam ClassBorderColor #555555
-skinparam ClassFontColor #000000
-skinparam ClassHeaderBackgroundColor #808080
+.Functions (non private scope only)
+[cols="<.<4d,<.<8a,<.<12d,<.<1a,<.<1a,<.<1a", %autowidth, frame=all, grid=all, stripes=none]
+|===
+|Name |Connector pane |Description |S. |R. |I.
 
-skinparam top to bottom direction
-class "horiba.lvlib:CCD" {
-{static} {method} +getSpeedAndGainSettings()
-{static} {method} +parseConfigData()
-{static} {method} +parseImageData()
-{static} {method} +parseRangeMode()
-{static} {method} +parseSpectralData()
-{static} {method} +stitchingModeAverage()
-{static} {method} +stitchingModeSimple()
-{static} {method} +acquisitionAbort()
-{static} {method} +acquisitionStart()
-{static} {method} +calculateRangeModePositions()
-{static} {method} +convertWavelengthToRamanShift()
-{static} {method} +getAcqCount()
-{static} {method} +getAcquisitionBusy()
-{static} {method} +getAcquisitionReady()
-{static} {method} +getChipTemperature()
-{static} {method} +getCleanCount()
-{static} {method} +getConfig()
-{static} {method} +getDataSize()
-{static} {method} +getExposureTime()
-{static} {method} +getFitParams()
-{static} {method} +getGain()
-{static} {method} +getImageData()
-{static} {method} +getParallelSpeed()
-{static} {method} +getSignalOut()
-{static} {method} +getSpectralData()
-{static} {method} +getSpeed()
-{static} {method} +getTimerResolution()
-{static} {method} +getTriggerIn()
-{static} {method} +getXAxisConversionType()
-{static} {method} +restart()
-{static} {method} +setAcqCount()
-{static} {method} +setAcqFormat()
-{static} {method} +setCenterWavelength()
-{static} {method} +setCleanCount()
-{static} {method} +setExposureTime()
-{static} {method} +setGain()
-{static} {method} +setParallelSpeed()
-{static} {method} +setRoi()
-{static} {method} +setSignalOut()
-{static} {method} +setSpeed()
-{static} {method} +setTimerResolution()
-{static} {method} +setTriggerIn()
-{static} {method} +setXAxisConversionType()
-{method} +DeviceClose()
-{method} +DeviceIsOpen()
-{method} +DeviceOpen()
-{method} +getChipSize()
+|CreateLogger
+|image:horiba.lvlib_CreateLogger.vi.png[horiba.lvlib:CreateLogger.vi]
+|No description found (add content in vi description)
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|image:empty.png[empty.png]
+|===
 
-}
-"horiba.lvlib:GenericDevice" <|-- "horiba.lvlib:CCD"
+**S**cope: image:scope-protected.png[] -> Protected | image:scope-community.png[] -> Community
 
+**R**eentrancy: image:reentrancy-preallocated.png[] -> Preallocated reentrancy | image:reentrancy-shared.png[] -> Shared reentrancy
 
-class "horiba.lvlib:Communicator" {
-{field} -WebSocket Connection : LV Class
-{field} -ID counter : I32
-{field} -connectionEstablished? : Boolean
-{static} {method} +JSON Parse Command()
-{static} {method} +JSON Parse Errors()
-{static} {method} +JSON Parse ID()
-{static} {method} +JSON Parse Info()
-{static} {method} +JSON Parse Results()
-{static} {method} +Overwrite ID()
-{method} +OpenConnection()
-{method} +CloseConnection()
-{method} +SendAndAskForReply()
-{method} #ReceiveJson()
-{method} #SendJson()
-
-}
-"horiba.lvlib:Communicator" *-- "WebSockets.lvlib:WebSocket Client"
-
-
-class "horiba.lvlib:GenericDevice" {
-{field} -deviceTerm : String
-{field} -deviceType : String
-{field} -index : I32
-{field} -open : Boolean
-{field} -serialNumber : String
-{field} +productId : I32
-{static} {method} +Send Receive Parse()
-{static} {method} +ReadDeviceJSONList()
-{static} {method} +DecodeDeviceJSONList()
-{static} {method} +ReadDeviceTypeAsString()
-{method} +DeviceClose()
-{method} +DeviceOpen()
-{method} +DeviceIsOpen()
-
-}
-
-
-class "horiba.lvlib:Monochromator" {
-{static} {method} +setPosition()
-{static} {method} +getFilterWheelPosition()
-{static} {method} +moveFilterWheel()
-{static} {method} +getGratingPosition()
-{static} {method} +moveGrating()
-{static} {method} +getMirrorPosition()
-{static} {method} +moveMirror()
-{static} {method} +getPosition()
-{static} {method} +moveToPosition()
-{static} {method} +getShutterStatus()
-{static} {method} +shutterClose()
-{static} {method} +shutterOpen()
-{static} {method} +shutterSelect()
-{static} {method} +getSlitPositionInMM()
-{static} {method} +moveSlitMM()
-{static} {method} +getConfig()
-{static} {method} +Init()
-{static} {method} +isBusy()
-{static} {method} +isInitialized()
-{static} {method} -parseConfigData()
-{method} +DeviceClose()
-{method} +DeviceIsOpen()
-{method} +DeviceOpen()
-
-}
-"horiba.lvlib:GenericDevice" <|-- "horiba.lvlib:Monochromator"
-
-
-class "horiba.lvlib:SCD" {
-{method} +DeviceClose()
-{method} +DeviceOpen()
-{method} +DeviceIsOpen()
-
-}
-"horiba.lvlib:GenericDevice" <|-- "horiba.lvlib:SCD"
-
-
-
-@enduml
-....
+**I**nlining: image:inlined.png[] -> Inlined

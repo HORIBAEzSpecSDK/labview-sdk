@@ -1303,46 +1303,6 @@
 		</Controls>
 	</Test>
 	<Test>
-		<Name>"Front Panel Property and Invoke Nodes"</Name>
-		<Ranking>1</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW"</BasePath>
-		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Front Panel Property and Invoke Nodes.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"Timed Structures in Time Critical VIs"</Name>
-		<Ranking>1</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW"</BasePath>
-		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Timed Structures in Time Critical VIs.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"Unbounded Code in Time Critical VIs"</Name>
-		<Ranking>1</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW"</BasePath>
-		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Unbounded Code in Time Critical VIs.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"Unbounded Code in Timed Structures"</Name>
-		<Ranking>1</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW"</BasePath>
-		<RelativePath>"project\\_VI Analyzer\\_tests\\Real-Time Module\\Unbounded Code in Timed Structures.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
 		<Name>"Connector Inputs and Outputs"</Name>
 		<Ranking>0</Ranking>
 		<MaxFailures>5</MaxFailures>
@@ -1428,46 +1388,6 @@
 		<MaxFailures>5</MaxFailures>
 		<BasePath>"LabVIEW"</BasePath>
 		<RelativePath>"project\\_VI Analyzer\\_tests\\VI Metrics\\Wire Sources.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"Broken Wire Check"</Name>
-		<Ranking>2</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW Data"</BasePath>
-		<RelativePath>"VI Analyzer Tests\\Broken Wire Check.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"Check For Breakpoints in BD"</Name>
-		<Ranking>2</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW Data"</BasePath>
-		<RelativePath>"VI Analyzer Tests\\Check For Breakpoints in BD.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"CheckReferencesAreClosed"</Name>
-		<Ranking>1</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW Data"</BasePath>
-		<RelativePath>"VI Analyzer Tests\\CheckReferencesAreClosed.llb"</RelativePath>
-		<Selected>FALSE</Selected>
-		<Controls>
-		</Controls>
-	</Test>
-	<Test>
-		<Name>"Forked Event Reg Refnum Wire"</Name>
-		<Ranking>1</Ranking>
-		<MaxFailures>5</MaxFailures>
-		<BasePath>"LabVIEW Data"</BasePath>
-		<RelativePath>"VI Analyzer Tests\\Forked Event Reg Refnum Wire.llb"</RelativePath>
 		<Selected>FALSE</Selected>
 		<Controls>
 		</Controls>

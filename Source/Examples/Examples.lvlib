@@ -46,4 +46,12 @@
 		</Item>
 		<Item Name="CCD Acquire Spectrum vs Wavelength Range Mode.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength Range Mode.vi"/>
 	</Item>
+	<Item Name="SCD" Type="Folder">
+		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Setup Example SCD.vi" Type="VI" URL="../SCD/Setup Example SCD.vi"/>
+			<Item Name="Teardown Examples SCD.vi" Type="VI" URL="../SCD/Teardown Examples SCD.vi"/>
+		</Item>
+		<Item Name="SCD Acquisition.vi" Type="VI" URL="../SCD/SCD Acquisition.vi"/>
+		<Item Name="SCD Get Infos.vi" Type="VI" URL="../SCD/SCD Get Infos.vi"/>
+	</Item>
 </Library>

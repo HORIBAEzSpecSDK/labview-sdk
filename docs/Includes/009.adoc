@@ -1,7 +1,7 @@
-== GenericDevice.lvclass
+== Communicator.lvclass
 
 *Responsibility:*
-+++This parent class for all devices provides base functionality like discovering, opening and closing devices on the ICL.+++
++++This class handles the communication between LV and the ICL via websocket requests.+++
 
 
 *Version:* 1.0.0.0
@@ -16,22 +16,24 @@ skinparam ClassFontColor #000000
 skinparam ClassHeaderBackgroundColor #808080
 
 skinparam top to bottom direction
-class "horiba.lvlib:GenericDevice" {
-{field} -deviceTerm : String
-{field} -deviceType : String
-{field} -index : I32
-{field} -open : Boolean
-{field} -serialNumber : String
-{field} +productId : I32
-{static} {method} +Send Receive Parse()
-{static} {method} +ReadDeviceJSONList()
-{static} {method} +DecodeDeviceJSONList()
-{static} {method} +ReadDeviceTypeAsString()
-{method} +DeviceClose()
-{method} +DeviceOpen()
-{method} +DeviceIsOpen()
+class "horiba.lvlib:Communicator" {
+{field} -WebSocket Connection : LV Class
+{field} -ID counter : I32
+{field} -connectionEstablished? : Boolean
+{static} {method} +JSON Parse Command()
+{static} {method} +JSON Parse Errors()
+{static} {method} +JSON Parse ID()
+{static} {method} +JSON Parse Info()
+{static} {method} +JSON Parse Results()
+{static} {method} +Overwrite ID()
+{method} +OpenConnection()
+{method} +CloseConnection()
+{method} +SendAndAskForReply()
+{method} #ReceiveJson()
+{method} #SendJson()
 
 }
+"horiba.lvlib:Communicator" *-- "WebSockets.lvlib:WebSocket Client"
 
 
 
@@ -43,155 +45,91 @@ class "horiba.lvlib:GenericDevice" {
 |===
 |Name |Connector pane |Description |S. |R. |I.
 
-|DeviceClose
-|image:horiba.lvlib_GenericDevice.lvclass_DeviceClose.vi.png[horiba.lvlib:GenericDevice.lvclass:DeviceClose.vi]
-|+++Closes communications with the CCD indicated by the index.+++
+|OpenConnection
+|image:horiba.lvlib_Communicator.lvclass_OpenConnection.vi.png[horiba.lvlib:Communicator.lvclass:OpenConnection.vi]
+|+++Opens a connection to the ICL via werbsocket.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|DeviceOpen
-|image:horiba.lvlib_GenericDevice.lvclass_DeviceOpen.vi.png[horiba.lvlib:GenericDevice.lvclass:DeviceOpen.vi]
-|+++This command initializes the CCD and gets it’s the CCD configuration from the device. The device is also connected to the API. Since a CCD hardware initialization occurs, all CCD parameters, including any previously set parameters, will be reset to their default values.+++
+|CloseConnection
+|image:horiba.lvlib_Communicator.lvclass_CloseConnection.vi.png[horiba.lvlib:Communicator.lvclass:CloseConnection.vi]
+|+++Closes the websocket connection.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|DeviceIsOpen
-|image:horiba.lvlib_GenericDevice.lvclass_DeviceIsOpen.vi.png[horiba.lvlib:GenericDevice.lvclass:DeviceIsOpen.vi]
-|+++Returns true if selected CCD is open.+++
+|SendAndAskForReply
+|image:horiba.lvlib_Communicator.lvclass_SendAndAskForReply.vi.png[horiba.lvlib:Communicator.lvclass:SendAndAskForReply.vi]
+|+++Wrapper around send and receive for the websocket communication.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|Send Receive Parse
-|image:horiba.lvlib_GenericDevice.lvclass_Send_Receive_Parse.vi.png[horiba.lvlib:GenericDevice.lvclass:Send Receive Parse.vi]
-|+++Wrapper around the send and receive calls.+++
+|JSON Parse Command
+|image:horiba.lvlib_Communicator.lvclass_JSON_Parse_Command.vi.png[horiba.lvlib:Communicator.lvclass:JSON Parse Command.vi]
+|+++Parses the original command.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|ReadDeviceJSONList
-|image:horiba.lvlib_GenericDevice.lvclass_ReadDeviceJSONList.vi.png[horiba.lvlib:GenericDevice.lvclass:ReadDeviceJSONList.vi]
-|+++Parses the returned devies into a string array.+++
+|JSON Parse Errors
+|image:horiba.lvlib_Communicator.lvclass_JSON_Parse_Errors.vi.png[horiba.lvlib:Communicator.lvclass:JSON Parse Errors.vi]
+|+++Parses the returned error into an LV error.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|DecodeDeviceJSONList
-|image:horiba.lvlib_GenericDevice.lvclass_DecodeDeviceJSONList.vi.png[horiba.lvlib:GenericDevice.lvclass:DecodeDeviceJSONList.vi]
-|+++Decodes the answer from the ICL into a device.+++
+|JSON Parse ID
+|image:horiba.lvlib_Communicator.lvclass_JSON_Parse_ID.vi.png[horiba.lvlib:Communicator.lvclass:JSON Parse ID.vi]
+|+++Parses the message ID to follow communication.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|ReadDeviceTypeAsString
-|image:horiba.lvlib_GenericDevice.lvclass_ReadDeviceTypeAsString.vi.png[horiba.lvlib:GenericDevice.lvclass:ReadDeviceTypeAsString.vi]
-|+++Return the device class name as string.+++
+|JSON Parse Info
+|image:horiba.lvlib_Communicator.lvclass_JSON_Parse_Info.vi.png[horiba.lvlib:Communicator.lvclass:JSON Parse Info.vi]
+|+++Wrapper around all other VIs that parse an answer from the ICL.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|Read isOpen
-|image:horiba.lvlib_GenericDevice.lvclass_Read_isOpen.vi.png[horiba.lvlib:GenericDevice.lvclass:Read isOpen.vi]
-|+++Accessor VI for this class property.+++
+|JSON Parse Results
+|image:horiba.lvlib_Communicator.lvclass_JSON_Parse_Results.vi.png[horiba.lvlib:Communicator.lvclass:JSON Parse Results.vi]
+|+++Parses the results from the ICL.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|Write isOpen
-|image:horiba.lvlib_GenericDevice.lvclass_Write_isOpen.vi.png[horiba.lvlib:GenericDevice.lvclass:Write isOpen.vi]
-|+++Accessor VI for this class property.+++
+|Overwrite ID
+|image:horiba.lvlib_Communicator.lvclass_Overwrite_ID.vi.png[horiba.lvlib:Communicator.lvclass:Overwrite ID.vi]
+|+++Overwrites the message ID if a custom ID is to be used for messaging to the ICL.+++
 
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|Read DeviceTerm
-|image:horiba.lvlib_GenericDevice.lvclass_Read_DeviceTerm.vi.png[horiba.lvlib:GenericDevice.lvclass:Read DeviceTerm.vi]
-|+++Accessor VI for this class property.+++
+|ReceiveJson
+|image:horiba.lvlib_Communicator.lvclass_ReceiveJson.vi.png[horiba.lvlib:Communicator.lvclass:ReceiveJson.vi]
+|+++Receives the reply from the synchronous communication to the ICL.+++
 
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write DeviceTerm
-|image:horiba.lvlib_GenericDevice.lvclass_Write_DeviceTerm.vi.png[horiba.lvlib:GenericDevice.lvclass:Write DeviceTerm.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
+|image:scope-protected.png[scope-protected.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 
-|Read DeviceType
-|image:horiba.lvlib_GenericDevice.lvclass_Read_DeviceType.vi.png[horiba.lvlib:GenericDevice.lvclass:Read DeviceType.vi]
-|+++Accessor VI for this class property.+++
+|SendJson
+|image:horiba.lvlib_Communicator.lvclass_SendJson.vi.png[horiba.lvlib:Communicator.lvclass:SendJson.vi]
+|+++Sends the request for a synchronous communication to the ICL.+++
 
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write DeviceType
-|image:horiba.lvlib_GenericDevice.lvclass_Write_DeviceType.vi.png[horiba.lvlib:GenericDevice.lvclass:Write DeviceType.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read Index
-|image:horiba.lvlib_GenericDevice.lvclass_Read_Index.vi.png[horiba.lvlib:GenericDevice.lvclass:Read Index.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write Index
-|image:horiba.lvlib_GenericDevice.lvclass_Write_Index.vi.png[horiba.lvlib:GenericDevice.lvclass:Write Index.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read productId
-|image:horiba.lvlib_GenericDevice.lvclass_Read_productId.vi.png[horiba.lvlib:GenericDevice.lvclass:Read productId.vi]
-|+++Accesor to the product ID.s+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write productId
-|image:horiba.lvlib_GenericDevice.lvclass_Write_productId.vi.png[horiba.lvlib:GenericDevice.lvclass:Write productId.vi]
-|+++Accessor to the product ID.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Read SerialNumber
-|image:horiba.lvlib_GenericDevice.lvclass_Read_SerialNumber.vi.png[horiba.lvlib:GenericDevice.lvclass:Read SerialNumber.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-|image:empty.png[empty.png]
-
-|Write SerialNumber
-|image:horiba.lvlib_GenericDevice.lvclass_Write_SerialNumber.vi.png[horiba.lvlib:GenericDevice.lvclass:Write SerialNumber.vi]
-|+++Accessor VI for this class property.+++
-
-|image:empty.png[empty.png]
+|image:scope-protected.png[scope-protected.png]
 |image:empty.png[empty.png]
 |image:empty.png[empty.png]
 |===

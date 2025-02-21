@@ -452,6 +452,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_preamble">2.1. Preamble</a></li>
 <li><a href="#_modules_overview">2.2. Modules overview</a></li>
 <li><a href="#_devicemanager_lvlib">2.3. DeviceManager.lvlib</a></li>
+<li><a href="#_livelogger_lvlib">2.4. LiveLogger.lvlib</a></li>
 </ul>
 </li>
 <li><a href="#_libraries">3. Libraries</a>
@@ -582,7 +583,7 @@ It gives you an overview of the modules' interaction and detailed information on
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-fd886a8ce5c5a93038e8157907c468106403f8553f11071dcdb4b971884000e0.png" alt="Diagram">
+<img src="Images/diag-410ee1940d84db569bf5d5e452105ce77155e17ea800d32991ae712b0ce8d9c0.png" alt="Diagram">
 </div>
 </div>
 <div class="paragraph">
@@ -590,7 +591,7 @@ It gives you an overview of the modules' interaction and detailed information on
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-6d3ac530ecbab3596d8994418b02ea86f31fdd832da3cfdfb2aad287309ef417.png" alt="Diagram">
+<img src="Images/diag-6776250fc40eb8a5817c23aa4e2b09edc1e0af299a0c58ee906b43d63be958b4.png" alt="Diagram">
 </div>
 </div>
 <div class="admonitionblock note">
@@ -628,19 +629,19 @@ Otherwise Request and wait for Reply is used</p>
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-f00dbbf8b5d6741871e7613b6e0760f998f084374811824d7d59c20e1aa59343.png" alt="Diagram">
+<img src="Images/diag-33e31924594244b55aec9630fe94d64817d837dfd2010d9e8afe63f3c1e31742.png" alt="Diagram">
 </div>
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-ff1ac472c95bf2cb4dbe50e73d64d2d7f3ef27dafa373a2751baa2310fbe7e0a.png" alt="Diagram">
+<img src="Images/diag-9c0a741ebdce65ecaf6623784fc20761628134dbd543d096b78242a3336937c0.png" alt="Diagram">
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_modules_overview"><a class="anchor" href="#_modules_overview"></a><a class="link" href="#_modules_overview">2.2. Modules overview</a></h3>
 <div class="paragraph">
-<p>This project contains 1 singleton module and 0 cloneable module.</p>
+<p>This project contains 2 singleton modules and 0 cloneable module.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
 <caption class="title">Table 1. Modules list</caption>
@@ -659,6 +660,10 @@ Otherwise Request and wait for Reply is used</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_devicemanager_lvlib">DeviceManager.lvlib</a></p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_livelogger_lvlib">LiveLogger.lvlib</a></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -666,7 +671,7 @@ Otherwise Request and wait for Reply is used</p>
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-356bbd4ef55a3ec93f668db54642e6e622bb12b31952ec48d7ae309950df915c.png" alt="Diagram">
+<img src="Images/diag-4f46bf4539f11116e01469fbf869d4337908034c43b465c307ced4558c7ad68b.png" alt="Diagram">
 </div>
 </div>
 </div>
@@ -1127,7 +1132,7 @@ It also handles any communication to and from the ICL via Websocket requests.</p
 <h4 id="_module_relationship"><a class="anchor" href="#_module_relationship"></a><a class="link" href="#_module_relationship">2.3.2. Module relationship</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-5f9fb0699403d7fc489b0a98fbee646e9ff0288c0e244d383f96a9fbb39d2d6c.png" alt="Diagram">
+<img src="Images/diag-dbf5d682fef3f455411b9c62aaa8069aca54bea431bcf38bfa4929b95e5233fc.png" alt="Diagram">
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
@@ -1293,7 +1298,7 @@ websocketConnectionOpened.vi</p></td>
 <h4 id="_module_startstop_calls"><a class="anchor" href="#_module_startstop_calls"></a><a class="link" href="#_module_startstop_calls">2.3.3. Module Start/Stop calls</a></h4>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-cc07d283744e60f557064419f9a7d1247f5b207b68b1e7b80ec447cb754ee1f6.png" alt="Diagram">
+<img src="Images/diag-2c803fa448b0f35456dd54a9f17368a3bd629c33c871d8ebe0471c7493e8e0c4.png" alt="Diagram">
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
@@ -1381,6 +1386,476 @@ DeviceManager.lvlib:Test DeviceManager API.vi</p></td>
 </table>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_livelogger_lvlib"><a class="anchor" href="#_livelogger_lvlib"></a><a class="link" href="#_livelogger_lvlib">2.4. LiveLogger.lvlib</a></h3>
+<div class="paragraph">
+<p><strong>Type:</strong> Singleton</p>
+</div>
+<div class="paragraph">
+<p><strong>Responsibility:</strong>
+This DQMH module initializes a live logger to view everything that is occuring during code execution.</p>
+</div>
+<div class="sect3">
+<h4 id="_event_list_2"><a class="anchor" href="#_event_list_2"></a><a class="link" href="#_event_list_2">2.4.1. Event list</a></h4>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 9. Events</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 3.5714%;">
+<col style="width: 28.5714%;">
+<col style="width: 42.8571%;">
+<col style="width: 3.5714%;">
+<col style="width: 3.5714%;">
+<col style="width: 3.5716%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-center valign-top">Type</th>
+<th class="tableblock halign-center valign-top">Connector pane</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-center valign-top">S.</th>
+<th class="tableblock halign-center valign-top">R.</th>
+<th class="tableblock halign-left valign-top">I.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start Module</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Start_Module.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Start Module.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Launches the module Main VI. After calling this VI, you can optionally register for broadcast events from the module by wiring the broadcast events output of this VI to a <b>Register For Events</b> function. </p>
+<p class="tableblock">After the optional Register For Events function call, you should always call the <b>Synchronize Module Events.vi</b> for this module with the 'Wait for Event Sync?' output of this VI to the corresponding input of the Synchronize Module Events.vi. </p>
+<p class="tableblock">To see an example of the proper wiring pattern, see the "Start Module: Value Change" event frame in the API Tester VI for this module.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop Module</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Stop_Module.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Stop Module.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Stop request to the Module's Main.vi.</p>
+<p class="tableblock">If <b>Wait for Module to Stop?</b> is TRUE, this VI will wait until the module main VI stops, and will timeout at the <b>Timeout to Wait for Stop</b> value. This value defaults to "-1", which means the VI will not timeout, and will always wait until the module main VI stops before completing execution.</p>
+<p class="tableblock">Note: The <b>Timeout to Wait for Stop</b> value is ignored if 'Wait for Module to Stop?' is set to FALSE.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show Panel</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/request.png" alt="request.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Show_Panel.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Show Panel.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Show Panel request to the Module's Main.vi.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hide Panel</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/request.png" alt="request.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Hide_Panel.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Hide Panel.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Hide Panel request to the Module's Main.vi.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get Module Execution Status</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/request.png" alt="request.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Get_Module_Execution_Status.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Get Module Execution Status.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fire the Get Module Execution Status request.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show Diagram</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/request.png" alt="request.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Show_Diagram.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Show Diagram.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This VI tells the Module to show its block diagram to facilitate troubleshooting (add probes, breakpoints, highlight execution, etc).</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Module Did Init</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/broadcast.png" alt="broadcast.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Module_Did_Init.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Module Did Init.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Module Did Init event to any VI registered to listen to this module's broadcast events.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status Updated</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/broadcast.png" alt="broadcast.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Status_Updated.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Status Updated.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Status Updated event to any VI registered to listen to events from the owning module.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error Reported</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/broadcast.png" alt="broadcast.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Error_Reported.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Error Reported.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Error Reported event to any VI registered to listen to events from the owning module.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Module Did Stop</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/broadcast.png" alt="broadcast.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Module_Did_Stop.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Module Did Stop.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Module Did Stop event to any VI registered to listen to this module's broadcast events.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update Module Execution Status</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/broadcast.png" alt="broadcast.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_LiveLogger.lvlib_Update_Module_Execution_Status.vi.png" alt="horiba.lvlib:LiveLogger.lvlib:Update Module Execution Status.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Broadcast event to specify whether or not the module is running.</p></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-center valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Type</strong>: <span class="image"><img src="Images/request.png" alt="request"></span> &#8594; Request | <span class="image"><img src="Images/request-and-wait-for-reply.png" alt="request and wait for reply"></span> &#8594; Request and Wait for Reply  | <span class="image"><img src="Images/broadcast.png" alt="broadcast"></span> &#8594; Broadcast</p>
+</div>
+<div class="paragraph">
+<p><strong>S</strong>cope: <span class="image"><img src="Images/scope-protected.png" alt="scope protected"></span> &#8594; Protected | <span class="image"><img src="Images/scope-community.png" alt="scope community"></span> &#8594; Community</p>
+</div>
+<div class="paragraph">
+<p><strong>R</strong>eentrancy: <span class="image"><img src="Images/reentrancy-preallocated.png" alt="reentrancy preallocated"></span> &#8594; Preallocated reentrancy | <span class="image"><img src="Images/reentrancy-shared.png" alt="reentrancy shared"></span> &#8594; Shared reentrancy</p>
+</div>
+<div class="paragraph">
+<p><strong>I</strong>nlining: <span class="image"><img src="Images/inlined.png" alt="inlined"></span> &#8594; Inlined</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_module_relationship_2"><a class="anchor" href="#_module_relationship_2"></a><a class="link" href="#_module_relationship_2">2.4.2. Module relationship</a></h4>
+<div class="imageblock text-center kroki">
+<div class="content">
+<img src="Images/diag-c53b940c9906831b70912bd628125666db7be975fad886b5a0f45025c23d4590.png" alt="Diagram">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 10. Requests callers</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Request Name</th>
+<th class="tableblock halign-left valign-top">Callers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Get Module Execution Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Obtain Broadcast Events for Registration.vi<br>
+LiveLogger.lvlib:Start Module.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Hide Panel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Show Diagram</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Show Panel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 11. Broadcasts Listeners</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Broadcast Name</th>
+<th class="tableblock halign-left valign-top">Listeners</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Error Reported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Module Did Init</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Module Did Stop</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Status Updated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Update Module Execution Status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 12. Used requests</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Module</th>
+<th class="tableblock halign-left valign-top">Requests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">horiba.lvlib</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Stop Module.vi (2)</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 13. Registered broadcast</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Module</th>
+<th class="tableblock halign-left valign-top">Broadcasts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Error Reported.vi<br>
+Module Did Init.vi<br>
+Module Did Stop.vi<br>
+Status Updated.vi<br>
+Update Module Execution Status.vi</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_module_startstop_calls_2"><a class="anchor" href="#_module_startstop_calls_2"></a><a class="link" href="#_module_startstop_calls_2">2.4.3. Module Start/Stop calls</a></h4>
+<div class="imageblock text-center kroki">
+<div class="content">
+<img src="Images/diag-64296875739b4a303c38946fe398b3ffb138bc1552f014e1d5e690c2a1a15078.png" alt="Diagram">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 14. Start and Stop module callers</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Function</th>
+<th class="tableblock halign-left valign-top">Callers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start Module</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop Module</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Main.vi<br>
+LiveLogger.lvlib:Handle Exit.vi<br>
+LiveLogger.lvlib:Test LiveLogger API.vi</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_module_custom_errors_2"><a class="anchor" href="#_module_custom_errors_2"></a><a class="link" href="#_module_custom_errors_2">2.4.4. Module custom errors</a></h4>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Custom errors are added to the module via vi named <code>*--error.vi</code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Module LiveLogger.lvlib use the following custom errors:</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-none stretch">
+<caption class="title">Table 15. Custom errors</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 12.5%;">
+<col style="width: 62.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Code</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Module Not Running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Module Not Stopped</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Module Not Synced</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Request and Wait for Reply Timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1399,7 +1874,7 @@ This library contains all examples for single or multi device setup for the Hori
 <p><strong>Version:</strong> 1.0.0.0</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 9. Functions (non private scope only)</caption>
+<caption class="title">Table 16. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -1757,6 +2232,70 @@ This library contains all examples for single or multi device setup for the Hori
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Setup Example SCD</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Examples.lvlib_Setup_Example_SCD.vi.png" alt="Examples.lvlib:Setup Example SCD.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Setup for the mono examples.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Teardown Examples SCD</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Examples.lvlib_Teardown_Examples_SCD.vi.png" alt="Examples.lvlib:Teardown Examples SCD.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SCD Acquisition</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Examples.lvlib_SCD_Acquisition.vi.png" alt="Examples.lvlib:SCD Acquisition.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SCD Get Infos</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/Examples.lvlib_SCD_Get_Infos.vi.png" alt="Examples.lvlib:SCD Get Infos.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1779,7 +2318,7 @@ This library contains all code to connect and drive the Horiba hardware.</p>
 <p><strong>Version:</strong> 1.0.0.0</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 10. Nested libraries</caption>
+<caption class="title">Table 17. Nested libraries</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1815,10 +2354,14 @@ This library contains all code to connect and drive the Horiba hardware.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_devicemanager_lvlib">DeviceManager.lvlib</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Library</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#_livelogger_lvlib">LiveLogger.lvlib</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Library</p></td>
+</tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 11. Functions (non private scope only)</caption>
+<caption class="title">Table 18. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -1880,7 +2423,7 @@ This library contains all code to connect and drive the Horiba hardware.</p>
 <p>This project contains 5 classes and 0 interface.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 12. Classes list</caption>
+<caption class="title">Table 19. Classes list</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1916,7 +2459,7 @@ This library contains all code to connect and drive the Horiba hardware.</p>
 </table>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-4d1edcdd397f6861b5b10ee159e12d9f1a9cb63d523e10a645b57ae8e541c818.svg" alt="Diagram">
+<img src="Images/diag-5a86b905d85b4488bbd0a8d58f0efef155a650c01db5def75d3ecd9ebebe7e34.svg" alt="Diagram">
 </div>
 </div>
 </div>
@@ -1931,11 +2474,11 @@ This class contains all functionality needed for Horiba's Multi-Channel-detector
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-d14cdb5a64fd807226e858e4472506b4d6788fbc45de7317cbd40d0c4a831f7b.svg" alt="Diagram">
+<img src="Images/diag-f26ae529ab1bec14c1a898640a514d5be2d19f3a123e8f8d3284c5803ff16bb9.svg" alt="Diagram">
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 13. Functions (non private scope only)</caption>
+<caption class="title">Table 20. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -1972,6 +2515,38 @@ This class contains all functionality needed for Horiba's Multi-Channel-detector
 </div></div></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">parse1dOr2dArray</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_parse1dOr2dArray.vi.png" alt="horiba.lvlib:CCD.lvclass:parse1dOr2dArray.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">parseCcdData</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_parseCcdData.vi.png" alt="horiba.lvlib:CCD.lvclass:parseCcdData.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Helper VI to parse the ccd data to a LV 2D image array.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">parseConfigData</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_parseConfigData.vi.png" alt="horiba.lvlib:CCD.lvclass:parseConfigData.vi"></span></p>
@@ -1988,43 +2563,11 @@ This class contains all functionality needed for Horiba's Multi-Channel-detector
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">parseImageData</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_parseImageData.vi.png" alt="horiba.lvlib:CCD.lvclass:parseImageData.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Helper VI to parse the ccd data to a LV 2D image array.</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">parseRangeMode</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_parseRangeMode.vi.png" alt="horiba.lvlib:CCD.lvclass:parseRangeMode.vi"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">parseSpectralData</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_parseSpectralData.vi.png" alt="horiba.lvlib:CCD.lvclass:parseSpectralData.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Helper VI to parse the ccd data to a LV 2D image array.</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -2206,6 +2749,70 @@ count	Integer. The number of acquisition measurements to be performed.</p></td>
 <p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_getAcquisitionBusy.vi.png" alt="horiba.lvlib:CCD.lvclass:getAcquisitionBusy.vi"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">getAcquisitionData</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_getAcquisitionData.vi.png" alt="horiba.lvlib:CCD.lvclass:getAcquisitionData.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The acquisition description string consists of the following information:</p>
+<p class="tableblock">acqIndex: Acquisition number
+roiIndex: Region of Interest number
+xOrigin: ROI’s X Origin
+yOrigin: ROI’s Y Origin
+xSize: ROI’s X Size
+ySize: ROI’s Y Size
+xBinning: ROI’s X Bin
+yBinning: ROI’s Y Bin
+Timestamp: This is a timestamp that relates to the time when the all the programmed acquisitions have completed. The data from all programmed acquisitions are retrieved from the CCD after all acquisitions have completed, therefore the same timestamp is used for all acquisitions.
+Command Parameters:</p>
+<p class="tableblock">Return Results:</p>
+<p class="tableblock">results	description
+acquisition	String. Acquisition data.
+Example command:</p>
+<p class="tableblock">Example response:</p>
+<p class="tableblock">{
+    "command": "ccd_getAcquisitionData",
+    "errors": [],
+    "id": 1234,
+    "results": {
+        "acquisition": [
+                {
+                "acqIndex": 1,
+                "roi":
+                    [
+                        {
+                        "roiIndex": 1,
+                        "xBinning": 1,
+                        "xOrigin": 1,
+                        "xSize": 8,
+                        "xyData": [
+                            [
+                                885.6389770507812,
+                                976
+                            ],
+                            [w
+                                885.2899780273438,
+                                975
+                            ],
+                            [
+                                884.9409790039062,
+                                979
+                            ],
+                            [
+                                884.593017578125,
+                                976
+                            ],
+}</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -2595,70 +3202,6 @@ For example:</p>
 </div></div></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">getImageData</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_getImageData.vi.png" alt="horiba.lvlib:CCD.lvclass:getImageData.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The acquisition description string consists of the following information:</p>
-<p class="tableblock">acqIndex: Acquisition number
-roiIndex: Region of Interest number
-xOrigin: ROI’s X Origin
-yOrigin: ROI’s Y Origin
-xSize: ROI’s X Size
-ySize: ROI’s Y Size
-xBinning: ROI’s X Bin
-yBinning: ROI’s Y Bin
-Timestamp: This is a timestamp that relates to the time when the all the programmed acquisitions have completed. The data from all programmed acquisitions are retrieved from the CCD after all acquisitions have completed, therefore the same timestamp is used for all acquisitions.
-Command Parameters:</p>
-<p class="tableblock">Return Results:</p>
-<p class="tableblock">results	description
-acquisition	String. Acquisition data.
-Example command:</p>
-<p class="tableblock">Example response:</p>
-<p class="tableblock">{
-    "command": "ccd_getAcquisitionData",
-    "errors": [],
-    "id": 1234,
-    "results": {
-        "acquisition": [
-                {
-                "acqIndex": 1,
-                "roi":
-                    [
-                        {
-                        "roiIndex": 1,
-                        "xBinning": 1,
-                        "xOrigin": 1,
-                        "xSize": 8,
-                        "xyData": [
-                            [
-                                885.6389770507812,
-                                976
-                            ],
-                            [w
-                                885.2899780273438,
-                                975
-                            ],
-                            [
-                                884.9409790039062,
-                                979
-                            ],
-                            [
-                                884.593017578125,
-                                976
-                            ],
-}</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">getParallelSpeed</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_getParallelSpeed.vi.png" alt="horiba.lvlib:CCD.lvclass:getParallelSpeed.vi"></span></p>
@@ -2735,70 +3278,6 @@ For example:</p>
         "token": 0
     }
 ]</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">getSpectralData</p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p><span class="image"><img src="Images/horiba.lvlib_CCD.lvclass_getSpectralData.vi.png" alt="horiba.lvlib:CCD.lvclass:getSpectralData.vi"></span></p>
-</div></div></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The acquisition description string consists of the following information:</p>
-<p class="tableblock">acqIndex: Acquisition number
-roiIndex: Region of Interest number
-xOrigin: ROI’s X Origin
-yOrigin: ROI’s Y Origin
-xSize: ROI’s X Size
-ySize: ROI’s Y Size
-xBinning: ROI’s X Bin
-yBinning: ROI’s Y Bin
-Timestamp: This is a timestamp that relates to the time when the all the programmed acquisitions have completed. The data from all programmed acquisitions are retrieved from the CCD after all acquisitions have completed, therefore the same timestamp is used for all acquisitions.
-Command Parameters:</p>
-<p class="tableblock">Return Results:</p>
-<p class="tableblock">results	description
-acquisition	String. Acquisition data.
-Example command:</p>
-<p class="tableblock">Example response:</p>
-<p class="tableblock">{
-    "command": "ccd_getAcquisitionData",
-    "errors": [],
-    "id": 1234,
-    "results": {
-        "acquisition": [
-                {
-                "acqIndex": 1,
-                "roi":
-                    [
-                        {
-                        "roiIndex": 1,
-                        "xBinning": 1,
-                        "xOrigin": 1,
-                        "xSize": 8,
-                        "xyData": [
-                            [
-                                885.6389770507812,
-                                976
-                            ],
-                            [w
-                                885.2899780273438,
-                                975
-                            ],
-                            [
-                                884.9409790039062,
-                                979
-                            ],
-                            [
-                                884.593017578125,
-                                976
-                            ],
-}</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -3532,7 +4011,7 @@ This class handles the communication between LV and the ICL via websocket reques
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 14. Functions (non private scope only)</caption>
+<caption class="title">Table 21. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -3755,7 +4234,7 @@ This parent class for all devices provides base functionality like discovering, 
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 15. Functions (non private scope only)</caption>
+<caption class="title">Table 22. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -4106,7 +4585,7 @@ This class contains all functionality needed for Horiba's Monochromators.</p>
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 16. Functions (non private scope only)</caption>
+<caption class="title">Table 23. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -4743,15 +5222,15 @@ slitType	Integer. Used to identify the slit size.
 This class contains all functionality needed for Horiba's Single-Channel-detectors.</p>
 </div>
 <div class="paragraph">
-<p><strong>Version:</strong> 1.0.0.0</p>
+<p><strong>Version:</strong> 1.0.0.2</p>
 </div>
 <div class="imageblock text-center kroki">
 <div class="content">
-<img src="Images/diag-c3a73bdb728916e5c5ebbf683be58883300b73a500a4ad691ce9384b9fd6fde8.svg" alt="Diagram">
+<img src="Images/diag-149b49dc9621e4ce4885d011d95499114d39c72b77164806e1263d1bb69ba8b6.svg" alt="Diagram">
 </div>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 17. Functions (non private scope only)</caption>
+<caption class="title">Table 24. Functions (non private scope only)</caption>
 <colgroup>
 <col style="width: 14.8148%;">
 <col style="width: 29.6296%;">
@@ -4771,6 +5250,99 @@ This class contains all functionality needed for Horiba's Single-Channel-detecto
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AcqStart</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_AcqStart.vi.png" alt="horiba.lvlib:SCD.lvclass:AcqStart.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Define acquisition sets before starting an acquisition. Ensure acquisition preparation is completed successfully.
+Starting an acquisition will return an error if:</p>
+<p class="tableblock">An acquisition is already running, or
+Acquisition preparation has not been completed.
+In the event of errors in the defined parameters, the result will include an error_count field indicating the number of errors detected.
+use saq3_getErrorLog to get the detailed error.</p>
+<p class="tableblock">Trigger Modes:</p>
+<p class="tableblock">Mode	description
+1	- 1st data started on Start command, all subsequent data acquired based on interval time
+2	- 1st data started by Trigger after start Command, all subsequent data acquired based on interval time
+3	- Each data acquisition waits for Trigger</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AcqStop</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_AcqStop.vi.png" alt="horiba.lvlib:SCD.lvclass:AcqStop.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stops the current acquisition. The current data point is discarded. The acquisition process must be checked and restarted if needed.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AcqPause</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_AcqPause.vi.png" alt="horiba.lvlib:SCD.lvclass:AcqPause.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pause active Acquisition. Current point is completed. Can be continued. Needs to be Stopped to start a new Acquisition.
+An error will be returned if a pause is received while an acquisition is not running.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AcqContinue</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_AcqContinue.vi.png" alt="horiba.lvlib:SCD.lvclass:AcqContinue.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Restart a paused acquisition.
+An error will be returned if continue is received when not paused.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ForceTrigger</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_ForceTrigger.vi.png" alt="horiba.lvlib:SCD.lvclass:ForceTrigger.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Software Trigger, treated the same as Hardware Trigger (IN).
+If no acquisition is in progress, the trigger will be ignored.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DeviceClose</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -4809,6 +5381,316 @@ This class contains all functionality needed for Horiba's Single-Channel-detecto
 <p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_DeviceIsOpen.vi.png" alt="horiba.lvlib:SCD.lvclass:DeviceIsOpen.vi"></span></p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Returns true if selected SpectrAcq3 is open.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IsDeviceBusy</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_IsDeviceBusy.vi.png" alt="horiba.lvlib:SCD.lvclass:IsDeviceBusy.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetFirmwareVersion</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetFirmwareVersion.vi.png" alt="horiba.lvlib:SCD.lvclass:GetFirmwareVersion.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetFpgaVersion</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetFpgaVersion.vi.png" alt="horiba.lvlib:SCD.lvclass:GetFpgaVersion.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetBoardRevision</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetBoardRevision.vi.png" alt="horiba.lvlib:SCD.lvclass:GetBoardRevision.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetSerialNumber</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetSerialNumber.vi.png" alt="horiba.lvlib:SCD.lvclass:GetSerialNumber.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No description found (add content in vi description)</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetIntegrationTime</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetIntegrationTime.vi.png" alt="horiba.lvlib:SCD.lvclass:GetIntegrationTime.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SetIntegrationTime</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_SetIntegrationTime.vi.png" alt="horiba.lvlib:SCD.lvclass:SetIntegrationTime.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SetHvBiasVoltage</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_SetHvBiasVoltage.vi.png" alt="horiba.lvlib:SCD.lvclass:SetHvBiasVoltage.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the High bias voltage in Volts. If not set then default value will be used.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetHvBiasVoltage</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetHvBiasVoltage.vi.png" alt="horiba.lvlib:SCD.lvclass:GetHvBiasVoltage.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetMaxHVVoltageAllowed</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetMaxHVVoltageAllowed.vi.png" alt="horiba.lvlib:SCD.lvclass:GetMaxHVVoltageAllowed.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetAcqSet</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetAcqSet.vi.png" alt="horiba.lvlib:SCD.lvclass:GetAcqSet.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get the acquisition set parameters.
+scan_count	Number of acquisition to perform
+time_step	Interval between successive scans for time based scan in seconds. If 0/not defined, the scans take place as fast as possible (limited by integration time and monochromator move if applicable)
+integration_time	Integration time in seconds
+external_param	User defined value</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DefineAcqSet</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_DefineAcqSet.vi.png" alt="horiba.lvlib:SCD.lvclass:DefineAcqSet.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Defines and sends the parameters for the acquisition set to perform the acquisition.
+If the acquisition set is not defined, a single-point scan with default settings is performed.
+Parameters that are not explicitly defined are set to their default values.
+Parameters to define for the acquisition</p>
+<p class="tableblock">Scan Count : Number of acquisitions to perform
+Time Steps : Time interval in seconds between acquisitions
+Integration time: Time in Seconds
+External user defined parameter Returns an error if an acquisition is already in progress.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IsDataAvailable</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_IsDataAvailable.vi.png" alt="horiba.lvlib:SCD.lvclass:IsDataAvailable.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check whether the acquired data is available.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetAvailableData</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetAvailableData.vi.png" alt="horiba.lvlib:SCD.lvclass:GetAvailableData.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check whether the acquired data is available.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SetInTriggerMode</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_SetInTriggerMode.vi.png" alt="horiba.lvlib:SCD.lvclass:SetInTriggerMode.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tell the device how Hardware Trigger pin is used. Returns Error if Acquisition is in Progress.</p>
+<p class="tableblock">mode:	Mode of hardware trigger pin.
+0: TTL input
+1: Event marker input
+2: Hardware trigger input</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetTriggerMode</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetTriggerMode.vi.png" alt="horiba.lvlib:SCD.lvclass:GetTriggerMode.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetLastError</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetLastError.vi.png" alt="horiba.lvlib:SCD.lvclass:GetLastError.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GetErrorLog</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><span class="image"><img src="Images/horiba.lvlib_SCD.lvclass_GetErrorLog.vi.png" alt="horiba.lvlib:SCD.lvclass:GetErrorLog.vi"></span></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gets the integration time that was previously set. If no integration time has been explicitly set, the default value is returned.
+The integration time is returned in seconds.</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p><span class="image"><img src="Images/empty.png" alt="empty.png"></span></p>
 </div></div></td>
@@ -5011,7 +5893,7 @@ This class contains all functionality needed for Horiba's Single-Channel-detecto
 </table>
 </div>
 <table class="tableblock frame-all grid-all stripes-none stretch">
-<caption class="title">Table 18. Custom errors</caption>
+<caption class="title">Table 25. Custom errors</caption>
 <colgroup>
 <col style="width: 18.75%;">
 <col style="width: 12.5%;">
@@ -5047,6 +5929,30 @@ This class contains all functionality needed for Horiba's Single-Channel-detecto
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DeviceManager.lvlib:Request and Wait for Reply Timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#horiba.lvlib">[horiba.lvlib]</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Module Not Running</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#horiba.lvlib">[horiba.lvlib]</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Module Not Stopped</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#horiba.lvlib">[horiba.lvlib]</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Module Not Synced</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#horiba.lvlib">[horiba.lvlib]</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LiveLogger.lvlib:Request and Wait for Reply Timeout</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-left valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#horiba.lvlib">[horiba.lvlib]</a></p></td>
@@ -5278,7 +6184,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2024-11-20 17:33:48 +0100
+Last updated 2025-02-21 16:25:31 +0100
 </div>
 </div>
 </body>
