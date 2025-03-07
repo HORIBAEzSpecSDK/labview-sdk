@@ -10,8 +10,20 @@ The functionality is distributed over two parts, the `instrument control layer (
 
 The ICL itself is sold and distributed by Horiba. The source code to communicate with the ICL and drive the instruments is located in this repo for LabVIEW, but can be also found for C#, C++ and Python.
 
+## How the LabVIEW Code works
+This is the very basic use case of any code when working with the Horiba devices:
+![VeryBasicUsage](docs/veryBasicUsageOfDeviceManager.png "basicUsage")
+
+- The divice manager (which is a DQMH module) starts the ICL if it is not already running
+- The device manager opens the websocket connection to the ICL
+- The device manager asks the ICL to dicover all devices attached
+- The device manager returns arrays of Monochromators, CCDs and SingleChannelDetectors
+- The user programs what they need to do
+- The device manager cleans up all resources at the end
+
+
 ## Compatible ICL Version
-This code version has been tested with ICL version *2.0.0.177*
+This code version has been tested with ICL version *2.0.0.179*
 
 ## Compatible Devices
 ### Monos:

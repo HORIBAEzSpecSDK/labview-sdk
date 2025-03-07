@@ -54,4 +54,5 @@
 		<Item Name="SCD Acquisition.vi" Type="VI" URL="../SCD/SCD Acquisition.vi"/>
 		<Item Name="SCD Get Infos.vi" Type="VI" URL="../SCD/SCD Get Infos.vi"/>
 	</Item>
+	<Item Name="BasicUsage.vi" Type="VI" URL="../BasicUsage.vi"/>
 </Library>

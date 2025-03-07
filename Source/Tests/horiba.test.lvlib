@@ -94,7 +94,6 @@
 			<Item Name="test_scd_GetMaxHVVoltageAllowed.vi" Type="VI" URL="../Classes/SCD/test_scd_GetMaxHVVoltageAllowed.vi"/>
 			<Item Name="test_scd_GetSerialNumber.vi" Type="VI" URL="../Classes/SCD/test_scd_GetSerialNumber.vi"/>
 			<Item Name="test_scd_HVBiasVoltage.vi" Type="VI" URL="../Classes/SCD/test_scd_HVBiasVoltage.vi"/>
-			<Item Name="test_scd_IntegrationTime.vi" Type="VI" URL="../Classes/SCD/test_scd_IntegrationTime.vi"/>
 			<Item Name="test_scd_IsDeviceBusy.vi" Type="VI" URL="../Classes/SCD/test_scd_IsDeviceBusy.vi"/>
 			<Item Name="test_scd_OpenAndClose.vi" Type="VI" URL="../Classes/SCD/test_scd_OpenAndClose.vi"/>
 			<Item Name="test_scd_TriggerModes.vi" Type="VI" URL="../Classes/SCD/test_scd_TriggerModes.vi"/>
