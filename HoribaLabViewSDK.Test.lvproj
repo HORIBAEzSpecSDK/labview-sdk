@@ -15,8 +15,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Modules" Type="Folder"/>
-		<Item Name="Testers" Type="Folder"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
 		<Item Name="horiba.test.lvlib" Type="Library" URL="../Source/Tests/horiba.test.lvlib"/>

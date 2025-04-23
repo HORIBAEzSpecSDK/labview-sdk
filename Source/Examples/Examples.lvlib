@@ -26,24 +26,30 @@
 		<Item Name="CCD Get Config.vi" Type="VI" URL="../CCD/CCD Get Config.vi"/>
 	</Item>
 	<Item Name="Mono" Type="Folder">
+		<Item Name="SingleExamples" Type="Folder">
+			<Item Name="Mono Filter Wheel.vi" Type="VI" URL="../Mono/Mono Filter Wheel.vi"/>
+			<Item Name="Mono Get Config.vi" Type="VI" URL="../Mono/Mono Get Config.vi"/>
+			<Item Name="Mono Grating.vi" Type="VI" URL="../Mono/Mono Grating.vi"/>
+			<Item Name="Mono Init.vi" Type="VI" URL="../Mono/Mono Init.vi"/>
+			<Item Name="Mono Mirror.vi" Type="VI" URL="../Mono/Mono Mirror.vi"/>
+			<Item Name="Mono Position.vi" Type="VI" URL="../Mono/Mono Position.vi"/>
+			<Item Name="Mono Shutter.vi" Type="VI" URL="../Mono/Mono Shutter.vi"/>
+			<Item Name="Mono Slit.vi" Type="VI" URL="../Mono/Mono Slit.vi"/>
+		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Setup Example Mono.vi" Type="VI" URL="../Mono/Setup Example Mono.vi"/>
 			<Item Name="Teardown Examples Mono.vi" Type="VI" URL="../Mono/Teardown Examples Mono.vi"/>
 		</Item>
-		<Item Name="Mono Filter Wheel.vi" Type="VI" URL="../Mono/Mono Filter Wheel.vi"/>
-		<Item Name="Mono Get Config.vi" Type="VI" URL="../Mono/Mono Get Config.vi"/>
-		<Item Name="Mono Grating.vi" Type="VI" URL="../Mono/Mono Grating.vi"/>
-		<Item Name="Mono Init.vi" Type="VI" URL="../Mono/Mono Init.vi"/>
-		<Item Name="Mono Mirror.vi" Type="VI" URL="../Mono/Mono Mirror.vi"/>
-		<Item Name="Mono Position.vi" Type="VI" URL="../Mono/Mono Position.vi"/>
-		<Item Name="Mono Shutter.vi" Type="VI" URL="../Mono/Mono Shutter.vi"/>
-		<Item Name="Mono Slit.vi" Type="VI" URL="../Mono/Mono Slit.vi"/>
+		<Item Name="Mono Full Example.vi" Type="VI" URL="../Mono/Mono Full Example.vi"/>
 	</Item>
 	<Item Name="MonoAndCCD" Type="Folder">
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Setup Example All Devices.vi" Type="VI" URL="../../Classes/CCD/Setup Example All Devices.vi"/>
 		</Item>
 		<Item Name="CCD Acquire Spectrum vs Wavelength Range Mode.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength Range Mode.vi"/>
+	</Item>
+	<Item Name="MonoAndScd" Type="Folder">
+		<Item Name="SCD Range Mode.vi" Type="VI" URL="../SCD/SCD Range Mode.vi"/>
 	</Item>
 	<Item Name="SCD" Type="Folder">
 		<Item Name="SubVIs" Type="Folder">
