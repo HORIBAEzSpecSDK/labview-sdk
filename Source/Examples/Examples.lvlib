@@ -23,6 +23,7 @@
 		<Item Name="CCD Acquire Spectrum vs Wavelength.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength.vi"/>
 		<Item Name="CCD Acquire Spectrum vs Wavenumbers.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavenumbers.vi"/>
 		<Item Name="CCD Acquire Spectrum with Darkcount Subtract.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum with Darkcount Subtract.vi"/>
+		<Item Name="CCD Exposure Time Control.vi" Type="VI" URL="../CCD/CCD Exposure Time Control.vi"/>
 		<Item Name="CCD Get Config.vi" Type="VI" URL="../CCD/CCD Get Config.vi"/>
 	</Item>
 	<Item Name="Mono" Type="Folder">
