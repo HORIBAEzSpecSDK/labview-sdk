@@ -133,6 +133,7 @@ It also handles any communication to and from the ICL via Websocket requests.</P
 		<Item Name="SCDList.vi" Type="VI" URL="../../GenericDevice/SCDList.vi"/>
 		<Item Name="CheckIclRunning.vi" Type="VI" URL="../CheckIclRunning.vi"/>
 		<Item Name="Open Websocket Connection.vi" Type="VI" URL="../Open Websocket Connection.vi"/>
+		<Item Name="StartIclExeViaCommandLine.vi" Type="VI" URL="../StartIclExeViaCommandLine.vi"/>
 	</Item>
 	<Item Name="Module Sync" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
