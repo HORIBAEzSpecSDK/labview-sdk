@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="23008000">
+<Library LVVersion="20008000">
 	<Property Name="EndevoGOOP_ColorFrame" Type="UInt">0</Property>
 	<Property Name="EndevoGOOP_ColorHeader" Type="UInt">6056066</Property>
 	<Property Name="EndevoGOOP_ColorPrivate" Type="UInt">16777215</Property>
@@ -10,8 +10,7 @@
 	<Property Name="NI.Lib.ContainingLib" Type="Str">horiba.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../horiba.lvlib</Property>
 	<Property Name="NI.Lib.Description" Type="Str">This DQMH module initializes a live logger to view everything that is occuring during code execution.</Property>
-	<Property Name="NI.Lib.Icon" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)\!!!*Q(C=\&gt;5^&lt;B.2&amp;-8R![+A^1[1NX#XY)9&amp;?!OXI5LFAI:SON2X#&lt;'%+&amp;WYJTJ&lt;'*&lt;A,94`P&amp;Q\53,B"B"#G=F\NM`\_PH.?#+.Y\XU4P@8DC_`0'D8]CK.3A`6O6T;F\Q\HKM207P8O?JZ8IR`L*[-@_D^9PVT_R8`F5/PR_PR@R`8@Q2``(@Q2MO$C'*+5:)37J;^.\H*47ZSEZO]S)O]S)O]S)M]S:-]S:-]S:-]S)-]S)-]S).]H/1C&amp;\H)):H&amp;T5*G5D/"[1R&amp;JD)?YT%?Y_'DD-&gt;YD-&gt;YD)=O-B\D-2\D-2['S8C-RXC-RXC9;EA]4H)]RM0U+DS&amp;J`!5HM,$ECI]";"9L*CYG!3'CM&lt;C4?%J0)7(NSI]B;@Q&amp;*\#1\-+4_%J0)7H]$"E\%I.T8+3YW%;*:\%EXA34_*B;C7?R*.Y%E`C94EFHM34)*)&amp;E]EB+"G5&gt;%A_**\%QYM34_**0)EH]&gt;!ULF#/H6EUSUG/*`!%HM!4?!)05SDQ"*\!%XA#$^-K]!3?Q".Y!A^,+@!%HM!41)*&amp;76\":-(!I&amp;-1""\_RNU3YSL6E-1YJ&lt;ZZV4?F_G:4XU4KGU.^U&gt;585XW2V*OPXF4V:KEX1@XFV'AV2LW)?P$353@KG8+E\#E4:5@:5D;5.77V$0X.(5_HE_:ZVP&amp;YV([`VT2.WOVWWG[XWGQW7K`87KV7F]@!"]\,!_(RO@4D:LK&gt;PXU_T(=@&lt;_?PHQ\@&lt;[&lt;$8`L``!]]'`674^&gt;ADXY#'86B3!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">587235328</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)\!!!*Q(C=\&gt;5^&lt;B.2&amp;-8R![+A^1[1NX#XY)9&amp;?!OXI5LFAI:SON2X#&lt;'%+&amp;WYJTJ&lt;'*&lt;A,94`P&amp;Q\53,B"B"#G=F\NM`\_PH.?#+.Y\XU4P@8DC_`0'D8]CK.3A`6O6T;F\Q\HKM207P8O?JZ8IR`L*[-@_D^9PVT_R8`F5/PR_PR@R`8@Q2``(@Q2MO$C'*+5:)37J;^.\H*47ZSEZO]S)O]S)O]S)M]S:-]S:-]S:-]S)-]S)-]S).]H/1C&amp;\H)):H&amp;T5*G5D/"[1R&amp;JD)?YT%?Y_'DD-&gt;YD-&gt;YD)=O-B\D-2\D-2['S8C-RXC-RXC9;EA]4H)]RM0U+DS&amp;J`!5HM,$ECI]";"9L*CYG!3'CM&lt;C4?%J0)7(NSI]B;@Q&amp;*\#1\-+4_%J0)7H]$"E\%I.T8+3YW%;*:\%EXA34_*B;C7?R*.Y%E`C94EFHM34)*)&amp;E]EB+"G5&gt;%A_**\%QYM34_**0)EH]&gt;!ULF#/H6EUSUG/*`!%HM!4?!)05SDQ"*\!%XA#$^-K]!3?Q".Y!A^,+@!%HM!41)*&amp;76\":-(!I&amp;-1""\_RNU3YSL6E-1YJ&lt;ZZV4?F_G:4XU4KGU.^U&gt;585XW2V*OPXF4V:KEX1@XFV'AV2LW)?P$353@KG8+E\#E4:5@:5D;5.77V$0X.(5_HE_:ZVP&amp;YV([`VT2.WOVWWG[XWGQW7K`87KV7F]@!"]\,!_(RO@4D:LK&gt;PXU_T(=@&lt;_?PHQ\@&lt;[&lt;$8`L``!]]'`674^&gt;ADXY#'86B3!!!!!!</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
