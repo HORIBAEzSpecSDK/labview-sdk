@@ -1,4 +1,0 @@
-== Project description
-
-+++The HORIBA SDK is a powerful tool for anyone working with HORIBA scientific instruments. It simplifies the process of instrument control and data acquisition, allowing users to focus on their research and development tasks. Whether you are conducting experiments, performing quality control, or developing new applications, this SDK provides the necessary tools to streamline your workflow and enhance productivity.+++
-
