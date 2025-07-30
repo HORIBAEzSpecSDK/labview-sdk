@@ -20,9 +20,6 @@
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="horiba.lvlib" Type="Library" URL="../Source/Classes/horiba.lvlib"/>
-		<Item Name="StitchingModeOffset_KJM.vi" Type="VI" URL="../Source/Classes/CCD/StitchingModeOffset_KJM.vi"/>
-		<Item Name="StitchingModeLinear_KJM.vi" Type="VI" URL="../Source/Classes/CCD/StitchingModeLinear_KJM.vi"/>
-		<Item Name="StitchingModeLabspec6_KJM.vi" Type="VI" URL="../Source/Classes/CCD/StitchingModeLabspec6_KJM.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
