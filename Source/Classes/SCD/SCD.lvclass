@@ -225,7 +225,7 @@ This class contains all functionality needed for Horiba's Single-Channel-detecto
 					<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 				</Item>
 				<Item Name="GetAvailableData.vi" Type="VI" URL="../GetAvailableData.vi">
-					<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*?!!!!&amp;Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!Z!-0````]%&gt;7ZJ&gt;!!!#U!+!!6W97RV:1!91&amp;!!!A!&amp;!!9.9X6S=G6O&gt;&amp;.J:WZB&lt;!!21!I!#W6M98"T:725;7VF!"*!)1RF&gt;G6O&gt;&amp;^N98*L:8)!!"Z!)2FP&gt;G6S=W.B&lt;'6@9X6S=G6O&gt;&amp;^D;'&amp;O&lt;G6M!"Z!)2FP&gt;G6S=W.B&lt;'6@&gt;G^M&gt;'&amp;H:6^D;'&amp;O&lt;G6M!"2!5!!#!!5!"AFQ&lt;824;7&gt;O97Q!%5!+!!NQ&lt;WFO&gt;%ZV&lt;7*F=A!51&amp;!!!A!&amp;!!9*=("E5WFH&lt;G&amp;M!"B!5!!#!!5!"AVW&lt;WRU97&gt;F5WFH&lt;G&amp;M!#"!5!!*!!=!#!!*!!I!#Q!-!!U!$A!0"U.M&gt;8.U:8)!%E"!!!(`````!"!%:'&amp;U91!!,%"Q!"Y!!"I-;'^S;7*B,GRW&lt;'FC#V.$2#ZM&gt;G.M98.T!!!(5U.%)'^V&gt;!!J1!-!)U2F&lt;'&amp;Z)'*F&gt;(&gt;F:7YA=W6O:#"B&lt;G1A=G6D:7FW:3"&lt;&lt;8.&gt;!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!,%"Q!"Y!!"I-;'^S;7*B,GRW&lt;'FC#V.$2#ZM&gt;G.M98.T!!!'5U.%)'FO!!"B!0!!$!!$!!1!%1!3!!1!"!!4!!1!&amp;!!%!!1!&amp;1-!!(A!!!U)!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#A!!!!!!!!!!!!!!%!!!$1!!!!Q!!!!!!!!!!!!!!1!7!!!!!!</Property>
+					<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!,P!!!!'1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!!Z!-0````]%&gt;7ZJ&gt;!!!#U!+!!6W97RV:1!91&amp;!!!A!&amp;!!9.9X6S=G6O&gt;&amp;.J:WZB&lt;!!21!I!#W6M98"T:725;7VF!"*!)1RF&gt;G6O&gt;&amp;^N98*L:8)!!"Z!)2FP&gt;G6S=W.B&lt;'6@9X6S=G6O&gt;&amp;^D;'&amp;O&lt;G6M!"Z!)2FP&gt;G6S=W.B&lt;'6@&gt;G^M&gt;'&amp;H:6^D;'&amp;O&lt;G6M!"2!5!!#!!5!"AFQ&lt;824;7&gt;O97Q!%5!+!!NQ&lt;WFO&gt;%ZV&lt;7*F=A!51&amp;!!!A!&amp;!!9*=("E5WFH&lt;G&amp;M!"B!5!!#!!5!"AVW&lt;WRU97&gt;F5WFH&lt;G&amp;M!#"!5!!*!!=!#!!*!!I!#Q!-!!U!$A!0"U.M&gt;8.U:8)!%E"!!!(`````!"!%:'&amp;U91!!,%"Q!"Y!!"I-;'^S;7*B,GRW&lt;'FC#V.$2#ZM&gt;G.M98.T!!!(5U.%)'^V&gt;!!J1!-!)U2F&lt;'&amp;Z)'*F&gt;(&gt;F:7YA=W6O:#"B&lt;G1A=G6D:7FW:3"&lt;&lt;8.&gt;!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!;Q$R!!!!!!!!!!--;'^S;7*B,GRW&lt;'FC#V.$2#ZM&gt;G.M98.T%'2B&gt;'&amp;$;'&amp;O&lt;G6M=SZD&gt;'Q!/5!7!!1(9X6S=G6O&gt;!&gt;W&lt;WRU97&gt;F!X"Q:!:Q;'^U&lt;WY!!"&amp;4&gt;8"Q&lt;X*U:72$;'&amp;O&lt;G6M=Q!G1%!!!@````]!&amp;2B$;'&amp;O&lt;G6M=S"U&lt;S"C:3"S:8&amp;V:8.U:71!!#R!=!!?!!!;$'BP=GFC93ZM&gt;GRJ9AN41U1O&lt;(:D&lt;'&amp;T=Q!!"F.$2#"J&lt;A!!91$Q!!Q!!Q!%!"%!%A!%!!1!%Q!%!"1!"!!7!"=$!!"Y!!!.#!!!!!!!!!E!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!#!!!!!"!!!!U!!!!-!!!!!!!!!!!!!!%!'!!!!!!</Property>
 					<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 					<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 					<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
@@ -303,6 +303,15 @@ This class contains all functionality needed for Horiba's Single-Channel-detecto
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1074278912</Property>
+		</Item>
+		<Item Name="dataChannels.ctl" Type="VI" URL="../dataChannels.ctl">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!\!!!!!1!T!0%!!!!!!!!!!QRI&lt;X*J9G%O&lt;(:M;7),5U.%,GRW9WRB=X-*1W^O&gt;(*P&lt;#!R!!A!!!!"!!!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">5242880</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074541056</Property>
 		</Item>
 	</Item>
 	<Item Name="Properties" Type="Folder">
