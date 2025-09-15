@@ -85,6 +85,7 @@
 			<Item Name="test_scd_AcqStart.vi" Type="VI" URL="../Classes/SCD/test_scd_AcqStart.vi"/>
 			<Item Name="test_scd_AcqStop.vi" Type="VI" URL="../Classes/SCD/test_scd_AcqStop.vi"/>
 			<Item Name="test_scd_dataToCluster.vi" Type="VI" URL="../Classes/SCD/test_scd_dataToCluster.vi"/>
+			<Item Name="test_scd_formatChannelsIntoGetData.vi" Type="VI" URL="../Classes/SCD/test_scd_formatChannelsIntoGetData.vi"/>
 			<Item Name="test_scd_GetBoardRevision.vi" Type="VI" URL="../Classes/SCD/test_scd_GetBoardRevision.vi"/>
 			<Item Name="test_scd_GetErrorLog.vi" Type="VI" URL="../Classes/SCD/test_scd_GetErrorLog.vi"/>
 			<Item Name="test_scd_GetFirmwareVersion.vi" Type="VI" URL="../Classes/SCD/test_scd_GetFirmwareVersion.vi"/>
