@@ -14,6 +14,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="CCD" Type="Folder">
 		<Item Name="subVIs" Type="Folder">
+			<Item Name="Mono Helper.vi" Type="VI" URL="../CCD/Mono Helper.vi"/>
 			<Item Name="Setup Example CCD.vi" Type="VI" URL="../../Classes/CCD/Setup Example CCD.vi"/>
 			<Item Name="Teardown Example.vi" Type="VI" URL="../../Classes/CCD/Teardown Example.vi"/>
 		</Item>
