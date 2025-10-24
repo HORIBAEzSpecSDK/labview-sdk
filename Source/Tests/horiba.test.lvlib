@@ -21,6 +21,7 @@
 			<Item Name="test_ccd_chipTemperature.vi" Type="VI" URL="../Classes/CCD/test_ccd_chipTemperature.vi"/>
 			<Item Name="test_ccd_cleanCount.vi" Type="VI" URL="../Classes/CCD/test_ccd_cleanCount.vi"/>
 			<Item Name="test_ccd_convertWavelengthToRamanShift.vi" Type="VI" URL="../Classes/CCD/test_ccd_convertWavelengthToRamanShift.vi"/>
+			<Item Name="test_ccd_EMgain.vi" Type="VI" URL="../Classes/CCD/test_ccd_EMgain.vi"/>
 			<Item Name="test_ccd_exposureTime.vi" Type="VI" URL="../Classes/CCD/test_ccd_exposureTime.vi"/>
 			<Item Name="test_ccd_gain.vi" Type="VI" URL="../Classes/CCD/test_ccd_gain.vi"/>
 			<Item Name="test_ccd_GetConfig.vi" Type="VI" URL="../Classes/CCD/test_ccd_GetConfig.vi"/>
