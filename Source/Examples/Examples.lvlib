@@ -49,6 +49,7 @@
 			<Item Name="Setup Example All Devices.vi" Type="VI" URL="../../Classes/CCD/Setup Example All Devices.vi"/>
 		</Item>
 		<Item Name="CCD Acquire Spectrum vs Wavelength Range Mode.vi" Type="VI" URL="../CCD/CCD Acquire Spectrum vs Wavelength Range Mode.vi"/>
+		<Item Name="CCD Wavelength Range Mode Enum.ctl" Type="VI" URL="../CCD/CCD Wavelength Range Mode Enum.ctl"/>
 	</Item>
 	<Item Name="MonoAndScd" Type="Folder">
 		<Item Name="SCD Range Mode.vi" Type="VI" URL="../SCD/SCD Range Mode.vi"/>
